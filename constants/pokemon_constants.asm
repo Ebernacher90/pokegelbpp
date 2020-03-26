@@ -1,6 +1,6 @@
 const_value = 1
 
-	const RHYDON       ; $01
+	const RIZEROS      ; $01
 	const KANGASKHAN   ; $02
 	const NIDORAN_M    ; $03
 	const CLEFAIRY     ; $04
@@ -30,8 +30,8 @@ const_value = 1
 	const BLASTOISE    ; $1C
 	const PINSIR       ; $1D
 	const TANGELA      ; $1E
-	const MISSINGNO_1F ; $1F
-	const MISSINGNO_20 ; $20
+	const STAHLOS      ; $1F
+	const IKSBAT       ; $20
 	const GROWLITHE    ; $21
 	const ONIX         ; $22
 	const FEAROW       ; $23
@@ -49,24 +49,24 @@ const_value = 1
 	const PSYDUCK      ; $2F
 	const DROWZEE      ; $30
 	const GOLEM        ; $31
-	const MISSINGNO_32 ; $32
+	const RIHORNIOR	   ; $32
 	const MAGMAR       ; $33
-	const MISSINGNO_34 ; $34
+	const MAGBRANT	   ; $34
 	const ELECTABUZZ   ; $35
 	const MAGNETON     ; $36
 	const KOFFING      ; $37
-	const MISSINGNO_38 ; $38
+	const ELEVOLTEK    ; $38
 	const MANKEY       ; $39
 	const SEEL         ; $3A
 	const DIGLETT      ; $3B
 	const TAUROS       ; $3C
-	const MISSINGNO_3D ; $3D
-	const MISSINGNO_3E ; $3E
-	const MISSINGNO_3F ; $3F
+	const PORYGON2	   ; $3D
+	const PORYGONZ     ; $3E
+	const KOKNODON	   ; $3F
 	const FARFETCHD    ; $40
 	const VENONAT      ; $41
 	const DRAGONITE    ; $42
-	const MISSINGNO_43 ; $43
+	const RAMEIDON	   ; $43
 	const MISSINGNO_44 ; $44
 	const MISSINGNO_45 ; $45
 	const DODUO        ; $46

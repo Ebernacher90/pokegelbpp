@@ -16,7 +16,7 @@ MonPartyData:
 	dn SPRITE_WATER, SPRITE_WATER                      ;Squirtle/Wartortle
 	dn SPRITE_WATER, SPRITE_BUG                        ;Blastoise/Caterpie
 	dn SPRITE_BUG, SPRITE_BUG                          ;Metapod/Butterfree
-	dn SPRITE_BUG, SPRITE_BUG                           ;Weedle/Kakuna
+	dn SPRITE_BUG, SPRITE_BUG                          ;Weedle/Kakuna
 	dn SPRITE_BUG, SPRITE_BIRD_M                       ;Beedrill/Pidgey
 	dn SPRITE_BIRD_M, SPRITE_BIRD_M                    ;Pidgeotto/Pidgeot
 	dn SPRITE_QUADRUPED, SPRITE_QUADRUPED              ;Rattata/Raticate
@@ -65,7 +65,7 @@ MonPartyData:
 	dn SPRITE_MON, SPRITE_MON                          ;Marowak/Hitmonlee
 	dn SPRITE_MON, SPRITE_MON                          ;Hitmonchan/Lickitung
 	dn SPRITE_MON, SPRITE_MON                          ;Koffing/Weezing
-	dn SPRITE_QUADRUPED, SPRITE_MON                    ;Rhyhorn/Rhydon
+	dn SPRITE_QUADRUPED, SPRITE_MON                    ;Rhyhorn/Rizeros
 	dn SPRITE_FAIRY, SPRITE_GRASS                      ;Chansey/Tangela
 	dn SPRITE_MON, SPRITE_WATER                        ;Kangaskhan/Horsea
 	dn SPRITE_WATER, SPRITE_WATER                      ;Seadra/Goldeen
@@ -85,4 +85,9 @@ MonPartyData:
 	dn SPRITE_BIRD_M, SPRITE_BIRD_M                    ;Zapdos/Moltres
 	dn SPRITE_SNAKE, SPRITE_SNAKE                      ;Dratini/Dragonair
 	dn SPRITE_SNAKE, SPRITE_MON                        ;Dragonite/Mewtwo
-	dn SPRITE_MON, 0                                   ;Mew/Padding
+	dn SPRITE_MON, SPRITE_SNAKE                        ;Mew/Stahlos
+	dn SPRITE_MON, SPRITE_MON						   ;Iksbat/Rihornior
+	dn SPRITE_MON, SPRITE_MON						   ;Magbrant/Elevoltek
+	dn SPRITE_MON, SPRITE_MON						   ;Porygon2/PorygonZ
+	dn SPRITE_HELIX, SPRITE_HELIX					   ;Koknodon/Rameidon
+	dn 0, 0											   ;padding/padding

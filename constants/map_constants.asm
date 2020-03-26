@@ -254,3 +254,4 @@ ENDM
 	mapconst BRUNOS_ROOM,                 6,  5 ; $F6
 	mapconst AGATHAS_ROOM,                6,  5 ; $F7
 	mapconst BEACH_HOUSE,                 4,  7 ; $F8
+	mapconst ROUTE_26,                    8, 20 ; $F9

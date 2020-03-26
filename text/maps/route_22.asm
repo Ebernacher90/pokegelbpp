@@ -1,5 +1,5 @@
 _Route22RivalDefeatedText1::
-	text "Awww!"
+	text $53, ": Awww!"
 	line "You just lucked"
 	cont "out!"
 	prompt
@@ -10,11 +10,11 @@ _Route22Text_511bc::
 	cont "#MON?"
 
 	para "You should catch"
-	cont "some more too!"
+	line "some more too!"
 	prompt
 
 _Route22RivalDefeatedText2::
-	text "What!?"
+	text $53, ": What!?"
 
 	para "I was just"
 	line "careless!"
@@ -35,33 +35,40 @@ _Route22RivalBeforeBattleText1::
 	text $53, ": Hey!"
 	line $52, "!"
 
-	para "You're going to"
-	line "#MON LEAGUE?"
+	para "Bist Du auf"
+	line "dem Weg zur"
+	cont "PKMN-LIGA?"
 
-	para "Forget it! You"
-	line "probably don't"
-	cont "have any BADGEs!"
+	para "Vergiss es!"
+	line "Wahrscheinlich"
+	cont "besitzt Du nicht"
+	cont "einmal einen"
+	cont "ORDEN!"
 
-	para "The guard won't"
-	line "let you through!"
+	para "Die Wache wird"
+	line "Dich gar nicht"
+	cont "erst durchlassen!" 
 
-	para "By the way, did"
-	line "your #MON"
-	cont "get any stronger?"
+	para "Ach, sind"
+	line "deine #MON"
+	cont "eigentlich"
+	cont "stärker geworden?"
 	done
 
 _Route22RivalAfterBattleText1::
-	text "I heard #MON"
-	line "LEAGUE has many"
-	cont "tough trainers!"
+	text "In der PKMN-LIGA"
+	line "gibt es viele"
+	cont "starke Trainer!"
 
-	para "I have to figure"
-	line "out how to get"
-	cont "past them!"
+	para "Ich muss einen Weg"
+	line "finden, an ihnen"
+	cont "vorbeizukommen."
 
-	para "You should quit"
-	line "dawdling and get"
-	cont "a move on!"
+	para "Du solltest"
+	line "aufhören zu"
+	cont "bummeln und Dich"
+	cont "in Bewegung"
+	cont "setzen!"
 	done
 
 _Route22RivalBeforeBattleText2::
@@ -99,6 +106,6 @@ _Route22RivalAfterBattleText2::
 	done
 
 _Route22FrontGateText::
-	text "#MON LEAGUE"
-	line "Front Gate"
+	text "PKMN-LIGA"
+	line "Haupteingang"
 	done

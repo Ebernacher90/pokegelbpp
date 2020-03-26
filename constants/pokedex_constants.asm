@@ -111,7 +111,7 @@ const_value = 1
 	const DEX_KOFFING    ; 109
 	const DEX_WEEZING    ; 110
 	const DEX_RHYHORN    ; 111
-	const DEX_RHYDON     ; 112
+	const DEX_RIZEROS    ; 112
 	const DEX_CHANSEY    ; 113
 	const DEX_TANGELA    ; 114
 	const DEX_KANGASKHAN ; 115
@@ -151,5 +151,14 @@ const_value = 1
 	const DEX_DRAGONITE  ; 149
 	const DEX_MEWTWO     ; 150
 	const DEX_MEW        ; 151
+	const DEX_STAHLOS    ; 152
+	const DEX_IKSBAT	 ; 153
+	const DEX_RIHORNIOR	 ; 154
+	const DEX_MAGBRANT	 ; 155
+	const DEX_ELEVOLTEK	 ; 156
+	const DEX_PORYGON2	 ; 157
+	const DEX_PORYGONZ	 ; 158
+	const DEX_KOKNODON	 ; 159
+	const DEX_RAMEIDON	 ; 160
 
-NUM_POKEMON    EQU 151
+NUM_POKEMON    EQU 160

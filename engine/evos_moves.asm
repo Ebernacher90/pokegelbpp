@@ -485,6 +485,8 @@ Pointer_3b0ee:
 	db CHARIZARD
 	db VILEPLUME
 	db VICTREEBEL
+	db IKSBAT
+	db STAHLOS
 	db $ff
 
 Func_3b10f:
@@ -516,7 +518,7 @@ Func_3b10f:
 .asm_3b130
 	inc c
 	ld a, c
-	cp VICTREEBEL
+	cp STAHLOS
 	jr c, .asm_3b111
 	and a
 	ret

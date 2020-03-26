@@ -275,7 +275,7 @@ StartMenu_Pokemon:
 	jp nc,.notHealthyEnough
 	ld a,[wPartyAndBillsPCSavedMenuItem]
 	push af
-	ld a,POTION
+	ld a,TRANK
 	ld [wcf91],a
 	ld [wPseudoItemID],a
 	call UseItem
@@ -474,7 +474,7 @@ UsableItems_PartyMenu:
 	db MAX_POTION
 	db HYPER_POTION
 	db SUPER_POTION
-	db POTION
+	db TRANK
 	db FIRE_STONE
 	db THUNDER_STONE
 	db WATER_STONE
@@ -500,6 +500,10 @@ UsableItems_PartyMenu:
 	db MAX_ETHER
 	db ELIXER
 	db MAX_ELIXER
+	db METAL_COAT
+	db PROTECTOR
+	db MAGMARIZER
+	db ELECTIRIZER
 	db $ff
 
 ; items which close the item menu when used

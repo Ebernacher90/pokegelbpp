@@ -1,6 +1,6 @@
 db DEX_DUGTRIO ; pokedex id
 db 35 ; base hp
-db 80 ; base attack
+db 100 ; base attack
 db 50 ; base defense
 db 120 ; base speed
 db 70 ; base special
@@ -25,4 +25,4 @@ db 0 ; growth rate
 	tmlearn 34
 	tmlearn 44,48
 	tmlearn 50,51
-db 0 ; padding
+db BANK(DugtrioPicFront)

@@ -1,6 +1,6 @@
 db DEX_NIDOQUEEN ; pokedex id
 db 90 ; base hp
-db 82 ; base attack
+db 92 ; base attack
 db 87 ; base defense
 db 76 ; base speed
 db 75 ; base special
@@ -25,4 +25,4 @@ db 3 ; growth rate
 	tmlearn 33,34,38,40
 	tmlearn 44,48
 	tmlearn 50,53,54
-db 0 ; padding
+db BANK(NidoqueenPicFront)

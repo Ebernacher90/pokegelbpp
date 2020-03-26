@@ -249,3 +249,4 @@ MapHeaderBanks::
 	db BANK(Bruno_h)
 	db BANK(Agatha_h)
 	db BANK(BeachHouse_h)
+	db BANK(Route26_h) ; ROUTE_26

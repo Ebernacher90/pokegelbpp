@@ -1,5 +1,5 @@
 PokedexEntryPointers:
-	dw RhydonDexEntry
+	dw RizerosDexEntry
 	dw KangaskhanDexEntry
 	dw NidoranMDexEntry
 	dw ClefairyDexEntry
@@ -29,8 +29,8 @@ PokedexEntryPointers:
 	dw BlastoiseDexEntry
 	dw PinsirDexEntry
 	dw TangelaDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw StahlosDexEntry
+	dw IksbatDexEntry
 	dw GrowlitheDexEntry
 	dw OnixDexEntry
 	dw FearowDexEntry
@@ -48,24 +48,24 @@ PokedexEntryPointers:
 	dw PsyduckDexEntry
 	dw DrowzeeDexEntry
 	dw GolemDexEntry
-	dw MissingNoDexEntry
+	dw RihorniorDexEntry
 	dw MagmarDexEntry
-	dw MissingNoDexEntry
+	dw MagbrantDexEntry
 	dw ElectabuzzDexEntry
 	dw MagnetonDexEntry
 	dw KoffingDexEntry
-	dw MissingNoDexEntry
+	dw ElevoltekDexEntry
 	dw MankeyDexEntry
 	dw SeelDexEntry
 	dw DiglettDexEntry
 	dw TaurosDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw Porygon2DexEntry
+	dw PorygonZDexEntry
+	dw KoknodonDexEntry
 	dw FarfetchdDexEntry
 	dw VenonatDexEntry
 	dw DragoniteDexEntry
-	dw MissingNoDexEntry
+	dw RameidonDexEntry
 	dw MissingNoDexEntry
 	dw MissingNoDexEntry
 	dw DoduoDexEntry
@@ -972,11 +972,11 @@ RhyhornDexEntry:
 	TX_FAR _RhyhornDexEntry
 	db "@"
 
-RhydonDexEntry:
+RizerosDexEntry:
 	db "DRILL@"
 	db 6,3
 	dw 2650
-	TX_FAR _RhydonDexEntry
+	TX_FAR _RizerosDexEntry
 	db "@"
 
 ChanseyDexEntry:
@@ -992,7 +992,7 @@ TangelaDexEntry:
 	dw 770
 	TX_FAR _TangelaDexEntry
 	db "@"
-
+	
 KangaskhanDexEntry:
 	db "PARENT@"
 	db 7,3
@@ -1250,6 +1250,69 @@ MewDexEntry:
 	db 1,4
 	dw 90
 	TX_FAR _MewDexEntry
+	db "@"
+		
+StahlosDexEntry:
+	db "Stahlboa@"
+	db 30,02
+	dw 8818 
+	TX_FAR _StahlosDexEntry
+	db "@"
+
+IksbatDexEntry:
+	db "Fledermaus@"
+	db 5,11
+	dw 1653
+	TX_FAR _IksbatDexEntry
+	db "@"
+	
+RihorniorDexEntry:
+	db "Bohrer@"
+	db 7,10
+	dw 6235
+	TX_FAR _RihorniorDexEntry
+	db "@"
+	
+MagbrantDexEntry:
+	db "Detonation@"
+	db 5,3
+	dw 1499
+	TX_FAR _MagbrantDexEntry
+	db "@"
+	
+ElevoltekDexEntry:
+	db "Donnerkeil@"
+	db 5,11
+	dw 3056
+	TX_FAR _ElevoltekDexEntry
+	db "@"
+	
+Porygon2DexEntry:
+	db "Virtual@"
+	db 2,0
+	dw 716
+	TX_FAR _Porygon2DexEntry
+	db "@"
+	
+PorygonZDexEntry:
+	db "Virtual@"
+	db 2,11
+	dw 750
+	TX_FAR _PorygonZDexEntry
+	db "@"
+
+KoknodonDexEntry:
+	db "Kopfstoss@"
+	db 2,11
+	dw 750
+	TX_FAR _KoknodonDexEntry
+	db "@"
+
+RameidonDexEntry:
+	db "Kopfstoss@"
+	db 2,11
+	dw 750
+	TX_FAR _RameidonDexEntry
 	db "@"
 
 MissingNoDexEntry:

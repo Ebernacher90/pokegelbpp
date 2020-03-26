@@ -7,6 +7,6 @@ TradeMons:
 	db MEW,       MEW,     2,"BART@@@@@@@"
 	db TANGELA,   PARASECT,0,"SPIKE@@@@@@"
 	db PIDGEOT,   PIDGEOT, 1,"MARTY@@@@@@"
-	db GOLDUCK,   RHYDON,  1,"BUFFY@@@@@@"
+	db GOLDUCK,   RIZEROS, 1,"BUFFY@@@@@@"
 	db GROWLITHE, DEWGONG, 2,"CEZANNE@@@@"
 	db CUBONE,    MACHOKE, 2,"RICKY@@@@@@"

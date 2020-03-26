@@ -233,6 +233,12 @@ charmap "'l", $BC
 charmap "'s", $BD
 charmap "'t", $BE
 charmap "'v", $BF
+charmap "Ä", $C0
+charmap "Ö", $C1
+charmap "Ü", $C2
+charmap "ä", $C3
+charmap "ö", $C4
+charmap "ü", $C5
 charmap "'", $E0
 charmap "-", $E3
 charmap "'r", $E4

@@ -303,10 +303,10 @@ PrintStat:
 	ret
 
 StatsText:
-	db   "ATTACK"
-	next "DEFENSE"
-	next "SPEED"
-	next "SPECIAL@"
+	db   "Angriff"
+	next "Vert"
+	next "Init"
+	next "Spezial@"
 
 StatusScreen2:
 	ld a, [hTilesetType]

@@ -415,7 +415,7 @@ MainInBattleLoop:
 	ld a, [wEnemyBattleStatus1]
 	bit UsingTrappingMove, a ; check if enemy is using a multi-turn attack like wrap
 	jr z, .selectPlayerMove ; if not, jump
-; enemy is using a mult-turn attack like wrap, so player is trapped and cannot execute a move
+; enemy is using a multi-turn attack like wrap, so player is trapped and cannot execute a move
 	ld a, $ff
 	ld [wPlayerSelectedMove], a
 	jr .selectEnemyMove
@@ -713,7 +713,7 @@ HandlePoisonBurnLeechSeed_DecreaseOwnHP:
 	ret
 
 ; adds bc to enemy HP
-; bc isn't updated if HP substracted was capped to prevent overkill
+; bc isn't updated if HP subtracted was capped to prevent overkill
 HandlePoisonBurnLeechSeed_IncreaseEnemyHP:
 	push hl
 	ld hl, wEnemyMonMaxHP
@@ -1257,22 +1257,23 @@ ChooseNextMon:
 	ret
 
 ; called when player is out of usable mons.
-; prints approriate lose message, sets carry flag if player blacked out (special case for initial rival fight)
+; prints appropriate lose message, sets carry flag if player blacked out (special case for initial rival fight)
 HandlePlayerBlackOut:
 	ld a, [wLinkState]
 	cp LINK_STATE_BATTLING
 	jr z, .notSony1Battle
 	ld a, [wCurOpponent]
-	cp OPP_SONY1
-	jr nz, .notSony1Battle
+	cp OPP_SONY1 ; is the current opponent Rival1?
+	jr nz, .checkSony2 ; if not, check if other Rivals
+	jr .isRivalBattle
+.isRivalBattle
 	coord hl, 0, 0  ; sony 1 battle
 	lb bc, 8, 21
-	call ClearScreenArea
+	call ClearScreenArea	;clear the top-right of the screen in case there's a Pokémon there.
 	call ScrollTrainerPicAfterBattle
 	ld c, 40
 	call DelayFrames
-	ld hl, Sony1WinText
-	call PrintText
+	call PrintEndBattleText
 	ld a, [wCurMap]
 	cp OAKS_LAB
 	ret z            ; starter battle in oak's lab: don't black out
@@ -1292,6 +1293,16 @@ HandlePlayerBlackOut:
 	call ClearScreen
 	scf
 	ret
+.checkSony2
+	ld a, [wCurOpponent]
+	cp OPP_SONY2 ; is the current opponent Rival2?
+	jr nz, .checkSony3 ;if not, check if Rival3
+	jr .isRivalBattle
+.checkSony3
+	ld a, [wCurOpponent]
+	cp OPP_SONY3 ;is the current opponent Rival3?
+	jr nz, .notSony1Battle ;if not, don't print our message.
+	jr .isRivalBattle
 
 Sony1WinText:
 	TX_FAR _Sony1WinText
@@ -2401,7 +2412,7 @@ BagWasSelected:
 
 SimulatedInputBattleItemList:
 	db 1 ; # of items
-	db POKE_BALL, 1
+	db POKEBALL, 1
 	db $ff
 
 DisplayPlayerBag:
@@ -3581,7 +3592,7 @@ CheckPlayerStatusConditions:
 
 .HeldInPlaceCheck
 	ld a,[wEnemyBattleStatus1]
-	bit UsingTrappingMove,a ; is enemy using a mult-turn move like wrap?
+	bit UsingTrappingMove,a ; is enemy using a multi-turn move like wrap?
 	jp z,.FlinchedCheck
 	ld hl,CantMoveText
 	call PrintText
@@ -3707,7 +3718,7 @@ CheckPlayerStatusConditions:
 	ld c,[hl]
 	ld hl,wPlayerBideAccumulatedDamage + 1
 	ld a,[hl]
-	add c ; acumulate damage taken
+	add c ; accumulate damage taken
 	ld [hld],a
 	ld a,[hl]
 	adc b
@@ -4445,7 +4456,7 @@ GetDamageVarsForPlayerAttack:
 	sla c
 	rl b
 ; reflect and light screen boosts do not cap the stat at 999, so weird things will happen during stats scaling if
-; a Pokemon with 512 or more Defense has ued Reflect, or if a Pokemon with 512 or more Special has used Light Screen
+; a Pokemon with 512 or more Defense has used Reflect, or if a Pokemon with 512 or more Special has used Light Screen
 .specialAttackCritCheck
 	ld hl, wBattleMonSpecial
 	ld a, [wCriticalHitOrOHKO]
@@ -5347,7 +5358,6 @@ MirrorMoveCopyMove:
 	ld de,wEnemyMoveNum
 	ld hl,wEnemySelectedMove
 .next
-	ld [hl],a
 	cp a,MIRROR_MOVE ; did the target Pokemon last use Mirror Move, and miss?
 	jr z,.mirrorMoveFailed
 	and a ; has the target selected any move yet?
@@ -5695,11 +5705,18 @@ MoveHitTest:
 	ld a,[wEnemyMoveAccuracy]
 	ld b,a
 .doAccuracyCheck
-; if the random number generated is greater than or equal to the scaled accuracy, the move misses
-; note that this means that even the highest accuracy is still just a 255/256 chance, not 100%
+; if the move is 100% accurate, don't miss
+	ld a, b
+	cp $FF
+	jr z, .moveHits
+; else if the random number generated is greater than or equal to the selected accuracy, the move misses
 	call BattleRandom
 	cp b
 	jr nc,.moveMissed
+.moveHits
+; make sure wMoveMissed is 0 if it hits
+	xor a
+	ld [wMoveMissed],a
 	ret
 .moveMissed
 	xor a
@@ -6378,10 +6395,14 @@ LoadEnemyMonData:
 	jr nz, .storeDVs
 	ld a, [wIsInBattle]
 	cp $2 ; is it a trainer battle?
-; fixed DVs for trainer mon
-	ld a, $98
-	ld b, $88
-	jr z, .storeDVs
+	jr nz, .notTrainer
+; get DVs for Trainer mon
+	callba GetTrainerMonDVs
+	ld hl, wTempDVs
+	ld a, [hli]
+	ld b, [hl]
+	jr .storeDVs
+.notTrainer
 ; random DVs for wild mon
 	call BattleRandom
 	ld b, a

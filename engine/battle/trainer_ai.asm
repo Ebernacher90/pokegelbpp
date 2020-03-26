@@ -288,7 +288,7 @@ TrainerClassMoveChoiceModifications:
 	db 1,0    ; BIKER
 	db 1,3,0  ; BURGLAR
 	db 1,0    ; ENGINEER
-	db 1,2,0  ; JUGGLER_X
+	db 1,3,0  ; SWIMMER_F
 	db 1,3,0  ; FISHER
 	db 1,3,0  ; SWIMMER
 	db 0      ; CUE_BALL
@@ -393,7 +393,7 @@ TrainerAIPointers:
 	dbw 3,GenericAI
 	dbw 3,GenericAI
 	dbw 3,GenericAI
-	dbw 3,JugglerAI ; juggler_x
+	dbw 3,GenericAI ; swimmer_f
 	dbw 3,GenericAI
 	dbw 3,GenericAI
 	dbw 3,GenericAI
@@ -428,6 +428,7 @@ TrainerAIPointers:
 	dbw 3,GenericAI
 	dbw 2,AgathaAI ; agatha
 	dbw 1,LanceAI ; lance
+	dbw 3,GenericAI
 
 JugglerAI:
 	cp 25 percent + 1
@@ -508,7 +509,7 @@ Sony2AI:
 	ld a,5
 	call AICheckIfHPBelowFraction
 	ret nc
-	jp AIUsePotion
+	jp AIUseTrank
 
 Sony3AI:
 	cp 13 percent - 1
@@ -589,9 +590,9 @@ AIUseFullRestore:
 	ld [wEnemyMonHP],a
 	jr AIPrintItemUseAndUpdateHPBar
 
-AIUsePotion:
+AIUseTrank:
 ; enemy trainer heals his monster with a potion
-	ld a,POTION
+	ld a,TRANK
 	ld b,20
 	jr AIRecoverHP
 

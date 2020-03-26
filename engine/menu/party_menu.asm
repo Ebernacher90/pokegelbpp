@@ -148,11 +148,11 @@ RedrawPartyMenu_:
 	rl b
 	ld c,a
 	add hl,bc
-	ld de,wcd6d
+	ld de,wEvolutionData
 	ld a,BANK(EvosMovesPointerTable)
 	ld bc,2
 	call FarCopyData
-	ld hl,wcd6d
+	ld hl,wEvolutionData
 	ld a,[hli]
 	ld h,[hl]
 	ld l,a

@@ -249,3 +249,4 @@ MapHeaderPointers::
 	dw Bruno_h
 	dw Agatha_h ;247
 	dw BeachHouse_h
+	dw Route26_h

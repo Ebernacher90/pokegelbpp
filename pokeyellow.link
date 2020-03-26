@@ -91,23 +91,23 @@ ROMX $8
 
 ROMX $9
 	org $4000
-	"Pics 1"
+	"bank09"
 
 ROMX $A
 	org $4000
-	"Pics 2"
+	"bank0A"
 
 ROMX $B
 	org $4000
-	"Pics 3"
+	"bank0B"
 
 ROMX $C
 	org $4000
-	"Pics 4"
+	"bank0C"
 
 ROMX $D
 	org $4000
-	"Pics 5"
+	"bank0D"
 
 ROMX $E
 	org $4000
@@ -316,6 +316,38 @@ ROMX $3E
 ROMX $3F
 	org $4000
 	"bank3F"
+	
+ROMX $40
+	org $4000
+	"Pics 1"
+	
+ROMX $41
+	org $4000
+	"Pics 2"
+	
+ROMX $42
+	org $4000
+	"Pics 3"
+	
+ROMX $43
+	org $4000
+	"Pics 4"
+	
+ROMX $44
+	org $4000
+	"Pics 5"
+	
+ROMX $45
+	org $4000
+	"Pics 6"
+	
+ROMX $46
+	org $4000
+	"bank46"
+	
+ROMX $47
+	org $4000
+	"facility"
 
 WRAM0
 	org $c000

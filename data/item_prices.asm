@@ -2,13 +2,13 @@ ItemPrices:
 	money 0     ; MASTER_BALL
 	money 1200  ; ULTRA_BALL
 	money 600   ; GREAT_BALL
-	money 200   ; POKE_BALL
+	money 200   ; POKEBALL
 	money 0     ; TOWN_MAP
 	money 0     ; BICYCLE
 	money 0     ; SURFBOARD
 	money 1000  ; SAFARI_BALL
 	money 0     ; POKEDEX
-	money 0     ; MOON_STONE
+	money 2100  ; MOON_STONE
 	money 100   ; ANTIDOTE
 	money 250   ; BURN_HEAL
 	money 250   ; ICE_HEAL
@@ -18,7 +18,7 @@ ItemPrices:
 	money 2500  ; MAX_POTION
 	money 1500  ; HYPER_POTION
 	money 700   ; SUPER_POTION
-	money 300   ; POTION
+	money 300   ; TRANK
 	money 0     ; BOULDERBADGE
 	money 0     ; CASCADEBADGE
 	money 0     ; THUNDERBADGE
@@ -29,18 +29,18 @@ ItemPrices:
 	money 0     ; EARTHBADGE
 	money 550   ; ESCAPE_ROPE
 	money 350   ; REPEL
-	money 0     ; OLD_AMBER
+	money 4200  ; OLD_AMBER
 	money 2100  ; FIRE_STONE
 	money 2100  ; THUNDER_STONE
 	money 2100  ; WATER_STONE
-	money 9800  ; HP_UP
-	money 9800  ; PROTEIN
-	money 9800  ; IRON
-	money 9800  ; CARBOS
-	money 9800  ; CALCIUM
-	money 4800  ; RARE_CANDY
-	money 0     ; DOME_FOSSIL
-	money 0     ; HELIX_FOSSIL
+	money 100   ; HP_UP
+	money 100   ; PROTEIN
+	money 100   ; IRON
+	money 100   ; CARBOS
+	money 100   ; CALCIUM
+	money 100   ; RARE_CANDY
+	money 4200  ; DOME_FOSSIL
+	money 4200  ; HELIX_FOSSIL
 	money 0     ; SECRET_KEY
 	money 0     ; XXX
 	money 0     ; BIKE_VOUCHER
@@ -77,11 +77,11 @@ ItemPrices:
 	money 0     ; OLD_ROD
 	money 0     ; GOOD_ROD
 	money 0     ; SUPER_ROD
-	money 0     ; PP_UP
-	money 0     ; ETHER
-	money 0     ; MAX_ETHER
-	money 0     ; ELIXER
-	money 0     ; MAX_ELIXER
+	money 100   ; PP_UP
+	money 800   ; ETHER
+	money 1600  ; MAX_ETHER
+	money 2500  ; ELIXER
+	money 10000 ; MAX_ELIXER
 	money 0     ; FLOOR_B2F
 	money 0     ; FLOOR_B1F
 	money 0     ; FLOOR_1F
@@ -96,3 +96,9 @@ ItemPrices:
 	money 0     ; FLOOR_10F
 	money 0     ; FLOOR_11F
 	money 0     ; FLOOR_B4F
+	money 2100  ; METAL_COAT
+	money 10000 ; PROTECTOR
+	money 30000 ; MAGMARIZER
+	money 30000 ; ELECTIRIZER
+	money 40000 ; UPGRADE
+	money 60000 ; DUBIOSDISC

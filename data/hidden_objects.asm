@@ -144,7 +144,7 @@ SeafoamIslands5HiddenObjects:
 	db $ff
 
 ViridianForestHiddenObjects:
-	hidden_object  18,   1, POTION, HiddenItems
+	hidden_object  18,   1, TRANK, HiddenItems
 	hidden_object  42,  16, ANTIDOTE, HiddenItems
 	db $ff
 
@@ -316,7 +316,7 @@ OaksLabHiddenObjects:
 	db $ff
 
 ViridianCityHiddenObjects:
-	hidden_object   4,  14, POTION, HiddenItems
+	hidden_object   4,  14, TRANK, HiddenItems
 	db $ff
 
 ViridianPokecenterHiddenObjects:

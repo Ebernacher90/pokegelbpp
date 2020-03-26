@@ -1,6 +1,6 @@
 db DEX_NIDOKING ; pokedex id
 db 81 ; base hp
-db 92 ; base attack
+db 102 ; base attack
 db 77 ; base defense
 db 85 ; base speed
 db 75 ; base special
@@ -25,4 +25,4 @@ db 3 ; growth rate
 	tmlearn 33,34,38,40
 	tmlearn 44,48
 	tmlearn 50,53,54
-db 0 ; padding
+db BANK(NidokingPicFront)

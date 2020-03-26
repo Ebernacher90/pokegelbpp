@@ -5,53 +5,65 @@ _ViridianCityText_19219::
 	done
 
 _ViridianCityText_1920a::
-	text "Ahh, I've had my"
-	line "coffee now and I"
-	cont "feel great!"
+	text "Ahh,  ich habe"
+	line "endlich meinen"
+	cont "Kaffee bekommen!"
 
-	para "Sure, you can go"
-	line "through!"
+	para "Natürlich kannst"
+	line "Du passieren!"
 
-	para "I'm sorry I was"
-	line "so rude to you!"
+	para "Es tut mir leid,"
+	line "dass ich so grob"
+	cont "zu Dir war!"
 
-	para "I see you're using"
-	line "a #DEX."
+	para "Wie ich sehe,"
+	line "besitzt Du einen"
+	cont "#DEX."
 
-	para "I'll show you how"
-	line "to catch #MON"
-	cont "as my apology."
+	para "Als kleine"
+	line "Wiedergutmachung"
+	cont "zeige ich Dir,"
+	cont "wie man #MON"
+	cont "fängt."
 	done
 
 _OldManTextAfterBattle::
-	text "That didn't work!"
-	line "I must be losing"
-	cont "my touch."
+	text "Es funktioniert"
+	line "nicht! Ich bin"
+	cont "aus der übung."
 
-	para "I've run out of"
-	line "# BALLs too."
+	para "Und #BÄLLE"
+	line "habe ich auch"
+	cont "keine mehr..."
 
-	para "I have to get some"
-	line "at #MON MART."
+	para "Ich muss mir im"
+	line "PKMN-SUPERMARKT"
+	cont "neue besorgen."
 	done
 
 _ViridianCityText1::
-	text "Those # BALLs"
-	line "at your waist!"
-	cont "You have #MON!"
+	text "Diese #BÄLLE"
+	line "an Deinem Gürtel"
+	cont "zeigen mir, dass"
+	cont "Du #MON"
+	cont "besitzt!"
 
-	para "It's great that"
-	line "you can carry and"
-	cont "use #MON any-"
-	cont "time, anywhere!"
+	para "Es ist klasse,"
+	line "dass man jederzeit"
+	cont "#MON tragen"
+	cont "und einsetzen"
+	cont "kann, nicht wahr?"
 	done
 
 _ViridianCityText_19122::
-	text "This #MON GYM"
-	line "is always closed."
+	text "Diese PKMN-ARENA"
+	line "ist stets"
+	cont "geschlossen!"
 
-	para "I wonder who the"
-	line "LEADER is?"
+	para "Ich frage mich,"
+	line "wer hier wohl"
+	cont "der ARENALEITER"
+	cont "sein mag?"
 	done
 
 _ViridianCityText_19127::
@@ -60,46 +72,48 @@ _ViridianCityText_19127::
 	done
 
 _ViridianCityText_1914d::
-	text "You want to know"
-	line "about the 2 kinds"
-	cont "of caterpillar"
-	cont "#MON?"
+	text "Möchtest Du etwas"
+	line "über die zwei"
+	cont "RAUPEN-#MON"
+	cont "erfahren??"
 	done
 
 _ViridianCityText_19152::
-	text "Oh, OK then!"
+	text "OK, alles klar!"
 	done
 
 _ViridianCityText_19157::
-	text "CATERPIE has no"
-	line "poison, but"
-	cont "WEEDLE does."
+	text "RAUPY ist nicht"
+	line "giftig, aber"
+	cont "HORNLIU!"
 
-	para "Watch out for its"
-	line "POISON STING!"
+	para "Achte auf seinen"
+	line "GIFTSTACHEL!"
 	done
 
 _ViridianCityText_19175::
-	text "Oh Grandpa! Don't"
-	line "be so mean!"
-	cont "He hasn't had his"
-	cont "coffee yet."
+	text "Grossvater! Sei"
+	line "nicht so gemein!"
+	cont "Er hatte noch"
+	cont "keinen Kaffee!!!"
 	done
 
 _ViridianCityText_1917a::
-	text "When I go shop in"
-	line "PEWTER CITY, I"
-	cont "have to take the"
-	cont "winding trail in"
-	cont "VIRIDIAN FOREST."
+	text "Wenn ich zum"
+	line "Einkaufen nach"
+	cont "MARMORIA CITY"
+	cont "möchte muss ich"
+	cont "immer durch den"
+	cont "VERTANIA-WALD"
+	cont "gehen."
 	done
 
 _ViridianCityText_19191::
-	text "You can't go"
-	line "through here!"
+	text "Du kannst hier"
+	line "nicht durch!"
 
-	para "This is private"
-	line "property!"
+	para "Das ist ein"
+	line "Privatgelände!"
 	done
 
 _ViridianCityText_191ca::
@@ -120,7 +134,7 @@ _ViridianCityText_191ca::
 	prompt
 
 _ReceivedTM42Text::
-	text $52, " received"
+	text $52, " erhält"
 	line "TM42!@@"
 
 _TM42Explanation::
@@ -152,43 +166,46 @@ _OldManAgainText3::
 	done
 
 _ViridianCityText8::
-	text "VIRIDIAN CITY "
-	line "The Eternally"
-	cont "Green Paradise"
+	text "VERTANIA CITY "
+	line "Das immergrüne"
+	cont "Paradis!"
 	done
 
 _ViridianCityText9::
-	text "TRAINER TIPS"
+	text "TIPS FÜR TRAINER"
 
-	para "Catch #MON"
-	line "and expand your"
-	cont "collection!"
+	para "Fange #MON,"
+	line "um Deine Sammlung"
+	cont "zu erweitern!"
 
-	para "The more you have,"
-	line "the easier it is"
-	cont "to fight!"
+	para "Je mehr Du"
+	line "besitzt, desto"
+	cont "leichter werden"
+	cont "die Kämpfe!"
 	done
 
 _ViridianCityText10::
-	text "TRAINER TIPS"
+	text "TIPS FÜR TRAINER"
 
-	para "The battle moves"
-	line "of #MON are"
-	cont "limited by their"
-	cont "POWER POINTs, PP."
+	para "Die Attacken der"
+	line "#MON werden"
+	cont "durch ihre"
+	cont "ANGRIFFSPUNKTE,"
+	cont "AP, limitiert."
 
-	para "To replenish PP,"
-	line "rest your tired"
-	cont "#MON at a"
-	cont "#MON CENTER!"
+	para "Um die AP wieder"
+	line "aufzufüllen, musst"
+	cont "Du die #MON"
+	cont "in ein #-"
+	cont "MONCENTER bringen!"
 	done
 
 _ViridianCityText13::
-	text "VIRIDIAN CITY"
-	line "#MON GYM"
+	text "VERTANIA CITY"
+	line "PKMN-ARENA"
 	done
 
 _ViridianCityText14::
-	text "The GYM's doors"
-	line "are locked..."
+	text "Die Tür der ARENA"
+	line "ist verschölossen!"
 	done

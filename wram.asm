@@ -484,6 +484,7 @@ wSurfingMinigameDataEnd:: ; c637
 
 	ds 177
 
+wTempDVs::
 wTempPic:: ; c6e8
 wPrinterData:: ; c6e8
 wOverworldMap:: ; c6e8
@@ -1336,9 +1337,6 @@ wFieldMovesLeftmostXCoord:: ; cd42
 wcd42:: ; cd42
 	ds 1
 
-wLastFieldMoveID:: ; cd43
-; unused
-
 wSlotMachineWheel1TopTile:: ; cd43
 	ds 1
 
@@ -1876,6 +1874,7 @@ wBattleMon:: battle_struct wBattleMon ; d013
 wTrainerClass:: ; d030
 	ds 1
 
+wTrainerPicBank:: ; d031
 	ds 1
 
 wTrainerPicPointer:: ; d032
@@ -2338,6 +2337,8 @@ wMonHGrowthRate:: ; d0ca
 wMonHLearnset:: ; d0cb
 ; bit field
 	flag_array 50 + 5
+	
+wMonHSpriteBank:: ; d0cc
 	ds 1
 
 wSavedTilesetType:: ; d0d3
@@ -2556,6 +2557,8 @@ wUnusedD153:: ; d152
 
 wEvoStoneItemID:: ; d155
 	ds 1
+	
+	ds 2
 
 wSavedNPCMovementDirections2Index:: ; d156
 	ds 1
@@ -2591,10 +2594,8 @@ wPokedexOwned:: ; d2f5
 	flag_array NUM_POKEMON
 wPokedexOwnedEnd::
 
-wPokedexSeen:: ; d309
-	flag_array NUM_POKEMON
-wPokedexSeenEnd::
-
+	flag_array 2 * 151 - NUM_POKEMON
+wPokedexSeenEndOld:: ; d309
 
 wNumBagItems:: ; d31c
 	ds 1
@@ -2820,9 +2821,15 @@ wWarpEntries:: ; d3ae
 ; current map warp entries
 	ds 128
 
-wDestinationWarpID:: ; d42e
+wDestinationWarpID:: ; d42f
 ; if $ff, the player's coordinates are not updated when entering the map
 	ds 1
+	
+wPokedexSeen::
+	flag_array NUM_POKEMON
+wPokedexSeenEnd::
+	
+	ds 128 - (wPokedexSeenEnd - wPokedexSeen)
 
 wPikachuOverworldStateFlags:: ds 1 ; d42f
 wPikachuSpawnState:: ds 1 ; d430
@@ -2838,7 +2845,7 @@ wExpressionNumber:: ; d447
 	ds 1
 wPikaPicAnimNumber:: ; d448
 	ds 1
-	
+
 wPikachuMovementScriptBank:: ds 1  ; d449
 wPikachuMovementScriptAddress:: dw ; d44a
 wPikachuMovementFlags:: ; d44c
@@ -2901,11 +2908,11 @@ wd475:: ds 1 ; d474
 wd47a:: ds 1 ; d479
 
 	ds 24
-	
+
 wd492:: ds 1 ; d492
-	
+
 	ds 1
-	
+
 wSurfingMinigameHiScore:: ds 2 ; 4-digit BCD little-endian
 	ds 1
 
@@ -2917,7 +2924,7 @@ wd49c:: ds 1 ; d49b
 
 	ds 19
 
-wNumSigns:: ; d4af
+wNumSigns:: ; d4b0
 ; number of signs in the current map (up to 16)
 	ds 1
 
@@ -3257,6 +3264,7 @@ wRoute18GateCurScript:: ; d668
 	ds 78
 wGameProgressFlagsEnd:: ; d6b7
 
+wEvolutionData::
 	ds 56
 
 wObtainedHiddenItemsFlags:: ; d6ef

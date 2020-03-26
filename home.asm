@@ -335,7 +335,7 @@ LoadFrontSpriteByMonIndex::
 	cp NUM_POKEMON + 1
 	jr c, .validDexNumber   ; dex >#151 invalid
 .invalidDexNumber
-	ld a, RHYDON ; $1
+	ld a, RIZEROS ; $1
 	ld [wcf91], a
 	ret
 .validDexNumber
@@ -781,40 +781,17 @@ UncompressMonSprite::
 	ld [wSpriteInputPtr], a    ; fetch sprite input pointer
 	ld a, [hl]
 	ld [wSpriteInputPtr + 1], a
-; define (by index number) the bank that a pokemon's image is in
-; index = Mew, bank 1
-; index = Kabutops fossil, bank $B
-;	index < $1F, bank 9
-; $1F ≤ index < $4A, bank $A
-; $4A ≤ index < $74, bank $B
-; $74 ≤ index < $99, bank $C
-; $99 ≤ index, bank $D
 	ld a, [wcf91] ; XXX name for this ram location
-	ld b, a
-	;cp MEW
-	;ld a, BANK(MewPicFront)
-	;jr z, .GotBank
-	;ld a, b
 	cp FOSSIL_KABUTOPS
+	jr z, .RecallBank
+	cp FOSSIL_AERODACTYL
+	jr z, .RecallBank
+	cp MON_GHOST
+	jr z, .RecallBank
+	ld a, [wMonHSpriteBank]
+	jr .GotBank
+.RecallBank
 	ld a, BANK(FossilKabutopsPic)
-	jr z, .GotBank
-	ld a, b
-	cp TANGELA + 1
-	ld a, BANK(TangelaPicFront)
-	jr c, .GotBank
-	ld a, b
-	cp MOLTRES + 1
-	ld a, BANK(MoltresPicFront)
-	jr c, .GotBank
-	ld a, b
-	cp BEEDRILL + 2
-	ld a, BANK(BeedrillPicFront)
-	jr c, .GotBank
-	ld a, b
-	cp STARMIE + 1
-	ld a, BANK(StarmiePicFront)
-	jr c, .GotBank
-	ld a, BANK(VictreebelPicFront)
 .GotBank
 	jp UncompressSpriteData
 
@@ -2718,7 +2695,6 @@ GetSavedEndBattleTextPointer::
 	ret
 
 TrainerEndBattleText::
-	TX_FAR _TrainerNameText
 	TX_ASM
 	call GetSavedEndBattleTextPointer
 	call TextCommandProcessor
@@ -3103,9 +3079,12 @@ GetTrainerInformation::
 	ld a, [wTrainerClass]
 	dec a
 	ld hl, TrainerPicAndMoneyPointers
-	ld bc, $5
+	ld bc, $6
 	call AddNTimes
-	ld de, wTrainerPicPointer
+	ld de, wTrainerPicBank
+	ld a, [hli]
+	ld [de], a
+	inc de ; ld de, wTrainerPicPointer
 	ld a, [hli]
 	ld [de], a
 	inc de
@@ -3120,6 +3099,8 @@ GetTrainerInformation::
 	call IsFightingJessieJames
 	jp BankswitchBack
 .linkBattle
+	ld a, BANK(RedPicFront)
+	ld [wTrainerPicBank], a
 	ld hl, wTrainerPicPointer
 	ld de, RedPicFront
 	ld [hl], e
@@ -4893,9 +4874,6 @@ const_value = 1
 	add_tx_pre SaffronCityPokecenterBenchGuyText    ; 1A
 	add_tx_pre MtMoonPokecenterBenchGuyText         ; 1B
 	add_tx_pre RockTunnelPokecenterBenchGuyText     ; 1C
-	add_tx_pre UnusedBenchGuyText1                  ; 1D
-	add_tx_pre UnusedBenchGuyText2                  ; 1E
-	add_tx_pre UnusedBenchGuyText3                  ; 1F
 	add_tx_pre UnusedPredefText                     ; 20
 	add_tx_pre PokemonCenterPCText                  ; 21
 	add_tx_pre ViridianSchoolNotebook               ; 22

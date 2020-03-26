@@ -960,7 +960,7 @@ const_value = 0
 	const EVENT_3BD                                  ; 3BD, (D7BE, bit 5)
 	const EVENT_3BE                                  ; 3BE, (D7BE, bit 6)
 	const EVENT_3BF                                  ; 3BF, (D7BE, bit 7)
-	const EVENT_GOT_POTION_SAMPLE                    ; 3C0, (D7BF, bit 0)
+	const EVENT_GOT_TRANK_SAMPLE                     ; 3C0, (D7BF, bit 0)
 	const EVENT_3C1                                  ; 3C1, (D7BF, bit 1)
 	const EVENT_3C2                                  ; 3C2, (D7BF, bit 2)
 	const EVENT_3C3                                  ; 3C3, (D7BF, bit 3)

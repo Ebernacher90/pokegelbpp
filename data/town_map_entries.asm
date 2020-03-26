@@ -36,6 +36,7 @@ ExternalMapEntries:
 	EMAP $0,$6,Route23Name
 	EMAP $A,$1,Route24Name
 	EMAP $B,$0,Route25Name
+	EMAP $E,$B,Route26Name
 
 InternalMapEntries:
 	IMAP OAKS_LAB,                  $2,$B,PalletTownName

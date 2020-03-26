@@ -1,9 +1,9 @@
 Func_f1ad2:
-	CheckAndSetEvent EVENT_GOT_POTION_SAMPLE
+	CheckAndSetEvent EVENT_GOT_TRANK_SAMPLE
 	jr nz, .asm_1cada
 	ld hl, Route1ViridianMartSampleText
 	call PrintText
-	lb bc, POTION, 1
+	lb bc, TRANK, 1
 	call GiveItem
 	jr nc, .BagFull
 	ld hl, Route1Text_f1aff

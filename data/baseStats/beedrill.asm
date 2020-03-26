@@ -1,6 +1,6 @@
 db DEX_BEEDRILL ; pokedex id
 db 65 ; base hp
-db 80 ; base attack
+db 90 ; base attack
 db 40 ; base defense
 db 75 ; base speed
 db 45 ; base special
@@ -25,4 +25,4 @@ db 0 ; growth rate
 	tmlearn 33,34,39,40
 	tmlearn 44
 	tmlearn 50,51
-db 0 ; padding
+db BANK(BeedrillPicFront)

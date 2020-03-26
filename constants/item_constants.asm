@@ -3,7 +3,7 @@ const_value = 1
 	const MASTER_BALL   ; $01
 	const ULTRA_BALL    ; $02
 	const GREAT_BALL    ; $03
-	const POKE_BALL     ; $04
+	const POKEBALL      ; $04
 	const TOWN_MAP      ; $05
 	const BICYCLE       ; $06
 	const SURFBOARD     ; $07 buggy?
@@ -19,7 +19,7 @@ const_value = 1
 	const MAX_POTION    ; $11
 	const HYPER_POTION  ; $12
 	const SUPER_POTION  ; $13
-	const POTION        ; $14
+	const TRANK         ; $14
 	const BOULDERBADGE  ; $15
 	const CASCADEBADGE  ; $16
 SAFARI_BAIT           EQU $15 ; overload
@@ -99,6 +99,12 @@ SAFARI_ROCK           EQU $16 ; overload
 	const FLOOR_10F     ; $5F
 	const FLOOR_11F     ; $60
 	const FLOOR_B4F     ; $61
+	const METAL_COAT    ; $62
+	const PROTECTOR		; $63
+	const MAGMARIZER	; $64
+	const ELECTIRIZER	; $65
+	const UPGRADE	    ; $66
+	const DUBIOSDISC	; $67
 
 const_value = $C4
 

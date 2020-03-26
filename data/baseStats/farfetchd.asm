@@ -1,6 +1,6 @@
 db DEX_FARFETCHD ; pokedex id
 db 52 ; base hp
-db 65 ; base attack
+db 90 ; base attack
 db 55 ; base defense
 db 60 ; base speed
 db 58 ; base special
@@ -25,4 +25,4 @@ db 0 ; growth rate
 	tmlearn 33,34,39,40
 	tmlearn 44
 	tmlearn 50,51,52
-db 0 ; padding
+db BANK(FarfetchdPicFront)

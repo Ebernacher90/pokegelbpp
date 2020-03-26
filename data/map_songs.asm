@@ -248,3 +248,4 @@ MapSongBanks:
 	db MUSIC_DUNGEON1, BANK(Music_Dungeon1) ; Bruno
 	db MUSIC_POKEMON_TOWER, BANK(Music_PokemonTower) ; Agatha
 	db MUSIC_ROUTES3, BANK(Music_Routes3) ; BeachHouse
+	db MUSIC_ROUTES4, BANK(Music_Routes4) ; ROUTE_26

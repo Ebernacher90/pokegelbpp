@@ -1,61 +1,64 @@
 _OakAppearsText::
-	text "OAK: Hey! Wait!"
-	line "Don't go out!@@"
+	text "EICH: Warte!"
+	line "Geh nicht raus!@@"
 
 _OakWalksUpText::
-	text "OAK: That was"
-	line "close!"
+	text "PROF. EICH:"
+	line "Das war knapp!"
 
-	para "Wild #MON live"
-	line "in tall grass!"
+	para "Wilde #MON"
+	line "leben in hohem"
+	cont "Gras!"
 	done
 
 _OakWhewText::
-	text "OAK: Whew..."
+	text "PROF. Eich: Puuh!"
 	done
 
 _OakGrassText::
-	text "OAK: A #MON can"
-	line "appear anytime in"
-	cont "tall grass."
+	text "PROF. EICH:"
+	line "Wilde #MON"
+	cont "können jederzeit"
+	cont "auftauchen!"
 
-	para "You need your own"
-	line "#MON for your"
-	cont "protection."
-	cont "I know!"
+	para "Du brauchst eigene"
+	line "#MON, um"
+	cont "Dich zu schützen."
 
-	para "Here, come with"
-	line "me!"
+	para "Komm, folge"
+	line "mir!"
 	done
 
 _PalletTownText2::
-	text "I'm raising"
-	line "#MON too!"
+	text "Auch ich ziehe"
+	line "#MON auf!"
 
-	para "When they get"
-	line "strong, they can"
-	cont "protect me!"
+	para "Wenn sie stark"
+	line "sind, können sie"
+	cont "mich beschützen!"
 	done
 
 _PalletTownText3::
-	text "Technology is"
-	line "incredible!"
+	text "Die Technik"
+	line "heutzutage ist"
+	cont "unglaublich!"
 
-	para "You can now store"
-	line "and recall items"
-	cont "and #MON as"
-	cont "data via PC!"
+	para "Man kann sogar"
+	line "Items und #MON"
+	cont "via PC lagern und"
+	cont "wieder abrufen!"
 	done
 
 _PalletTownText4::
-	text "OAK #MON"
-	line "RESEARCH LAB"
+	text "PROFESSOR EICH"
+	line "#MON-LABOR"
 	done
 
 _PalletTownText5::
-	text "PALLET TOWN"
-	line "Shades of your"
-	cont "journey await!"
+	text "ALABASTIA"
+	line "Dich erwarten"
+	cont "aufregende"
+	cont "Abenteuer!"
 	done
 
 _PalletTownText6::

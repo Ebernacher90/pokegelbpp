@@ -693,7 +693,6 @@ GetMonFieldMoves:
 	jr .fieldMoveLoop
 .foundFieldMove
 	ld a, b
-	ld [wLastFieldMoveID], a
 	ld a, [hli] ; field move name index
 	ld b, [hl] ; field move leftmost X coordinate
 	pop hl
@@ -707,7 +706,6 @@ GetMonFieldMoves:
 	ld a, b
 	ld [wFieldMovesLeftmostXCoord], a
 .skipUpdatingLeftmostXCoord
-	ld a, [wLastFieldMoveID]
 	ld b, a
 	jr .loop
 .done

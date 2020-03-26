@@ -1,16 +1,20 @@
 _ViridianForestEntranceText1::
-	text "Are you going to"
-	line "VIRIDIAN FOREST?"
-	cont "Be careful, it's"
-	cont "a natural maze!"
+	text "Du gehst in den"
+	line "VERTANIA-WALD?"
+	cont "Sei auf der Hut,"
+	cont "dort verläuft man"
+	cont "sich leicht!"
 	done
 
 _ViridianForestEntranceText2::
-	text "You have to roam"
-	line "far to get new"
-	cont "kinds of #MON."
+	text "Um neue Arten"
+	line "von #MON zu"
+	cont "finden, musst Du"
+	cont "durch das ganze"
+	cont "Land ziehen."
 
-	para "Look for other"
-	line "types outside of"
-	cont "VIRIDIAN FOREST."
+	para "Bereits hinter"
+	line "dem VERTANIA-WALD"
+	cont "findest Du andere"
+	cont "Arten."
 	done

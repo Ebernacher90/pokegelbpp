@@ -1107,7 +1107,7 @@ _RhyhornDexEntry::
 	next "falls asleep"
 	dex
 
-_RhydonDexEntry::
+_RizerosDexEntry::
 	text "Walks on its hind"
 	next "legs. Shows signs"
 	next "of intelligence."
@@ -1488,21 +1488,150 @@ _DragoniteDexEntry::
 	dex
 
 _MewtwoDexEntry::
-	text "Its DNA is almost"
-	next "the same as MEW's."
-	next "However, its size"
+	text "Dieses #MON ist"
+	next "das Resultat der"
+	next "Experimente eines"
 
-	page "and disposition"
-	next "are vastly dif-"
-	next "ferent"
+	page "gewissen"
+	next "Forschers. Es"
+	next "setzt all seine"
+	
+	page "Kraft fürs Kämpfen"
+	next "ein"
 	dex
 
 _MewDexEntry::
-	text "When viewed"
-	next "through a micro-"
-	next "scope, this"
+	text "Dieses Mysteriöse"
+	next "#MON gilt als"
+	next "ausgestorben, doch"
 
-	page "#MON's short,"
-	next "fine, delicate"
-	next "hair can be seen"
+	page "es melden sich"
+	next "immer wieder"
+	next "Augenzeugen, laut"
+	
+	page "denen es noch"
+	next "immer existiert"
+	dex
+	
+_StahlosDexEntry::
+	text "Man glaubt, dass"
+	next "sich sein Körper"
+	next "aufgrund des"
+
+	page "Schluckens von"
+	next "eisenhaltiger"
+	next "Erde verwandelt"
+	
+	page "habe"
+	dex
+	
+_IksbatDexEntry::
+	text "Frisches Blut"
+	next "von Menschen und"
+	next "#MON ist seine"
+
+	page "Nahrung. Ohne"
+	next "konstanten"
+	next "Nachschub wird"
+	
+	page "es schwach und"
+	next "kann nicht mehr"
+	next "fliegen"
+	dex
+
+_RihorniorDexEntry::
+	text "Mit seinem"
+	next "Schützer wehrt"
+	next "es Angriffe ab"
+
+	page "und durchsticht"
+	next "dann den"
+	next "verdutzten Gegner"
+	
+	page "mit seinem Bohrer,"
+	next "auf den es sehr"
+	next "stolz ist"
+	dex
+	
+_MagbrantDexEntry::
+	text "Es schiesst"
+	next "Feuerbälle auf"
+	next "seine Gegner. Da"
+
+	page "alles, was es"
+	next "damit trifft,"
+	next "verkohlt wird,"
+	
+	page "sieht es auf der"
+	next "Jagd nach Beute"
+	next "von dieser Methode"
+	
+	page "ab"
+	dex
+	
+_ElevoltekDexEntry::
+	text "Ein einziges"
+	next "Elevoltek erzeugt"
+	next "genügend"
+
+	page "Elektrizität, um"
+	next "eine Grossstadt"
+	next "ein ganzes Jahr"
+	
+	page "lang mit Strom"
+	next "zu versorgen"
+	dex
+	
+_Porygon2DexEntry::
+	text "Es ist mit"
+	next "künstlicher"
+	next "Intelligenz"
+
+	page "ausgestattet und"
+	next "kann selbständig"
+	next "verschiedene Dinge"
+	
+	page "lernen. Darunter"
+	next "ist jedoch auch"
+	next "viel Unnützes"
+	dex
+_PorygonZDexEntry::
+	text "Eine fehlerhafte"
+	next "neue Software"
+	next "führte zu seinem"
+
+	page "auffällig"
+	next "seltsamen"
+	next "Verhalten."
+	
+	page "Vermutlich handelt"
+	next "es sich um ein"
+	next "verkorkstes"
+	
+	page "Experiment"
+	dex
+	
+_KoknodonDexEntry::
+	text "Dieses urzeitliche"
+	next "#MON war trotz"
+	next "seines harten,"
+
+	page "robusten Schädels"
+	next "nicht sehr schlau"
+	dex
+	
+_RameidonDexEntry::
+	text "Dieses auf"
+	next "Kopfstösse"
+	next "spezialisierte"
+
+	page "urzeitliche"
+	next "#MON soll einer"
+	next "Theorie zufolge"
+	
+	page "wegen seines"
+	next "kleinen Hirns aus"
+	next "Dummheit"
+	
+	page "ausgestorben sein"
 	dex

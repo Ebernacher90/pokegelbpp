@@ -1,42 +1,50 @@
 _MomWakeUpText::
-	text "MOM: Right."
-	line "All boys leave"
-	cont "home someday."
-	cont "It said so on TV."
+	text "MUTTER: Richtig."
+	line "Irgendwann gehen"
+	cont "alle JUNGEN fort,"
+	cont "um ein Abenteuer"
+	cont "zu erleben!"
 
-	para "PROF.OAK, next"
-	line "door, is looking"
-	cont "for you."
+	para "PROF. EICH von"
+	line "nebenan hat nach"
+	cont "Dir gefragt."
 	done
 
 _MomHealText1::
-	text "MOM: <PLAYER>, if"
-	line "you drive your"
-	cont "#MON too hard,"
-	cont "they'll dislike"
-	cont "you."
+	text "MUTTER: <PLAYER>!"
+	line "Wenn Du zu hart"
+	cont "zu Deinen #MON"
+	cont "bist, werden sie"
+	cont "nicht zutraulich!"
 
-	para "You should take a"
-	line "rest."
+	para "Du solltest eine"
+	line "kurze Pause"
+	cont "einlegen."
 	prompt
 
 _MomHealText2::
-	text "MOM: Oh good!"
-	line "You and your"
-	cont "#MON are"
-	cont "looking great!"
-	cont "Take care now!"
+	text "MUTTER: sehr gut!"
+	line "Du und Deine"
+	cont "#MON sehen"
+	cont "grossartig aus!"
+	cont "Achte auf Dich!"
 	done
 
 _StandByMeText::
-	text "There's a movie"
-	line "on TV. Four boys"
-	cont "are walking on"
-	cont "railroad tracks."
+	text "Im Fernsehen"
+	line "läuft ein Film."
+	cont "Vier JUNGEN"
+	cont "laufen ein"
+	cont "Bahngleis"
+	cont "entlang!"
 
-	para "I better go too."
+	para "Den Film kenne"
+	line "ich schon! Ich"
+	cont "mache mich besser"
+	cont "auf den Weg!"
 	done
 
 _TVWrongSideText::
-	text "Oops, wrong side."
+	text "Ups,"
+	line "falsche Richtung!"
 	done

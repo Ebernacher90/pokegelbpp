@@ -3178,7 +3178,7 @@ TossBallAnimation:
 	ld hl, .PokeBallAnimations
 	; choose which toss animation to use
 	ld a, [wcf91]
-	cp a, POKE_BALL
+	cp a, POKEBALL
 	ld b, TOSS_ANIM
 	jr z, .done
 	cp a, GREAT_BALL

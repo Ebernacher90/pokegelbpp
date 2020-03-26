@@ -19,7 +19,7 @@ ItemUsePtrTable:
 	dw ItemUseBall       ; MASTER_BALL
 	dw ItemUseBall       ; ULTRA_BALL
 	dw ItemUseBall       ; GREAT_BALL
-	dw ItemUseBall       ; POKE_BALL
+	dw ItemUseBall       ; POKEBALL
 	dw ItemUseTownMap    ; TOWN_MAP
 	dw ItemUseBicycle    ; BICYCLE
 	dw ItemUseSurfboard  ; out-of-battle Surf effect
@@ -35,7 +35,7 @@ ItemUsePtrTable:
 	dw ItemUseMedicine   ; MAX_POTION
 	dw ItemUseMedicine   ; HYPER_POTION
 	dw ItemUseMedicine   ; SUPER_POTION
-	dw ItemUseMedicine   ; POTION
+	dw ItemUseMedicine   ; TRANK
 	dw ItemUseBait       ; BOULDERBADGE
 	dw ItemUseRock       ; CASCADEBADGE
 	dw UnusableItem      ; THUNDERBADGE
@@ -99,6 +99,26 @@ ItemUsePtrTable:
 	dw ItemUsePPRestore  ; MAX_ETHER
 	dw ItemUsePPRestore  ; ELIXER
 	dw ItemUsePPRestore  ; MAX_ELIXER
+	dw UnusableItem      ; FLOOR_B2F
+	dw UnusableItem      ; FLOOR_B1F
+	dw UnusableItem      ; FLOOR_1F
+	dw UnusableItem      ; FLOOR_2F
+	dw UnusableItem      ; FLOOR_3F
+	dw UnusableItem      ; FLOOR_4F
+	dw UnusableItem      ; FLOOR_5F
+	dw UnusableItem      ; FLOOR_6F
+	dw UnusableItem      ; FLOOR_7F
+	dw UnusableItem      ; FLOOR_8F
+	dw UnusableItem      ; FLOOR_9F
+	dw UnusableItem      ; FLOOR_10F
+	dw UnusableItem      ; FLOOR_11F
+	dw UnusableItem      ; FLOOR_B4F
+	dw ItemUseEvoStone   ; METAL_COAT
+	dw ItemUseEvoStone   ; PROTECTOR
+	dw ItemUseEvoStone	 ; MAGMARIZER
+	dw ItemUseEvoStone	 ; ELECTIRIZER
+	dw ItemUseEvoStone   ; UPGRADE
+	dw ItemUseEvoStone   ; DUBIOSDISC
 
 ItemUseBall:
 
@@ -207,7 +227,7 @@ ItemUseBall:
 	jp z,.captured
 
 ; Anything will do for the basic Poké Ball.
-	cp a,POKE_BALL
+	cp a,POKEBALL
 	jr z,.checkForAilments
 
 ; If it's a Great/Ultra/Safari Ball and Rand1 is greater than 200, try again.
@@ -351,7 +371,7 @@ ItemUseBall:
 ; Ultra/Safari Ball: BallFactor2 = 150
 	ld a,[wcf91]
 	ld b,255
-	cp POKE_BALL
+	cp POKEBALL
 	jr z,.skip4
 	ld b,200
 	cp GREAT_BALL
@@ -1338,7 +1358,7 @@ ItemUseMedicine:
 	jr z, .showHealingItemMessage
 	cp MAX_REVIVE
 	jr z, .showHealingItemMessage
-	ld a, POTION_MSG
+	ld a, TRANK_MSG
 	ld [wPartyMenuTypeOrMessageID], a
 	jr .showHealingItemMessage
 

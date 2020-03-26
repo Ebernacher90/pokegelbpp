@@ -9,7 +9,7 @@ IslandMonsB4:
 	db 27,GOLBAT
 	db 45,ZUBAT
 	db 30,DEWGONG
-	db 34,DEWGONG
+	db 34,JYNX
 
 	db $05
 	db 25,TENTACOOL
