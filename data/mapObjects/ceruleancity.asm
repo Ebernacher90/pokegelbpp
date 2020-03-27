@@ -31,7 +31,7 @@ CeruleanCityObject:
 	object SPRITE_LASS, $1d, $1a, STAY, LEFT, $7 ; person
 	object SPRITE_BALL, $1c, $1a, STAY, DOWN, $8 ; person
 	object SPRITE_LASS, $9, $1b, WALK, $2, $9 ; person
-	object SPRITE_BLACK_HAIR_BOY_2, $3, $c, STAY, DOWN, $a ; person
+	object SPRITE_BLACK_HAIR_BOY_2, $4, $c, STAY, DOWN, $a ; person
 	object SPRITE_OFFICER_JENNY, $1b, $c, STAY, DOWN, $b ; person
 
 	; warp-to

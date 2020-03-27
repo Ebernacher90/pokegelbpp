@@ -24,9 +24,9 @@ ViridianForestObject:
 	object SPRITE_BUG_CATCHER, $2, $12, STAY, LEFT, $4, OPP_BUG_CATCHER, $3
 	object SPRITE_LASS, $2, $29, STAY, NONE, $5, OPP_LASS, $13
 	object SPRITE_BUG_CATCHER, $d, $11, STAY, RIGHT, $6, OPP_BUG_CATCHER, $f
-	object SPRITE_BALL, $19, $b, STAY, NONE, $7, TRANK
-	object SPRITE_BALL, $c, $1d, STAY, NONE, $8, TRANK
-	object SPRITE_BALL, $1, $1f, STAY, NONE, $9, POKEBALL
+	object SPRITE_BALL, $19, $b, STAY, NONE, $7, POTION
+	object SPRITE_BALL, $c, $1d, STAY, NONE, $8, POTION
+	object SPRITE_BALL, $1, $1f, STAY, NONE, $9, POKE_BALL
 	object SPRITE_BUG_CATCHER, $1b, $28, STAY, NONE, $a ; person
 
 	; warp-to
