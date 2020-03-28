@@ -7,13 +7,31 @@ _OakSpeechText1::
 	line "EICH! Man nennt"
 	cont "mich den #MON-"
 	cont "PROFESSOR!"
+	
+	para "Dies ist die Welt"
+	line "von Gelb++ ein"
+	cont "Hack der"
+	cont "verbesserte"
+	cont "Inhalte hat. Dies"
+	cont "ist Version:"
+	cont "0.1.6.3.3"
+	cont "dies ist die"
+	cont "allerneuste"
+	cont "Version, viel"
+	cont "Spass beim zocken!"
 	prompt
 
 _OakSpeechText2A::
 	text "Diese Welt wird"
 	line "von Wesen"
 	cont "bewohnt, die man"
-	cont "#MON nennt!@@"
+	cont "#MON nennt!"
+	cont "bla bla bla"
+	cont "Ihr kennt dies"
+	cont "schon in und"
+	cont "auswendig, was"
+	cont "soll man noch"
+	cont "dazu sagen!@@"
 
 _OakSpeechText2B::
 	text $51,"Für manche Leute"
@@ -21,6 +39,7 @@ _OakSpeechText2B::
 	cont "Haustiere, andere"
 	cont "tragen Kämpfe mit"
 	cont "ihnen aus."
+	cont "Jaja und soweiter!"
 
 	para "Ich selbst..."
 
@@ -28,6 +47,9 @@ _OakSpeechText2B::
 	line "Hobby zum Beruf"
 	cont "gemacht und"
 	cont "studiere #MON."
+	cont "Kennen wir schon"
+	cont "alles, halt mal"
+	cont "bitte deinen ...!"
 	prompt
 
 _IntroducePlayerText::
@@ -59,4 +81,9 @@ _OakSpeechText3::
 	cont "und Geheimnisse!"
 	cont "Kurz gesagt, ein"
 	cont "Traum wird wahr!"
+	cont "Endlich kann das"
+	cont "Spiel beginen,"
+	cont "immer diese viele"
+	cont "Gelaber beim starten"
+	cont "eines neuen Spiels!"
 	done
