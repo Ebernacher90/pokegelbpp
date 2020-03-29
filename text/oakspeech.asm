@@ -7,18 +7,18 @@ _OakSpeechText1::
 	line "EICH! Man nennt"
 	cont "mich den #MON-"
 	cont "PROFESSOR!"
-	
-	para "Dies ist die Welt"
-	line "von Gelb++ ein"
+	cont "Dies ist die Welt"
+	cont "von Gelbpp, ein"
 	cont "Hack der"
 	cont "verbesserte"
 	cont "Inhalte hat. Dies"
 	cont "ist Version:"
-	cont "0.1.6.3.3"
+	cont "0.1.6.3.3!"
 	cont "dies ist die"
 	cont "allerneuste"
 	cont "Version, viel"
-	cont "Spass beim zocken!"
+	cont "Spass beim"
+	cont "zocken!"
 	prompt
 
 _OakSpeechText2A::
@@ -39,7 +39,8 @@ _OakSpeechText2B::
 	cont "Haustiere, andere"
 	cont "tragen Kämpfe mit"
 	cont "ihnen aus."
-	cont "Jaja und soweiter!"
+	cont "Jaja und"
+	cont "soweiter!"
 
 	para "Ich selbst..."
 
@@ -84,6 +85,7 @@ _OakSpeechText3::
 	cont "Endlich kann das"
 	cont "Spiel beginen,"
 	cont "immer diese viele"
-	cont "Gelaber beim starten"
-	cont "eines neuen Spiels!"
+	cont "Gelaber beim"
+	cont "starten eines"
+	cont "neuen Spiels!"
 	done
