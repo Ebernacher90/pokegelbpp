@@ -7,7 +7,8 @@ _OakSpeechText1::
 	line "EICH! Man nennt"
 	cont "mich den #MON-"
 	cont "PROFESSOR!"
-	cont "Dies ist die Welt"
+	
+	para "Dies ist die Welt"
 	cont "von Gelbpp, ein"
 	cont "Hack der"
 	cont "verbesserte"
