@@ -9,7 +9,7 @@ _OakSpeechText1::
 	cont "PROFESSOR!"
 	
 	para "Dies ist die Welt"
-	cont "von Gelbpp, ein"
+	line "von Gelbpp, ein"
 	cont "Hack der"
 	cont "verbesserte"
 	cont "Inhalte hat. Dies"
