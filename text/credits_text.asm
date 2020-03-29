@@ -1,7 +1,7 @@
 CreditsTextPointers:
 	dw CreditsText_Version
-	dw CreditsText_Tajiri
-	dw CreditsText_Oota
+	dw CreditsText_Ebernacher90
+	dw CreditsText_EeVeeEe
 	dw CreditsText_Morimoto
 	dw CreditsText_Watanabe
 	dw CreditsText_Masuda
@@ -89,10 +89,10 @@ CreditsTextPointers:
 CreditsText_Version:
 	db -6, "Gelb++ Version"
 	next   "    Staff@"
-CreditsText_Tajiri:
-	db -6, "SATOSHI TAJIRI@"
-CreditsText_Oota:
-	db -6, "TAKENORI OOTA@"
+CreditsText_Ebernacher90:
+	db -6, "Ebernacher90@"
+CreditsText_EeVeeEe:
+	db -6, "EeVeeEe@"
 CreditsText_Morimoto:
 	db -7, "SHIGEKI MORIMOTO@"
 CreditsText_Watanabe:
