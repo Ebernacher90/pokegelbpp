@@ -265,6 +265,7 @@ _GorochuDexEntry::
 	
 	page "amount of"
 	next "electricity"
+	dex
 
 _SandshrewDexEntry::
 	text "Its body is dry."
