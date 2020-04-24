@@ -174,7 +174,7 @@ const_value = 1
 	const MISSINGNO_AC ; $AC
 	const MAGNEMITE    ; $AD
 	const MISSINGNO_AE ; $AE
-	const MISSINGNO_AF ; $AF
+	const GOROCHU	   ; $AF
 	const CHARMANDER   ; $B0
 	const SQUIRTLE     ; $B1
 	const CHARMELEON   ; $B2

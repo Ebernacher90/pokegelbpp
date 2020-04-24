@@ -258,6 +258,14 @@ _RaichuDexEntry::
 	next "the dark"
 	dex
 
+_GorochuDexEntry::
+	text "It may be cute,"
+	next "but it can store"
+	next "unbelievable"
+	
+	page "amount of"
+	next "electricity"
+
 _SandshrewDexEntry::
 	text "Its body is dry."
 	next "When it gets cold"

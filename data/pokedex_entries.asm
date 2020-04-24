@@ -173,7 +173,7 @@ PokedexEntryPointers:
 	dw MissingNoDexEntry
 	dw MagnemiteDexEntry
 	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw GorochuDexEntry
 	dw CharmanderDexEntry
 	dw SquirtleDexEntry
 	dw CharmeleonDexEntry
@@ -375,6 +375,13 @@ RaichuDexEntry:
 	db 2,7
 	dw 660
 	TX_FAR _RaichuDexEntry
+	db "@"
+
+GorochuDexEntry:
+	db "MOUSE@"
+	db 4,07
+	dw 1190
+	TX_FAR _GorochuDexEntry
 	db "@"
 
 SandshrewDexEntry:

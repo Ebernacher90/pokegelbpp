@@ -2110,6 +2110,8 @@ KoknodonPicFront:	  INCBIN "pic/ymon/koknodon.pic"
 KoknodonPicBack:	  INCBIN "pic/monback/koknodonb.pic"
 RameidonPicFront:	  INCBIN "pic/ymon/rameidon.pic"
 RameidonPicBack:	  INCBIN "pic/monback/rameidonb.pic"
+GorochuPicFront:	  INCBIN "pic/ymon/gorochu.pic"
+GorochuPicBack:		  INCBIN "pic/monback/gorochub.pic"
 
 SECTION "bank46", ROMX
 

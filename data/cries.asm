@@ -174,7 +174,7 @@ CryData:
 	db $00, $00, $00; MissingNo.
 	db $1C, $80, $60; Magnemite
 	db $00, $00, $00; MissingNo.
-	db $00, $00, $00; MissingNo.
+	db $7C, $AB, $22; Gorochu
 	db $04, $60, $40; Charmander
 	db $1D, $60, $40; Squirtle
 	db $04, $20, $40; Charmeleon

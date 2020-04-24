@@ -173,7 +173,7 @@ MonsterNames:
 	db "MISSINGNO."
 	db "Magnetilo@"
 	db "MISSINGNO."
-	db "MISSINGNO."
+	db "Gorochu@@@"
 	db "Glumanda@@"
 	db "Schiggy@@@"
 	db "Glutexo@@@"
