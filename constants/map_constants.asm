@@ -5,7 +5,7 @@ mapconst: MACRO
 ENDM
 
 	const_def
-	mapconst PALLET_TOWN,                 9, 10 ; $00
+	mapconst PALLET_TOWN,                 9, 12 ; $00
 	mapconst VIRIDIAN_CITY,              18, 20 ; $01
 	mapconst PEWTER_CITY,                18, 20 ; $02
 	mapconst CERULEAN_CITY,              18, 20 ; $03
@@ -17,7 +17,7 @@ ENDM
 	mapconst INDIGO_PLATEAU,              9, 10 ; $09
 	mapconst SAFFRON_CITY,               18, 20 ; $0A
 	mapconst UNUSED_MAP_0B,               0,  0 ; $0B
-	mapconst ROUTE_1,                    18, 10 ; $0C
+	mapconst ROUTE_1,                    18, 12 ; $0C
 	mapconst ROUTE_2,                    36, 10 ; $0D
 	mapconst ROUTE_3,                     9, 35 ; $0E
 	mapconst ROUTE_4,                     9, 45 ; $0F

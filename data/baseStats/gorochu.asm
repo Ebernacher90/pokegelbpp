@@ -1,13 +1,13 @@
 db DEX_GOROCHU ; pokedex id
-db 80 ; base hp
-db 110 ; base attack
-db 75 ; base defense
-db 150 ; base speed
-db 110 ; base special
+db 70 ; base hp
+db 100 ; base attack
+db 65 ; base defense
+db 110 ; base speed
+db 95 ; base special
 db ELECTRIC ; species type 1
-db ELECTRIC ; species type 2
-db 75 ; catch rate
-db 194 ; base exp yield
+db DRAGON ; species type 2
+db 45 ; catch rate
+db 214 ; base exp yield
 INCBIN "pic/ymon/gorochu.pic",0,1 ; 77, sprite dimensions
 dw GorochuPicFront
 dw GorochuPicBack
