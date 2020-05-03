@@ -161,5 +161,8 @@ const_value = 1
 	const DEX_PORYGONZ	 ; 159
 	const DEX_KOKNODON	 ; 160
 	const DEX_RAMEIDON	 ; 161
+	const DEX_NINCADA	 ; 162
+	const DEX_NINJASK	 ; 163
+	const DEX_NINJATOM	 ; 164
 
-NUM_POKEMON    EQU 161
+NUM_POKEMON    EQU 164

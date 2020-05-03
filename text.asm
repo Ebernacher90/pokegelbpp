@@ -3355,12 +3355,14 @@ _UsedCutText::
 	line "away with CUT!"
 	prompt
 
-
-SECTION "Pokedex Text", ROMX ; BANK $2e
-
-INCLUDE "text/pokedex.asm"
-
-
 SECTION "Move Names", ROMX ; BANK $2f
 
 INCLUDE "text/move_names.asm"
+
+SECTION "Pokedex Text 1", ROMX ; BANK $48
+
+INCLUDE "text/pokedex1.asm"
+
+SECTION "Pokedex Text 2", ROMX ; BANK $49
+
+INCLUDE "text/pokedex2.asm"

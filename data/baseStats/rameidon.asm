@@ -8,7 +8,7 @@ db ROCK ; species type 1
 db ROCK ; species type 2
 db 45 ; catch rate
 db 145 ; base exp yield
-INCBIN "pic/ymon/rameidon.pic",0,1 ; 55, sprite dimensions
+INCBIN "pic/ymon/rameidon.pic",0,1 ; 77, sprite dimensions
 dw RameidonPicFront
 dw RameidonPicBack
 ; attacks known at lvl 0

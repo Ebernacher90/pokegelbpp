@@ -90,4 +90,6 @@ MonPartyData:
 	dn SPRITE_MON, SPRITE_MON						   ;Rihornior/Magbrant
 	dn SPRITE_MON, SPRITE_MON						   ;Elevoltek/Porygon2
 	dn SPRITE_MON, SPRITE_HELIX						   ;PorygonZ/Koknodon
-	dn SPRITE_HELIX, 0							       ;Rameidon/padding
+	dn SPRITE_HELIX, SPRITE_BUG						   ;Rameidon/Nincada
+	dn SPRITE_BUG, SPRITE_BUG						   ;Ninjask/Ninjatom
+	dn 0, 0											   ;padding/padding

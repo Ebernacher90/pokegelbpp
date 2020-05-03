@@ -66,8 +66,8 @@ PokedexEntryPointers:
 	dw VenonatDexEntry
 	dw DragoniteDexEntry
 	dw RameidonDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw NincadaDexEntry
+	dw NinjaskDexEntry
 	dw DoduoDexEntry
 	dw PoliwagDexEntry
 	dw JynxDexEntry
@@ -77,7 +77,7 @@ PokedexEntryPointers:
 	dw DittoDexEntry
 	dw MeowthDexEntry
 	dw KrabbyDexEntry
-	dw MissingNoDexEntry
+	dw NinjatomDexEntry
 	dw MissingNoDexEntry
 	dw MissingNoDexEntry
 	dw VulpixDexEntry
@@ -1320,6 +1320,27 @@ RameidonDexEntry:
 	db 2,11
 	dw 750
 	TX_FAR _RameidonDexEntry
+	db "@"
+
+NincadaDexEntry:
+	db "Vorbereiter@"
+	db 1,08
+	dw 121
+	TX_FAR _NincadaDexEntry
+	db "@"
+
+NinjaskDexEntry:
+	db "Ninja@"
+	db 2,07
+	dw 265
+	TX_FAR _NinjaskDexEntry
+	db "@"
+
+NinjatomDexEntry:
+	db "Häutungs@"
+	db 2,07
+	dw 26
+	TX_FAR _NinjatomDexEntry
 	db "@"
 
 MissingNoDexEntry:

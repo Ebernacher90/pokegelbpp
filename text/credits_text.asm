@@ -2,7 +2,7 @@ CreditsTextPointers:
 	dw CreditsText_Version
 	dw CreditsText_Ebernacher90
 	dw CreditsText_EeVeeEe
-	dw CreditsText_Morimoto
+	dw CreditsText_BloodlessNS
 	dw CreditsText_Watanabe
 	dw CreditsText_Masuda
 	dw CreditsText_Nishino
@@ -93,8 +93,8 @@ CreditsText_Ebernacher90:
 	db -6, "Ebernacher90@"
 CreditsText_EeVeeEe:
 	db -6, "EeVeeEe@"
-CreditsText_Morimoto:
-	db -7, "SHIGEKI MORIMOTO@"
+CreditsText_BloodlessNS:
+	db -7, "BloodlessNS@"
 CreditsText_Watanabe:
 	db -7, "TETSUYA WATANABE@"
 CreditsText_Masuda:

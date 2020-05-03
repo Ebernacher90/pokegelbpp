@@ -1644,3 +1644,32 @@ _RameidonDexEntry::
 	
 	page "ausgestorben sein"
 	dex
+
+_NincadaDexEntry::
+	text "Manche Nincada"
+	next "leben mehr als"
+	next "zehn Jahre unter"
+
+	page "der Erde und"
+	next "saugen Nährstoffe"
+	next "Taus den Wurzeln"
+	
+	page "von Bäumen"
+	dex
+
+_NinjaskDexEntry::
+	text "Lauscht man"
+	next "längere Zeit"
+	next "seinem Gesang,"
+
+	page "löst er"
+	next "dauerhafte"
+	next "Kopfschmerzen"
+	
+	page "aus. Es ist so"
+	next "schnell, dass es"
+	next "beinahe"
+	
+	page "unsichtbar zu"
+	next "sein scheint"
+	dex

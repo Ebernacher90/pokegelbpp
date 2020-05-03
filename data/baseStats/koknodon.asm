@@ -8,7 +8,7 @@ db ROCK ; species type 1
 db ROCK ; species type 2
 db 45 ; catch rate
 db 80 ; base exp yield
-INCBIN "pic/ymon/koknodon.pic",0,1 ; 55, sprite dimensions
+INCBIN "pic/ymon/koknodon.pic",0,1 ; 66, sprite dimensions
 dw KoknodonPicFront
 dw KoknodonPicBack
 ; attacks known at lvl 0

@@ -67,8 +67,8 @@ CryData:
 	db $1A, $44, $40; Venonat
 	db $0F, $3C, $C0; Dragonite
 	db $10, $10, $10; Rameidon
-	db $00, $00, $00; MissingNo.
-	db $1D, $E0, $80; MissingNo.
+	db $35, $17, $10; Nincada
+	db $36, $76, $12; Ninjask
 	db $0B, $BB, $01; Doduo
 	db $0E, $FF, $FF; Poliwag
 	db $0D, $FF, $FF; Jynx
@@ -78,7 +78,7 @@ CryData:
 	db $0E, $FF, $FF; Ditto
 	db $19, $77, $10; Meowth
 	db $20, $20, $E0; Krabby
-	db $22, $FF, $40; MissingNo.
+	db $09, $CA, $67; Ninjatom
 	db $00, $00, $00; MissingNo.
 	db $0E, $E0, $60; MissingNo.
 	db $24, $4F, $10; Vulpix

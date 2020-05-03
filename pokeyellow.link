@@ -245,9 +245,7 @@ ROMX $2D
 	org $4000
 	"Text 8"
 
-ROMX $2E
-	org $4000
-	"Pokedex Text"
+; bank2e is empty
 
 ROMX $2f
 	org $4000
@@ -348,6 +346,14 @@ ROMX $46
 ROMX $47
 	org $4000
 	"facility"
+
+ROMX $48
+	org $4000
+	"Pokedex Text 1"
+
+ROMX $49
+	org $4000
+	"Pokedex Text 2"
 
 WRAM0
 	org $c000
