@@ -65,9 +65,9 @@ EvosMovesPointerTable:
 	dw Mon084_EvosMoves
 	dw Mon049_EvosMoves
 	dw Mon150_EvosMoves
+	dw Mon161_EvosMoves
 	dw Mon162_EvosMoves
-	dw Mon163_EvosMoves	;MissingNo
-	dw Mon163_EvosMoves	;MissingNo
+	dw Mon163_EvosMoves
 	dw Mon085_EvosMoves
 	dw Mon061_EvosMoves
 	dw Mon125_EvosMoves
@@ -77,7 +77,7 @@ EvosMovesPointerTable:
 	dw Mon133_EvosMoves
 	dw Mon053_EvosMoves
 	dw Mon099_EvosMoves
-	dw Mon164_EvosMoves	;MissingNo
+	dw Mon164_EvosMoves
 	dw Mon165_EvosMoves	;MissingNo
 	dw Mon166_EvosMoves	;MissingNo
 	dw Mon038_EvosMoves
@@ -1046,17 +1046,26 @@ Mon161_EvosMoves:
 	db 0
 
 Mon162_EvosMoves:
-;MISSINGNO_44
+;NINCADA
 ;Evolutions
+	db EV_LEVEL,20,NINJASK
 	db 0
 ;Learnset
+	db 5,HARDEN
+	db 21,ABSORB
+	db 30,FURY_SWIPES
 	db 0
 
 Mon163_EvosMoves:
-;MISSINGNO_45
+;NINJASK
 ;Evolutions
 	db 0
 ;Learnset
+	db 15,AGILITY
+	db 23,ABSORB
+	db 36,FURY_SWIPES
+	db 50,SLASH
+	db 57,SWORDS_DANCE
 	db 0
 
 Mon085_EvosMoves:
@@ -1164,10 +1173,13 @@ Mon099_EvosMoves:
 	db 0
 
 Mon164_EvosMoves:
-;MISSINGNO_4F
+;NINJATOM
 ;Evolutions
 	db 0
 ;Learnset
+	db 15,CONFUSE_RAY
+	db 23,ABSORB
+	db 36,FURY_SWIPES
 	db 0
 
 Mon165_EvosMoves:
