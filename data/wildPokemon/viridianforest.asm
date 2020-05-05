@@ -6,7 +6,7 @@ ForestMons:
 	db 5,CATERPIE
 	db 4,KAKUNA
 	db 6,PIDGEY
-	db 6,CATERPIE
+	db 2,NINCADA
 	db 6,METAPOD
 	db 8,PIDGEY
 	db 9,PIDGEOTTO
