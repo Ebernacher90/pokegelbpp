@@ -62,7 +62,7 @@ MoveNames::
 	db "Blubbstrahl@"
 	db "Aurorastrahl@"
 	db "Hyperstrahl@"
-	db "Schnabel@"
+	db "Pikser@"
 	db "Bohrschnabel@"
 	db "Überroller@"
 	db "Fusskick@"

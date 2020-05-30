@@ -175,5 +175,5 @@ MoveEnd:
 	move SUPER_FANG,   SUPER_FANG_EFFECT,            1, NORMAL,    90, 10
 	move SLASH,        NO_ADDITIONAL_EFFECT,        70, NORMAL,   100, 20
 	move SUBSTITUTE,   SUBSTITUTE_EFFECT,            0, NORMAL,   100, 10
-	move BITE,         FLINCH_SIDE_EFFECT1,         80, DARK,     100, 15
+	move KNIRSCHER,    DEFENSE_DOWN_SIDE_EFFECT,    80, DARK,     100, 15
 	move STRUGGLE,     RECOIL_EFFECT,               50, UNKNOWN,  100, 10

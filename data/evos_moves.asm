@@ -32,8 +32,8 @@ EvosMovesPointerTable:
 	dw BlastoiseEvosMoves
 	dw PinsirEvosMoves
 	dw TangelaEvosMoves
-	dw MissingNo1FEvosMoves
-	dw MissingNo20EvosMoves
+	dw StahlosEvosMoves
+	dw IksbatEvosMoves
 	dw GrowlitheEvosMoves
 	dw OnixEvosMoves
 	dw FearowEvosMoves
@@ -51,26 +51,26 @@ EvosMovesPointerTable:
 	dw PsyduckEvosMoves
 	dw DrowzeeEvosMoves
 	dw GolemEvosMoves
-	dw MissingNo32EvosMoves
+	dw RihorniorEvosMoves
 	dw MagmarEvosMoves
-	dw MissingNo34EvosMoves
+	dw MagbrantEvosMoves
 	dw ElectabuzzEvosMoves
 	dw MagnetonEvosMoves
 	dw KoffingEvosMoves
-	dw MissingNo38EvosMoves
+	dw ElevoltekEvosMoves
 	dw MankeyEvosMoves
 	dw SeelEvosMoves
 	dw DiglettEvosMoves
 	dw TaurosEvosMoves
-	dw MissingNo3DEvosMoves
-	dw MissingNo3EEvosMoves
-	dw MissingNo3FEvosMoves
+	dw Porygon2EvosMoves
+	dw PorygonZEvosMoves
+	dw KoknodonEvosMoves
 	dw FarfetchdEvosMoves
 	dw VenonatEvosMoves
 	dw DragoniteEvosMoves
-	dw MissingNo43EvosMoves
-	dw MissingNo44EvosMoves
-	dw MissingNo45EvosMoves
+	dw RameidonEvosMoves
+	dw NincadaEvosMoves
+	dw NinjaskEvosMoves
 	dw DoduoEvosMoves
 	dw PoliwagEvosMoves
 	dw JynxEvosMoves
@@ -80,7 +80,7 @@ EvosMovesPointerTable:
 	dw DittoEvosMoves
 	dw MeowthEvosMoves
 	dw KrabbyEvosMoves
-	dw MissingNo4FEvosMoves
+	dw NinjatomEvosMoves
 	dw MissingNo50EvosMoves
 	dw MissingNo51EvosMoves
 	dw VulpixEvosMoves
@@ -176,7 +176,7 @@ EvosMovesPointerTable:
 	dw MissingNoACEvosMoves
 	dw MagnemiteEvosMoves
 	dw MissingNoAEEvosMoves
-	dw MissingNoAFEvosMoves
+	dw GorochuEvosMoves
 	dw CharmanderEvosMoves
 	dw SquirtleEvosMoves
 	dw CharmeleonEvosMoves
@@ -195,6 +195,7 @@ EvosMovesPointerTable:
 
 RizerosEvosMoves:
 ; Evolutions
+	db EV_ITEM, PROTECTOR, 1, RIHORNIOR
 	db 0
 ; Learnset
 	db 30, STOMP
@@ -545,16 +546,26 @@ TangelaEvosMoves:
 	db 48, GROWTH
 	db 0
 
-MissingNo1FEvosMoves:
+StahlosEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 15, BIND
+	db 19, ROCK_THROW
+	db 25, RAGE
+	db 33, SLAM
+	db 43, HARDEN
 	db 0
 
-MissingNo20EvosMoves:
+IksbatEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 10, SUPERSONIC
+	db 15, BITE
+	db 21, CONFUSE_RAY
+	db 32, WING_ATTACK
+	db 43, HAZE
 	db 0
 
 GrowlitheEvosMoves:
@@ -571,6 +582,7 @@ GrowlitheEvosMoves:
 
 OnixEvosMoves:
 ; Evolutions
+	db EV_ITEM, METAL_COAT, 1, STAHLOS
 	db 0
 ; Learnset
 	db 15, BIND
@@ -760,13 +772,32 @@ GolemEvosMoves:
 	db 43, EXPLOSION
 	db 0
 
-MissingNo32EvosMoves:
+RihorniorEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 30, STOMP
+	db 35, TAIL_WHIP
+	db 40, FURY_ATTACK
+	db 48, HORN_DRILL
+	db 55, LEER
+	db 64, TAKE_DOWN
 	db 0
 
 MagmarEvosMoves:
+; Evolutions
+	db EV_ITEM, MAGMARIZER, 1, MAGBRANT
+	db 0
+; Learnset
+	db 36, LEER
+	db 39, CONFUSE_RAY
+	db 43, FIRE_PUNCH
+	db 48, SMOKESCREEN
+	db 52, SMOG
+	db 55, FLAMETHROWER
+	db 0
+
+MagbrantEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
@@ -778,14 +809,9 @@ MagmarEvosMoves:
 	db 55, FLAMETHROWER
 	db 0
 
-MissingNo34EvosMoves:
-; Evolutions
-	db 0
-; Learnset
-	db 0
-
 ElectabuzzEvosMoves:
 ; Evolutions
+	db EV_ITEM, ELECTIRIZER, 1, ELEVOLTEK
 	db 0
 ; Learnset
 	db 34, THUNDERSHOCK
@@ -819,8 +845,13 @@ KoffingEvosMoves:
 	db 48, EXPLOSION
 	db 0
 
-MissingNo38EvosMoves:
+ElevoltekEvosMoves:
 ; Evolutions
+	db 34, THUNDERSHOCK
+	db 37, SCREECH
+	db 42, THUNDERPUNCH
+	db 49, LIGHT_SCREEN
+	db 54, THUNDER
 	db 0
 ; Learnset
 	db 0
@@ -874,22 +905,35 @@ TaurosEvosMoves:
 	db 51, TAKE_DOWN
 	db 0
 
-MissingNo3DEvosMoves:
+Porygon2EvosMoves:
 ; Evolutions
+	db EV_ITEM, DUBIOSDISC, 1, PORYGONZ
 	db 0
 ; Learnset
+	db 23, PSYBEAM
+	db 28, RECOVER
+	db 35, AGILITY
+	db 42, TRI_ATTACK
 	db 0
 
-MissingNo3EEvosMoves:
+PorygonZEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 23, PSYBEAM
+	db 28, RECOVER
+	db 35, AGILITY
+	db 42, TRI_ATTACK
 	db 0
 
-MissingNo3FEvosMoves:
+KoknodonEvosMoves:
 ; Evolutions
+	db EV_LEVEL, 30, RAMEIDON
 	db 0
 ; Learnset
+	db 6, FOCUS_ENERGY
+	db 15, TAKE_DOWN
+	db 42, SCREECH
 	db 0
 
 FarfetchdEvosMoves:
@@ -929,22 +973,35 @@ DragoniteEvosMoves:
 	db 60, HYPER_BEAM
 	db 0
 
-MissingNo43EvosMoves:
+RameidonEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 6, FOCUS_ENERGY
+	db 15, TAKE_DOWN
+	db 51, SCREECH
 	db 0
 
-MissingNo44EvosMoves:
+NincadaEvosMoves:
 ; Evolutions
+	db EV_LEVEL, 20, NINJASK
 	db 0
 ; Learnset
+	db 5, HARDEN
+	db 21, ABSORB
+	db 30, FURY_SWIPES
+	db 40, DIG
 	db 0
 
-MissingNo45EvosMoves:
+NinjaskEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 15, AGILITY
+	db 23, ABSORB
+	db 36, FURY_SWIPES
+	db 50, SLASH
+	db 57, SWORDS_DANCE
 	db 0
 
 DoduoEvosMoves:
@@ -1042,10 +1099,13 @@ KrabbyEvosMoves:
 	db 40, HARDEN
 	db 0
 
-MissingNo4FEvosMoves:
+NinjatomEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 15, CONFUSE_RAY
+	db 23, ABSORB
+	db 36, FURY_SWIPES
 	db 0
 
 MissingNo50EvosMoves:
@@ -1064,7 +1124,7 @@ VulpixEvosMoves:
 ; Evolutions
 	db EV_ITEM, FIRE_STONE, 1, NINETALES
 	db 0
-; Learnset
+; Learnset 
 	db 16, QUICK_ATTACK
 	db 21, ROAR
 	db 28, CONFUSE_RAY
@@ -1080,7 +1140,7 @@ NinetalesEvosMoves:
 
 PikachuEvosMoves:
 ; Evolutions
-	db EV_ITEM, THUNDER_STONE, 1, RAICHU
+	db EV_LEVEL, 30, RAICHU
 	db 0
 ; Learnset
 	db 6, TAIL_WHIP
@@ -1096,8 +1156,18 @@ PikachuEvosMoves:
 
 RaichuEvosMoves:
 ; Evolutions
+	db EV_ITEM, THUNDER_STONE, 1, GOROCHU
 	db 0
 ; Learnset
+	db 6, TAIL_WHIP
+	db 8, THUNDER_WAVE
+	db 11, QUICK_ATTACK
+	db 15, DOUBLE_TEAM
+	db 20, SLAM
+	db 26, THUNDERBOLT
+	db 36, AGILITY
+	db 45, THUNDER
+	db 56, LIGHT_SCREEN
 	db 0
 
 MissingNo56EvosMoves:
@@ -1558,6 +1628,7 @@ HypnoEvosMoves:
 
 GolbatEvosMoves:
 ; Evolutions
+	db EV_LEVEL, 50, IKSBAT
 	db 0
 ; Learnset
 	db 10, SUPERSONIC
@@ -1894,20 +1965,26 @@ RattataEvosMoves:
 	db EV_LEVEL, 20, RATICATE
 	db 0
 ; Learnset
-	db 7, QUICK_ATTACK
-	db 14, HYPER_FANG
-	db 23, FOCUS_ENERGY
-	db 34, SUPER_FANG
+	db 4, QUICK_ATTACK
+	db 7, FOCUS_ENERGY
+	db 10, BITE
+	db 16, HYPER_FANG
+	db 22, KNIRSCHER
+	db 28, SUPER_FANG
+	db 31, DOUBLE_EDGE
 	db 0
 
 RaticateEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 7, QUICK_ATTACK
-	db 14, HYPER_FANG
-	db 27, FOCUS_ENERGY
-	db 41, SUPER_FANG
+	db 4, QUICK_ATTACK
+	db 7, FOCUS_ENERGY
+	db 10, BITE
+	db 16, HYPER_FANG
+	db 24, KNIRSCHER
+	db 34, SUPER_FANG
+	db 39, DOUBLE_EDGE
 	db 0
 
 NidorinoEvosMoves:
@@ -1951,6 +2028,7 @@ GeodudeEvosMoves:
 
 PorygonEvosMoves:
 ; Evolutions
+	db EV_ITEM, UPGRADE, 1, PORYGON2
 	db 0
 ; Learnset
 	db 23, PSYBEAM
@@ -1994,7 +2072,7 @@ MissingNoAEEvosMoves:
 ; Learnset
 	db 0
 
-MissingNoAFEvosMoves:
+GorochuEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
