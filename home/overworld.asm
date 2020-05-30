@@ -3,7 +3,7 @@ EnterMap::
 	ld a, $ff
 	ld [wJoyIgnore], a
 	call LoadMapData
-	callba ClearVariablesAfterLoadingMapData
+	callba ClearVariablesOnEnterMap
 	ld hl, wd72c
 	bit 0, [hl] ; has the player already made 3 steps since the last battle?
 	jr z, .skipGivingThreeStepsOfNoRandomBattles
@@ -467,13 +467,13 @@ WarpFound2::
 	ld [wUnusedD366], a ; not read
 	ld a, [hWarpDestinationMap]
 	ld [wCurMap], a
-	cp ROCK_TUNNEL_1
+	cp ROCK_TUNNEL_1F
 	jr nz, .notRockTunnel
 	ld a, $06
 	ld [wMapPalOffset], a
 	call GBFadeOutToBlack
 .notRockTunnel
-	callab CalculatePikachuSpawnState1
+	callab SetPikachuSpawnOutside
 	call PlayMapChangeSound
 	jr .done
 
@@ -500,11 +500,11 @@ WarpFound2::
 	ld hl, wd736
 	res 0, [hl]
 	res 1, [hl]
-	callab CalculatePikachuSpawnState2
+	callab SetPikachuSpawnWarpPad
 	jr .done
 
 .goBackOutside
-	callab CalculatePikachuSpawnState3
+	callab SetPikachuSpawnBackOutside
 	ld a, [wLastMap]
 	ld [wCurMap], a
 	call PlayMapChangeSound
@@ -700,15 +700,15 @@ CheckIfInOutsideMap::
 ; sets carry if the check passes, otherwise clears carry
 ExtraWarpCheck::
 	ld a, [wCurMap]
-	cp SS_ANNE_3
+	cp SS_ANNE_3F
 	jr z, .useFunction1
-	cp ROCKET_HIDEOUT_1
+	cp ROCKET_HIDEOUT_B1F
 	jr z, .useFunction2
-	cp ROCKET_HIDEOUT_2
+	cp ROCKET_HIDEOUT_B2F
 	jr z, .useFunction2
-	cp ROCKET_HIDEOUT_4
+	cp ROCKET_HIDEOUT_B4F
 	jr z, .useFunction2
-	cp ROCK_TUNNEL_1
+	cp ROCK_TUNNEL_1F
 	jr z, .useFunction2
 	ld a, [wCurMapTileset]
 	and a ; outside tileset (OVERWORLD)
@@ -872,7 +872,7 @@ LoadTilesetTilePatternData::
 LoadTileBlockMap::
 ; fill C6E8-CBFB with the background tile
 	ld hl, wOverworldMap
-	ld bc, $0514
+	ld bc, wOverworldMapEnd - wOverworldMap
 	ld a, [wMapBackgroundTile] ; background tile number
 	call FillMemory
 ; load tile map of current map (made of tile block IDs)
@@ -1255,7 +1255,7 @@ CollisionCheckOnLand::
 	call CheckTilePassable
 	jr nc, .noCollision
 .collision
-	ld a, [wChannelSoundIDs + CH4]
+	ld a, [wChannelSoundIDs + Ch5]
 	cp SFX_COLLISION ; check if collision sound is already playing
 	jr z, .setCarry
 	ld a, SFX_COLLISION
@@ -1709,7 +1709,7 @@ CollisionCheckOnWater::
 	call IsTilePassable
 	jr nc, .stopSurfing
 .collision
-	ld a, [wChannelSoundIDs + CH4]
+	ld a, [wChannelSoundIDs + Ch5]
 	cp SFX_COLLISION ; check if collision sound is already playing
 	jr z, .setCarry
 	ld a, SFX_COLLISION
@@ -1717,7 +1717,6 @@ CollisionCheckOnWater::
 .setCarry
 	scf
 	jr .done
-
 .checkIfVermilionDockTileset
 	ld a, [wCurMapTileset] ; tileset
 	cp SHIP_PORT ; Vermilion Dock tileset

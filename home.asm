@@ -1,4 +1,3 @@
-
 ; The rst vectors are unused.
 SECTION "rst 00", ROM0
 	rst $38
@@ -22,7 +21,7 @@ SECTION "vblank", ROM0
 	jp VBlank
 SECTION "hblank", ROM0
 	jp LCDC
-SECTION "timer", ROM0 
+SECTION "timer",  ROM0
 	jp Timer
 SECTION "serial", ROM0
 	jp Serial
@@ -83,7 +82,6 @@ HideSprites::
 INCLUDE "home/copy.asm"
 
 
-
 SECTION "Entry", ROM0
 
 	nop
@@ -96,7 +94,6 @@ SECTION "Header", ROM0
 	; The space here is allocated to prevent code from being overwritten.
 
 	ds $150 - $104
-
 
 
 SECTION "Main", ROM0
@@ -488,7 +485,7 @@ HandlePartyMenuInput::
 	ld a, [wMenuItemToSwap]
 	and a
 	jp nz, .swappingPokemon
-	pop af ; double pop af?
+	pop af
 	ld [hTilesetType], a
 	bit 1, b
 	jr nz, .noPokemonChosen
@@ -781,6 +778,14 @@ UncompressMonSprite::
 	ld [wSpriteInputPtr], a    ; fetch sprite input pointer
 	ld a, [hl]
 	ld [wSpriteInputPtr + 1], a
+; define (by index number) the bank that a pokemon's image is in
+; index = Mew, bank 1
+; index = Kabutops fossil, bank $B
+; index < $1F, bank 9
+; $1F ≤ index < $4A, bank $A
+; $4A ≤ index < $74, bank $B
+; $74 ≤ index < $99, bank $C
+; $99 ≤ index, bank $D
 	ld a, [wcf91] ; XXX name for this ram location
 	cp FOSSIL_KABUTOPS
 	jr z, .RecallBank
@@ -1307,7 +1312,7 @@ DisplayPlayerBlackedOutText::
 	ld [wSafariSteps + 1], a
 	EventFlagAddressa EVENT_IN_SAFARI_ZONE
 	ld [wcf0d], a
-	ld [wSafariZoneEntranceCurScript], a
+	ld [wSafariZoneGateCurScript], a
 .didnotblackoutinsafari
 	jp HoldTextDisplayOpen
 
@@ -1363,7 +1368,7 @@ SubtractAmountPaidFromMoney::
 ; adds the amount the player sold to their money
 AddAmountSoldToMoney::
 	ld de, wPlayerMoney + 2
-	ld hl, $ffa1 ; total price of items
+	ld hl, hMoney + 2 ; total price of items
 	ld c, 3 ; length of money in bytes
 	predef AddBCDPredef ; add total price to money
 	ld a, MONEY_BOX
@@ -1908,7 +1913,7 @@ PrintListMenuEntries::
 	jp nz, .loop
 	ld bc, -8
 	add hl, bc
-	ld a, $ee ; down arrow
+	ld a, "▼"
 	ld [hl], a
 	ret
 .printCancelMenuItem
@@ -2135,7 +2140,7 @@ DisableWaitingAfterTextDisplay::
 ; [wcf91] = item ID
 ; OUTPUT:
 ; [wActionResultOrTookBattleTurn] = success
-; 00: unsucessful
+; 00: unsuccessful
 ; 01: successful
 ; 02: not able to be used right now, no extra menu displayed (only certain items use this)
 UseItem::
@@ -2304,7 +2309,7 @@ RunNPCMovementScript::
 	ld a, [wNPCMovementScriptBank]
 	call BankswitchCommon
 	ld a, [wNPCMovementScriptFunctionNum]
-	call JumpTable
+	call CallFunctionInTable
 	pop af
 	call BankswitchCommon
 	ret
@@ -2347,7 +2352,7 @@ ExecuteCurMapScriptInTable::
 .useProvidedIndex
 	pop hl
 	ld [wCurMapScript], a
-	call JumpTable
+	call CallFunctionInTable
 	ld a, [wCurMapScript]
 	ret
 
@@ -2516,7 +2521,7 @@ EndTrainerBattle::
 	ld b, FLAG_SET
 	call TrainerFlagAction   ; flag trainer as fought
 	ld a, [wEnemyMonOrTrainerClass]
-	cp 200
+	cp OPP_ID_OFFSET
 	jr nc, .skipRemoveSprite    ; test if trainer was fought (in that case skip removing the corresponding sprite)
 	ld hl, wMissableObjectList
 	ld de, $2
@@ -2550,7 +2555,7 @@ InitBattleEnemyParameters::
 	ld a, [wEngagedTrainerClass]
 	ld [wCurOpponent], a
 	ld [wEnemyMonOrTrainerClass], a
-	cp 200
+	cp OPP_ID_OFFSET
 	ld a, [wEngagedTrainerSet]
 	jr c, .noTrainer
 	ld [wTrainerNo], a
@@ -2651,7 +2656,7 @@ EngageMapTrainer::
 	ld a, [hli]    ; load trainer class
 	ld [wEngagedTrainerClass], a
 	ld a, [hl]     ; load trainer mon set
-	ld [wEnemyMonAttackMod], a
+	ld [wEngagedTrainerSet], a
 	jp PlayTrainerMusic
 
 PrintEndBattleText::
@@ -3384,7 +3389,7 @@ WaitForSoundToFinish::
 	ret nz
 	push hl
 .waitLoop
-	ld hl, wChannelSoundIDs + CH4
+	ld hl, wChannelSoundIDs + Ch5
 	xor a
 	or [hl]
 	inc hl
@@ -3546,7 +3551,7 @@ CopyString::
 ; this function is used when lower button sensitivity is wanted (e.g. menus)
 ; OUTPUT: [hJoy5] = pressed buttons in usual format
 ; there are two flags that control its functionality, [hJoy6] and [hJoy7]
-; there are esentially three modes of operation
+; there are essentially three modes of operation
 ; 1. Get newly pressed buttons only
 ;    ([hJoy7] == 0, [hJoy6] == any)
 ;    Just copies [hJoyPressed] to [hJoy5].
@@ -3891,7 +3896,7 @@ CalcStat::
 	ld a, b
 	add e
 	jr nc, .noCarry2
-	inc d                     ; da = (Base + IV) * 2 + ceil(Sqrt(stat exp)) / 4
+	inc d                     ; de = (Base + IV) * 2 + ceil(Sqrt(stat exp)) / 4
 .noCarry2
 	ld [H_MULTIPLICAND + 2], a
 	ld a, d
@@ -4260,7 +4265,7 @@ EraseMenuCursor::
 HandleDownArrowBlinkTiming::
 	ld a, [hl]
 	ld b, a
-	ld a, $ee ; down arrow
+	ld a, "▼"
 	cp b
 	jr nz, .downArrowOff
 .downArrowOn
@@ -4294,7 +4299,7 @@ HandleDownArrowBlinkTiming::
 	ret nz
 	ld a, $06
 	ld [H_DOWNARROWBLINKCNT2], a
-	ld a, $ee ; down arrow
+	ld a, "▼"
 	ld [hl], a
 	ret
 
@@ -4558,7 +4563,7 @@ endm
 	ret
 
 
-JumpTable::
+CallFunctionInTable::
 ; Call function a in jumptable hl.
 ; de is not preserved.
 	push hl
@@ -4878,8 +4883,6 @@ const_value = 1
 	add_tx_pre PokemonCenterPCText                  ; 21
 	add_tx_pre ViridianSchoolNotebook               ; 22
 	add_tx_pre ViridianSchoolBlackboard             ; 23
-	; add_tx_pre FakeTextPredef22
-	; add_tx_pre FakeTextPredef23
 	add_tx_pre JustAMomentText                      ; 24
 	add_tx_pre OpenBillsPCText                      ; 25
 	add_tx_pre FoundHiddenItemText                  ; 26

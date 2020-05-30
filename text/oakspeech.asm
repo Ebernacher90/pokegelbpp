@@ -71,7 +71,7 @@ _IntroduceRivalText::
 	prompt
 
 _OakSpeechText3::
-	text $52,"!"
+	text "<PLAYER>!"
 
 	para "Eine unglaubliche"
 	line "Reise in die Welt"

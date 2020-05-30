@@ -165,4 +165,4 @@ const_value = 1
 	const DEX_NINJASK	 ; 163
 	const DEX_NINJATOM	 ; 164
 
-NUM_POKEMON    EQU 164
+NUM_POKEMON EQU const_value + -1
