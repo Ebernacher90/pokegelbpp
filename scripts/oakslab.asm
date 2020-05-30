@@ -819,7 +819,7 @@ OaksLabText3:
 	jp .asm_1ca6f
 
 .asm_1c9ec
-	ld b, POKE_BALL
+	ld b, POKEBALL
 	call IsItemInBag
 	jr nz, .asm_1ca69
 	ld hl, wPokedexOwned
@@ -870,7 +870,7 @@ OaksLabText3:
 .asm_1ca52
 	CheckAndSetEvent EVENT_GOT_POKEBALLS_FROM_OAK
 	jr nz, .asm_1ca69
-	lb bc, POKE_BALL, 5
+	lb bc, POKEBALL, 5
 	call GiveItem
 	ld hl, OaksLabGivePokeballsText
 	call PrintText

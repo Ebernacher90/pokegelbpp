@@ -354,6 +354,10 @@ ROMX $48
 ROMX $49
 	org $4000
 	"Pokedex Text 2"
+	
+ROMX $4A
+	org $4000
+	"bank4a"
 
 WRAM0
 	org $c000

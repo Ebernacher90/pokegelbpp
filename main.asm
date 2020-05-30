@@ -1423,24 +1423,6 @@ Overworld_GFX:     INCBIN "gfx/tilesets/overworld.2bpp"
 	ds 32
 Overworld_Block:   INCBIN "gfx/blocksets/overworld.bst"
 
-RedsHouse1_GFX:
-RedsHouse2_GFX:    INCBIN "gfx/tilesets/reds_house.2bpp"
-	ds 16
-RedsHouse1_Block:
-RedsHouse2_Block:  INCBIN "gfx/blocksets/reds_house.bst"
-
-House_GFX:         INCBIN "gfx/tilesets/house.2bpp"
-House_Block:       INCBIN "gfx/blocksets/house.bst"
-Mansion_GFX:       INCBIN "gfx/tilesets/mansion.t2.2bpp"
-Mansion_Block:     INCBIN "gfx/blocksets/mansion.bst"
-ShipPort_GFX:      INCBIN "gfx/tilesets/ship_port.2bpp"
-ShipPort_Block:    INCBIN "gfx/blocksets/ship_port.bst"
-Interior_GFX:      INCBIN "gfx/tilesets/interior.2bpp"
-Interior_Block:    INCBIN "gfx/blocksets/interior.bst"
-Plateau_GFX:       INCBIN "gfx/tilesets/plateau.t10.2bpp"
-Plateau_Block:     INCBIN "gfx/blocksets/plateau.bst"
-
-
 SECTION "bank1A", ROMX
 
 INCBIN "gfx/blueversion.1bpp" ; unused
@@ -2168,9 +2150,29 @@ SECTION "bank46", ROMX
 INCLUDE "data/mapHeaders/route26.asm"
 INCLUDE "scripts/route26.asm"
 INCLUDE "data/mapObjects/route26.asm"
-Route26Blocks: INCBIN "maps/Route26.blk"
+Route26_Blocks: INCBIN "maps/Route26.blk"
 
 SECTION "facility", ROMX
 
 Facility_GFX:      INCBIN "gfx/tilesets/facility.2bpp"
 Facility_Block:    INCBIN "gfx/blocksets/facility.bst"
+
+SECTION "bank4a", ROMX
+
+RedsHouse1_GFX:
+RedsHouse2_GFX:    INCBIN "gfx/tilesets/reds_house.2bpp"
+	ds 16
+RedsHouse1_Block:
+RedsHouse2_Block:  INCBIN "gfx/blocksets/reds_house.bst"
+
+House_GFX:         INCBIN "gfx/tilesets/house.2bpp"
+House_Block:       INCBIN "gfx/blocksets/house.bst"
+Mansion_GFX:       INCBIN "gfx/tilesets/mansion.t2.2bpp"
+Mansion_Block:     INCBIN "gfx/blocksets/mansion.bst"
+ShipPort_GFX:      INCBIN "gfx/tilesets/ship_port.2bpp"
+ShipPort_Block:    INCBIN "gfx/blocksets/ship_port.bst"
+Interior_GFX:      INCBIN "gfx/tilesets/interior.2bpp"
+Interior_Block:    INCBIN "gfx/blocksets/interior.bst"
+Plateau_GFX:       INCBIN "gfx/tilesets/plateau.t10.2bpp"
+Plateau_Block:     INCBIN "gfx/blocksets/plateau.bst"
+

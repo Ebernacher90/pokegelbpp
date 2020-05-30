@@ -4,8 +4,9 @@ Route12_h:
 	dw Route12_Blocks ; blocks
 	dw Route12_TextPointers ; texts
 	dw Route12_Script ; scripts
-	db NORTH | SOUTH | WEST ; connections
+	db NORTH | SOUTH | WEST | EAST ; connections
 	NORTH_MAP_CONNECTION ROUTE_12, LAVENDER_TOWN, 0, 0, LavenderTown_Blocks
 	SOUTH_MAP_CONNECTION ROUTE_12, ROUTE_13, -3, 17, Route13_Blocks
 	WEST_MAP_CONNECTION ROUTE_12, ROUTE_11, 27, 0, Route11_Blocks
+	EAST_MAP_CONNECTION ROUTE_12, ROUTE_26, 0, -2, Route26_Blocks
 	dw Route12_Object ; objects

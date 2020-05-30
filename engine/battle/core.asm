@@ -3591,10 +3591,10 @@ CheckPlayerStatusConditions:
 	jp .returnToHL
 
 .HeldInPlaceCheck
-	ld a,[wEnemyBattleStatus1]
-	bit UsingTrappingMove,a ; is enemy using a multi-turn move like wrap?
-	jp z,.FlinchedCheck
-	ld hl,CantMoveText
+	ld a, [wEnemyBattleStatus1]
+	bit USING_TRAPPING_MOVE, a ; is enemy using a mult-turn move like wrap?
+	jp z, .FlinchedCheck
+	ld hl, CantMoveText
 	call PrintText
 	ld hl, ExecutePlayerMoveDone ; player can't move this turn
 	jp .returnToHL
@@ -3708,19 +3708,19 @@ CheckPlayerStatusConditions:
 
 .BideCheck
 	ld hl,wPlayerBattleStatus1
-	bit StoringEnergy,[hl] ; is mon using bide?
+	bit STORING_ENERGY, [hl] ; is mon using bide?
 	jr z,.ThrashingAboutCheck
 	xor a
-	ld [wPlayerMoveNum],a
-	ld hl,wDamage
-	ld a,[hli]
-	ld b,a
-	ld c,[hl]
-	ld hl,wPlayerBideAccumulatedDamage + 1
-	ld a,[hl]
+	ld [wPlayerMoveNum], a
+	ld hl, wDamage
+	ld a, [hli]
+	ld b, a
+	ld c, [hl]
+	ld hl, wPlayerBideAccumulatedDamage + 1
+	ld a, [hl]
 	add c ; accumulate damage taken
-	ld [hld],a
-	ld a,[hl]
+	ld [hld], a
+	ld a, [hl]
 	adc b
 	ld [hl], a
 	ld hl, wPlayerNumAttacksLeft

@@ -2,515 +2,7 @@
 ; The max number of evolutions per monster is MAX_EVOLUTIONS
 
 EvosMovesPointerTable:
-<<<<<<< HEAD
-	dw Mon113_EvosMoves
-	dw Mon116_EvosMoves
-	dw Mon033_EvosMoves
-	dw Mon036_EvosMoves
-	dw Mon021_EvosMoves
-	dw Mon101_EvosMoves
-	dw Mon035_EvosMoves
-	dw Mon081_EvosMoves
-	dw Mon002_EvosMoves
-	dw Mon104_EvosMoves
-	dw Mon109_EvosMoves
-	dw Mon103_EvosMoves
-	dw Mon089_EvosMoves
-	dw Mon095_EvosMoves
-	dw Mon030_EvosMoves
-	dw Mon032_EvosMoves
-	dw Mon105_EvosMoves
-	dw Mon112_EvosMoves
-	dw Mon132_EvosMoves
-	dw Mon060_EvosMoves
-	dw Mon152_EvosMoves
-	dw Mon131_EvosMoves
-	dw Mon091_EvosMoves
-	dw Mon073_EvosMoves
-	dw Mon093_EvosMoves
-	dw Mon124_EvosMoves
-	dw Mon121_EvosMoves
-	dw Mon009_EvosMoves
-	dw Mon128_EvosMoves
-	dw Mon115_EvosMoves
-	dw Mon153_EvosMoves
-	dw Mon154_EvosMoves
-	dw Mon059_EvosMoves
-	dw Mon096_EvosMoves
-	dw Mon022_EvosMoves
-	dw Mon016_EvosMoves
-	dw Mon080_EvosMoves
-	dw Mon065_EvosMoves
-	dw Mon076_EvosMoves
-	dw Mon114_EvosMoves
-	dw Mon068_EvosMoves
-	dw Mon123_EvosMoves
-	dw Mon107_EvosMoves
-	dw Mon108_EvosMoves
-	dw Mon024_EvosMoves
-	dw Mon048_EvosMoves
-	dw Mon055_EvosMoves
-	dw Mon097_EvosMoves
-	dw Mon077_EvosMoves
-	dw Mon155_EvosMoves
-	dw Mon127_EvosMoves
-	dw Mon156_EvosMoves
-	dw Mon126_EvosMoves
-	dw Mon083_EvosMoves
-	dw Mon110_EvosMoves
-	dw Mon157_EvosMoves
-	dw Mon057_EvosMoves
-	dw Mon087_EvosMoves
-	dw Mon051_EvosMoves
-	dw Mon129_EvosMoves
-	dw Mon158_EvosMoves
-	dw Mon159_EvosMoves
-	dw Mon160_EvosMoves
-	dw Mon084_EvosMoves
-	dw Mon049_EvosMoves
-	dw Mon150_EvosMoves
-	dw Mon161_EvosMoves
-	dw Mon162_EvosMoves
-	dw Mon163_EvosMoves
-	dw Mon085_EvosMoves
-	dw Mon061_EvosMoves
-	dw Mon125_EvosMoves
-	dw Mon147_EvosMoves
-	dw Mon145_EvosMoves
-	dw Mon146_EvosMoves
-	dw Mon133_EvosMoves
-	dw Mon053_EvosMoves
-	dw Mon099_EvosMoves
-	dw Mon164_EvosMoves
-	dw Mon165_EvosMoves	;MissingNo
-	dw Mon166_EvosMoves	;MissingNo
-	dw Mon038_EvosMoves
-	dw Mon039_EvosMoves
-	dw Mon025_EvosMoves
-	dw Mon026_EvosMoves
-	dw Mon167_EvosMoves	;MissingNo
-	dw Mon168_EvosMoves	;MissingNo
-	dw Mon148_EvosMoves
-	dw Mon149_EvosMoves
-	dw Mon141_EvosMoves
-	dw Mon142_EvosMoves
-	dw Mon117_EvosMoves
-	dw Mon118_EvosMoves
-	dw Mon169_EvosMoves	;MissingNo
-	dw Mon170_EvosMoves	;MissingNo
-	dw Mon028_EvosMoves
-	dw Mon029_EvosMoves
-	dw Mon139_EvosMoves
-	dw Mon140_EvosMoves
-	dw Mon040_EvosMoves
-	dw Mon041_EvosMoves
-	dw Mon134_EvosMoves
-	dw Mon137_EvosMoves
-	dw Mon136_EvosMoves
-	dw Mon135_EvosMoves
-	dw Mon067_EvosMoves
-	dw Mon042_EvosMoves
-	dw Mon023_EvosMoves
-	dw Mon047_EvosMoves
-	dw Mon062_EvosMoves
-	dw Mon063_EvosMoves
-	dw Mon013_EvosMoves
-	dw Mon014_EvosMoves
-	dw Mon015_EvosMoves
-	dw Mon171_EvosMoves	;MissingNo
-	dw Mon086_EvosMoves
-	dw Mon058_EvosMoves
-	dw Mon052_EvosMoves
-	dw Mon050_EvosMoves
-	dw Mon088_EvosMoves
-	dw Mon172_EvosMoves	;MissingNo
-	dw Mon173_EvosMoves	;MissingNo
-	dw Mon010_EvosMoves
-	dw Mon011_EvosMoves
-	dw Mon012_EvosMoves
-	dw Mon069_EvosMoves
-	dw Mon174_EvosMoves	;MissingNo
-	dw Mon056_EvosMoves
-	dw Mon098_EvosMoves
-	dw Mon043_EvosMoves
-	dw Mon151_EvosMoves
-	dw Mon144_EvosMoves
-	dw Mon130_EvosMoves
-	dw Mon175_EvosMoves	;MissingNo
-	dw Mon090_EvosMoves
-	dw Mon176_EvosMoves	;MissingNo
-	dw Mon100_EvosMoves
-	dw Mon092_EvosMoves
-	dw Mon177_EvosMoves	;MissingNo
-	dw Mon102_EvosMoves
-	dw Mon037_EvosMoves
-	dw Mon111_EvosMoves
-	dw Mon054_EvosMoves
-	dw Mon106_EvosMoves
-	dw Mon178_EvosMoves	;MissingNo
-	dw Mon094_EvosMoves
-	dw Mon064_EvosMoves
-	dw Mon066_EvosMoves
-	dw Mon017_EvosMoves
-	dw Mon018_EvosMoves
-	dw Mon122_EvosMoves
-	dw Mon001_EvosMoves
-	dw Mon003_EvosMoves
-	dw Mon074_EvosMoves
-	dw Mon179_EvosMoves	;MissingNo
-	dw Mon119_EvosMoves
-	dw Mon120_EvosMoves
-	dw Mon180_EvosMoves	;MissingNo
-	dw Mon181_EvosMoves	;MissingNo
-	dw Mon182_EvosMoves	;MissingNo
-	dw Mon183_EvosMoves	;MissingNo
-	dw Mon078_EvosMoves
-	dw Mon079_EvosMoves
-	dw Mon019_EvosMoves
-	dw Mon020_EvosMoves
-	dw Mon034_EvosMoves
-	dw Mon031_EvosMoves
-	dw Mon075_EvosMoves
-	dw Mon138_EvosMoves
-	dw Mon143_EvosMoves
-	dw Mon184_EvosMoves	;MissingNo
-	dw Mon082_EvosMoves
-	dw Mon185_EvosMoves	;MissingNo
-	dw Mon186_EvosMoves	;MissingNo
-	dw Mon027_EvosMoves
-	dw Mon004_EvosMoves
-	dw Mon007_EvosMoves
-	dw Mon005_EvosMoves
-	dw Mon008_EvosMoves
-	dw Mon006_EvosMoves
-	dw Mon187_EvosMoves	;MissingNo
-	dw Mon188_EvosMoves	;MissingNo
-	dw Mon189_EvosMoves	;MissingNo
-	dw Mon190_EvosMoves	;MissingNo
-	dw Mon044_EvosMoves
-	dw Mon045_EvosMoves
-	dw Mon046_EvosMoves
-	dw Mon070_EvosMoves
-	dw Mon071_EvosMoves
-	dw Mon072_EvosMoves
-
-Mon113_EvosMoves:
-;RIZEROS
-;Evolutions
-	db EV_ITEM,PROTECTOR,1,RIHORNIOR
-	db 0
-;Learnset
-	db 30,STOMP
-	db 35,TAIL_WHIP
-	db 40,FURY_ATTACK
-	db 48,HORN_DRILL
-	db 55,LEER
-	db 64,TAKE_DOWN
-	db 0
-
-Mon116_EvosMoves:
-;KANGASKHAN
-;Evolutions
-	db 0
-;Learnset
-	db 26,BITE
-	db 31,TAIL_WHIP
-	db 36,MEGA_PUNCH
-	db 41,LEER
-	db 46,DIZZY_PUNCH
-	db 0
-
-Mon033_EvosMoves:
-;NIDORAN_M
-;Evolutions
-	db EV_LEVEL,16,NIDORINO
-	db 0
-;Learnset
-	db 8,HORN_ATTACK
-	db 12,DOUBLE_KICK
-	db 17,POISON_STING
-	db 23,FOCUS_ENERGY
-	db 30,FURY_ATTACK
-	db 38,HORN_DRILL
-	db 0
-
-Mon036_EvosMoves:
-;CLEFAIRY
-;Evolutions
-	db EV_ITEM,MOON_STONE,1,CLEFABLE
-	db 0
-;Learnset
-	db 13,SING
-	db 18,DOUBLESLAP
-	db 24,MINIMIZE
-	db 31,METRONOME
-	db 39,DEFENSE_CURL
-	db 48,LIGHT_SCREEN
-	db 0
-
-Mon021_EvosMoves:
-;SPEAROW
-;Evolutions
-	db EV_LEVEL,20,FEAROW
-	db 0
-;Learnset
-	db 9,LEER
-	db 15,FURY_ATTACK
-	db 22,MIRROR_MOVE
-	db 29,DRILL_PECK
-	db 36,AGILITY
-	db 0
-
-Mon101_EvosMoves:
-;VOLTORB
-;Evolutions
-	db EV_LEVEL,30,ELECTRODE
-	db 0
-;Learnset
-	db 17,SONICBOOM
-	db 22,SELFDESTRUCT
-	db 29,LIGHT_SCREEN
-	db 36,SWIFT
-	db 43,EXPLOSION
-	db 0
-
-Mon035_EvosMoves:
-;NIDOKING
-;Evolutions
-	db 0
-;Learnset
-	db 8,HORN_ATTACK
-	db 12,DOUBLE_KICK
-	db 23,THRASH
-	db 0
-
-Mon081_EvosMoves:
-;SLOWBRO
-;Evolutions
-	db 0
-;Learnset
-	db 18,DISABLE
-	db 22,HEADBUTT
-	db 27,GROWL
-	db 33,WATER_GUN
-	db 37,WITHDRAW
-	db 44,AMNESIA
-	db 55,PSYCHIC_M
-	db 0
-
-Mon002_EvosMoves:
-;IVYSAUR
-;Evolutions
-	db EV_LEVEL,32,VENUSAUR
-	db 0
-;Learnset
-	db 7,LEECH_SEED
-	db 13,VINE_WHIP
-	db 22,POISONPOWDER
-	db 30,RAZOR_LEAF
-	db 38,GROWTH
-	db 46,SLEEP_POWDER
-	db 54,SOLARBEAM
-	db 0
-
-Mon104_EvosMoves:
-;EXEGGUTOR
-;Evolutions
-	db 0
-;Learnset
-	db 28,STOMP
-	db 0
-
-Mon109_EvosMoves:
-;LICKITUNG
-;Evolutions
-	db 0
-;Learnset
-	db 7,STOMP
-	db 15,DISABLE
-	db 23,DEFENSE_CURL
-	db 31,SLAM
-	db 39,SCREECH
-	db 0
-
-Mon103_EvosMoves:
-;EXEGGCUTE
-;Evolutions
-	db EV_ITEM,LEAF_STONE,1,EXEGGUTOR
-	db 0
-;Learnset
-	db 25,REFLECT
-	db 28,LEECH_SEED
-	db 32,STUN_SPORE
-	db 37,POISONPOWDER
-	db 42,SOLARBEAM
-	db 48,SLEEP_POWDER
-	db 0
-
-Mon089_EvosMoves:
-;GRIMER
-;Evolutions
-	db EV_LEVEL,38,MUK
-	db 0
-;Learnset
-	db 30,POISON_GAS
-	db 33,MINIMIZE
-	db 37,SLUDGE
-	db 42,HARDEN
-	db 48,SCREECH
-	db 55,ACID_ARMOR
-	db 0
-
-Mon095_EvosMoves:
-;GENGAR
-;Evolutions
-	db 0
-;Learnset
-	db 29,HYPNOSIS
-	db 38,DREAM_EATER
-	db 0
-
-Mon030_EvosMoves:
-;NIDORAN_F
-;Evolutions
-	db EV_LEVEL,16,NIDORINA
-	db 0
-;Learnset
-	db 8,SCRATCH
-	db 12,DOUBLE_KICK
-	db 17,POISON_STING
-	db 23,TAIL_WHIP
-	db 30,BITE
-	db 38,FURY_SWIPES
-	db 0
-
-Mon032_EvosMoves:
-;NIDOQUEEN
-;Evolutions
-	db 0
-;Learnset
-	db 8,SCRATCH
-	db 12,DOUBLE_KICK
-	db 23,BODY_SLAM
-	db 0
-
-Mon105_EvosMoves:
-;CUBONE
-;Evolutions
-	db EV_LEVEL,28,MAROWAK
-	db 0
-;Learnset
-	db 10,BONE_CLUB
-	db 13,TAIL_WHIP
-	db 18,HEADBUTT
-	db 25,LEER
-	db 31,FOCUS_ENERGY
-	db 38,THRASH
-	db 43,BONEMERANG
-	db 46,RAGE
-	db 0
-
-Mon112_EvosMoves:
-;RHYHORN
-;Evolutions
-	db EV_LEVEL,42,RIZEROS
-	db 0
-;Learnset
-	db 30,STOMP
-	db 35,TAIL_WHIP
-	db 40,FURY_ATTACK
-	db 45,HORN_DRILL
-	db 50,LEER
-	db 55,TAKE_DOWN
-	db 0
-
-Mon132_EvosMoves:
-;LAPRAS
-;Evolutions
-	db 0
-;Learnset
-	db 16,SING
-	db 20,MIST
-	db 25,BODY_SLAM
-	db 31,CONFUSE_RAY
-	db 38,ICE_BEAM
-	db 46,HYDRO_PUMP
-	db 0
-
-Mon060_EvosMoves:
-;ARCANINE
-;Evolutions
-	db 0
-;Learnset
-	db 0
-
-Mon152_EvosMoves:
-;MEW
-;Evolutions
-	db 0
-;Learnset
-	db 10,TRANSFORM
-	db 20,MEGA_PUNCH
-	db 30,METRONOME
-	db 40,PSYCHIC_M
-	db 0
-
-Mon131_EvosMoves:
-;GYARADOS
-;Evolutions
-	db 0
-;Learnset
-	db 20,BITE
-	db 25,DRAGON_RAGE
-	db 32,LEER
-	db 41,HYDRO_PUMP
-	db 52,HYPER_BEAM
-	db 0
-
-Mon091_EvosMoves:
-;SHELLDER
-;Evolutions
-	db EV_ITEM,WATER_STONE,1,CLOYSTER
-	db 0
-;Learnset
-	db 18,SUPERSONIC
-	db 23,CLAMP
-	db 30,AURORA_BEAM
-	db 39,LEER
-	db 50,ICE_BEAM
-	db 0
-
-Mon073_EvosMoves:
-;TENTACOOL
-;Evolutions
-	db EV_LEVEL,30,TENTACRUEL
-	db 0
-;Learnset
-	db 7,SUPERSONIC
-	db 13,WRAP
-	db 18,POISON_STING
-	db 22,WATER_GUN
-	db 27,CONSTRICT
-	db 33,BARRIER
-	db 40,SCREECH
-	db 48,HYDRO_PUMP
-	db 0
-
-Mon093_EvosMoves:
-;GASTLY
-;Evolutions
-	db EV_LEVEL,25,HAUNTER
-	db 0
-;Learnset
-	db 27,HYPNOSIS
-	db 35,DREAM_EATER
-	db 0
-
-Mon124_EvosMoves:
-;SCYTHER
-;Evolutions
-=======
-	dw RhydonEvosMoves
+	dw RizerosEvosMoves
 	dw KangaskhanEvosMoves
 	dw NidoranMEvosMoves
 	dw ClefairyEvosMoves
@@ -701,7 +193,7 @@ Mon124_EvosMoves:
 	dw WeepinbellEvosMoves
 	dw VictreebelEvosMoves
 
-RhydonEvosMoves:
+RizerosEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
@@ -901,7 +393,7 @@ CuboneEvosMoves:
 
 RhyhornEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 42, RHYDON
+	db EV_LEVEL, 42, RIZEROS
 	db 0
 ; Learnset
 	db 30, STOMP
@@ -1200,7 +692,6 @@ HitmonleeEvosMoves:
 
 HitmonchanEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 33, FIRE_PUNCH
@@ -1210,236 +701,6 @@ HitmonchanEvosMoves:
 	db 53, COUNTER
 	db 0
 
-<<<<<<< HEAD
-Mon121_EvosMoves:
-;STARYU
-;Evolutions
-	db EV_ITEM,WATER_STONE,1,STARMIE
-	db 0
-;Learnset
-	db 17,WATER_GUN
-	db 22,HARDEN
-	db 27,RECOVER
-	db 32,SWIFT
-	db 37,MINIMIZE
-	db 42,LIGHT_SCREEN
-	db 47,HYDRO_PUMP
-	db 0
-
-Mon009_EvosMoves:
-;BLASTOISE
-;Evolutions
-	db 0
-;Learnset
-	db 8,BUBBLE
-	db 15,WATER_GUN
-	db 24,BITE
-	db 31,WITHDRAW
-	db 42,SKULL_BASH
-	db 52,HYDRO_PUMP
-	db 0
-
-Mon128_EvosMoves:
-;PINSIR
-;Evolutions
-	db 0
-;Learnset
-	db 21,BIND
-	db 25,SEISMIC_TOSS
-	db 30,GUILLOTINE
-	db 36,FOCUS_ENERGY
-	db 43,HARDEN
-	db 49,SLASH
-	db 54,SWORDS_DANCE
-	db 0
-
-Mon115_EvosMoves:
-;TANGELA
-;Evolutions
-	db 0
-;Learnset
-	db 24,BIND
-	db 27,ABSORB
-	db 29,VINE_WHIP
-	db 32,POISONPOWDER
-	db 36,STUN_SPORE
-	db 39,SLEEP_POWDER
-	db 45,SLAM
-	db 48,GROWTH
-	db 0
-
-Mon153_EvosMoves:
-;STAHLOS
-;Evolutions
-	db 0
-;Learnset
-	db 15, BIND
-	db 19, ROCK_THROW
-	db 25, RAGE
-	db 33, SLAM
-	db 43, HARDEN
-
-Mon154_EvosMoves:
-;IKSBAT
-;Evolutions
-	db 0
-;Learnset
-		db 10,SUPERSONIC
-	db 15,BITE
-	db 21,CONFUSE_RAY
-	db 32,WING_ATTACK
-	db 43,HAZE
-	db 0
-
-Mon059_EvosMoves:
-;GROWLITHE
-;Evolutions
-	db EV_ITEM,FIRE_STONE,1,ARCANINE
-	db 0
-;Learnset
-	db 18,EMBER
-	db 23,LEER
-	db 30,TAKE_DOWN
-	db 39,AGILITY
-	db 50,FLAMETHROWER
-	db 0
-
-Mon096_EvosMoves:
-;ONIX
-;Evolutions
-	db EV_ITEM,METAL_COAT,1,STAHLOS
-	db 0
-;Learnset
-	db 15,BIND
-	db 19,ROCK_THROW
-	db 25,RAGE
-	db 33,SLAM
-	db 43,HARDEN
-	db 0
-
-Mon022_EvosMoves:
-;FEAROW
-;Evolutions
-	db 0
-;Learnset
-	db 9,LEER
-	db 15,FURY_ATTACK
-	db 25,MIRROR_MOVE
-	db 34,DRILL_PECK
-	db 43,AGILITY
-	db 0
-
-Mon016_EvosMoves:
-;PIDGEY
-;Evolutions
-	db EV_LEVEL,18,PIDGEOTTO
-	db 0
-;Learnset
-	db 5,SAND_ATTACK
-	db 12,QUICK_ATTACK
-	db 19,WHIRLWIND
-	db 28,WING_ATTACK
-	db 36,AGILITY
-	db 44,MIRROR_MOVE
-	db 0
-
-Mon080_EvosMoves:
-;SLOWPOKE
-;Evolutions
-	db EV_LEVEL,37,SLOWBRO
-	db 0
-;Learnset
-	db 18,DISABLE
-	db 22,HEADBUTT
-	db 27,GROWL
-	db 33,WATER_GUN
-	db 40,AMNESIA
-	db 48,PSYCHIC_M
-	db 0
-
-Mon065_EvosMoves:
-;KADABRA
-;Evolutions
-	db EV_LEVEL,28,ALAKAZAM
-	db 0
-;Learnset
-	db 16,CONFUSION
-	db 20,DISABLE
-	db 27,PSYBEAM
-	db 31,RECOVER
-	db 38,PSYCHIC_M
-	db 42,REFLECT
-	db 0
-
-Mon076_EvosMoves:
-;GRAVELER
-;Evolutions
-	db EV_LEVEL,36,GOLEM
-	db 0
-;Learnset
-	db 11,DEFENSE_CURL
-	db 16,ROCK_THROW
-	db 21,SELFDESTRUCT
-	db 29,HARDEN
-	db 36,EARTHQUAKE
-	db 43,EXPLOSION
-	db 0
-
-Mon114_EvosMoves:
-;CHANSEY
-;Evolutions
-	db 0
-;Learnset
-	db 12,DOUBLESLAP
-	db 24,SING
-	db 30,GROWL
-	db 38,MINIMIZE
-	db 44,DEFENSE_CURL
-	db 48,LIGHT_SCREEN
-	db 54,DOUBLE_EDGE
-	db 0
-
-Mon068_EvosMoves:
-;MACHOKE
-;Evolutions
-	db EV_LEVEL,42,MACHAMP
-	db 0
-;Learnset
-	db 20,LOW_KICK
-	db 25,LEER
-	db 36,FOCUS_ENERGY
-	db 44,SEISMIC_TOSS
-	db 52,SUBMISSION
-	db 0
-
-Mon123_EvosMoves:
-;MR_MIME
-;Evolutions
-	db 0
-;Learnset
-	db 15,CONFUSION
-	db 23,LIGHT_SCREEN
-	db 31,DOUBLESLAP
-	db 39,MEDITATE
-	db 47,SUBSTITUTE
-	db 0
-
-Mon107_EvosMoves:
-;HITMONLEE
-;Evolutions
-	db 0
-;Learnset
-	db 33,ROLLING_KICK
-	db 38,JUMP_KICK
-	db 43,FOCUS_ENERGY
-	db 48,HI_JUMP_KICK
-	db 53,MEGA_KICK
-	db 0
-
-Mon108_EvosMoves:
-;HITMONCHAN
-;Evolutions
-=======
 ArbokEvosMoves:
 ; Evolutions
 	db 0
@@ -1477,7 +738,6 @@ PsyduckEvosMoves:
 DrowzeeEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 26, HYPNO
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 12, DISABLE
@@ -1487,23 +747,9 @@ DrowzeeEvosMoves:
 	db 32, PSYCHIC_M
 	db 37, MEDITATE
 	db 0
-<<<<<<< HEAD
-;Learnset
-	db 10,POISON_STING
-	db 17,BITE
-	db 27,GLARE
-	db 36,SCREECH
-	db 47,ACID
-	db 0
-
-Mon048_EvosMoves:
-;PARASECT
-;Evolutions
-=======
 
 GolemEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 11, DEFENSE_CURL
@@ -1514,28 +760,14 @@ GolemEvosMoves:
 	db 43, EXPLOSION
 	db 0
 
-<<<<<<< HEAD
-Mon055_EvosMoves:
-;PSYDUCK
-;Evolutions
-	db EV_LEVEL,33,GOLDUCK
-=======
 MissingNo32EvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon097_EvosMoves:
-;DROWZEE
-;Evolutions
-	db EV_LEVEL,26,HYPNO
-=======
 MagmarEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 36, LEER
@@ -1546,37 +778,12 @@ MagmarEvosMoves:
 	db 55, FLAMETHROWER
 	db 0
 
-<<<<<<< HEAD
-Mon077_EvosMoves:
-;GOLEM
-;Evolutions
-=======
 MissingNo34EvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon155_EvosMoves:
-;RIHORNIOR
-;Evolutions
-	db 0
-;Learnset
-	db 30,STOMP
-	db 35,TAIL_WHIP
-	db 40,FURY_ATTACK
-	db 48,HORN_DRILL
-	db 55,LEER
-	db 64,TAKE_DOWN
-	db 0
-
-Mon127_EvosMoves:
-;MAGMAR
-;Evolutions
-	db EV_ITEM,MAGMARIZER,1,MAGBRANT
-=======
 ElectabuzzEvosMoves:
 ; Evolutions
 	db 0
@@ -1590,7 +797,6 @@ ElectabuzzEvosMoves:
 
 MagnetonEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 21, SONICBOOM
@@ -1601,25 +807,6 @@ MagnetonEvosMoves:
 	db 54, SCREECH
 	db 0
 
-<<<<<<< HEAD
-Mon156_EvosMoves:
-;MAGBRANT
-;Evolutions
-	db 0
-;Learnset
-	db 36,LEER
-	db 39,CONFUSE_RAY
-	db 43,FIRE_PUNCH
-	db 48,SMOKESCREEN
-	db 52,SMOG
-	db 55,FLAMETHROWER
-	db 0
-
-Mon126_EvosMoves:
-;ELECTABUZZ
-;Evolutions
-	db EV_ITEM,ELECTIRIZER,1,ELEVOLTEK
-=======
 KoffingEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 35, WEEZING
@@ -1634,20 +821,13 @@ KoffingEvosMoves:
 
 MissingNo38EvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon083_EvosMoves:
-;MAGNETON
-;Evolutions
-=======
 MankeyEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 28, PRIMEAPE
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 9, LOW_KICK
@@ -1659,16 +839,9 @@ MankeyEvosMoves:
 	db 45, SCREECH
 	db 0
 
-<<<<<<< HEAD
-Mon110_EvosMoves:
-;KOFFING
-;Evolutions
-	db EV_LEVEL,35,WEEZING
-=======
 SeelEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 34, DEWGONG
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 30, GROWL
@@ -1678,24 +851,6 @@ SeelEvosMoves:
 	db 50, ICE_BEAM
 	db 0
 
-<<<<<<< HEAD
-Mon157_EvosMoves:
-;ELEVOLTEK
-;Evolutions
-	db 0
-;Learnset
-	db 34,THUNDERSHOCK
-	db 37,SCREECH
-	db 42,THUNDERPUNCH
-	db 49,LIGHT_SCREEN
-	db 54,THUNDER
-	db 0
-
-Mon057_EvosMoves:
-;MANKEY
-;Evolutions
-	db EV_LEVEL,28,PRIMEAPE
-=======
 DiglettEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 26, DUGTRIO
@@ -1710,7 +865,6 @@ DiglettEvosMoves:
 
 TaurosEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 21, STOMP
@@ -1720,83 +874,24 @@ TaurosEvosMoves:
 	db 51, TAKE_DOWN
 	db 0
 
-<<<<<<< HEAD
-Mon087_EvosMoves:
-;SEEL
-;Evolutions
-	db EV_LEVEL,34,DEWGONG
-=======
 MissingNo3DEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon051_EvosMoves:
-;DIGLETT
-;Evolutions
-	db EV_LEVEL,26,DUGTRIO
-=======
 MissingNo3EEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon129_EvosMoves:
-;TAUROS
-;Evolutions
-=======
 MissingNo3FEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon158_EvosMoves:
-;PORYGON2
-;Evolutions
-	db EV_ITEM,DUBIOSDISC,1,PORYGONZ
-	db 0
-;Learnset
-	db 23,PSYBEAM
-	db 28,RECOVER
-	db 35,AGILITY
-	db 42,TRI_ATTACK
-	db 0
-
-Mon159_EvosMoves:
-;PORYGONZ
-;Evolutions
-	db 0
-;Learnset
-	db 23,PSYBEAM
-	db 28,RECOVER
-	db 35,AGILITY
-	db 42,TRI_ATTACK
-	db 0
-
-Mon160_EvosMoves:
-;KOKNODON
-;Evolutions
-	db EV_LEVEL,30,RAMEIDON
-	db 0
-;Learnset
-	db 6,FOCUS_ENERGY
-	db 15,TAKE_DOWN
-	db 42,SCREECH
-	db 0
-
-Mon084_EvosMoves:
-;FARFETCH_D
-;Evolutions
-=======
 FarfetchdEvosMoves:
 ; Evolutions
 	db 0
@@ -1836,75 +931,22 @@ DragoniteEvosMoves:
 
 MissingNo43EvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon049_EvosMoves:
-;VENONAT
-;Evolutions
-	db EV_LEVEL,31,VENOMOTH
-=======
 MissingNo44EvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon150_EvosMoves:
-;DRAGONITE
-;Evolutions
-=======
 MissingNo45EvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon161_EvosMoves:
-;RAMEIDON
-;Evolutions
-	db 0
-;Learnset
-	db 6,FOCUS_ENERGY
-	db 15,TAKE_DOWN
-	db 51,SCREECH
-	db 0
-
-Mon162_EvosMoves:
-;NINCADA
-;Evolutions
-	db EV_LEVEL,20,NINJASK
-	db 0
-;Learnset
-	db 5,HARDEN
-	db 21,ABSORB
-	db 30,FURY_SWIPES
-	db 0
-
-Mon163_EvosMoves:
-;NINJASK
-;Evolutions
-	db 0
-;Learnset
-	db 15,AGILITY
-	db 23,ABSORB
-	db 36,FURY_SWIPES
-	db 50,SLASH
-	db 57,SWORDS_DANCE
-	db 0
-
-Mon085_EvosMoves:
-;DODUO
-;Evolutions
-	db EV_LEVEL,31,DODRIO
-=======
 DoduoEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 31, DODRIO
@@ -1945,7 +987,6 @@ JynxEvosMoves:
 
 MoltresEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 51, LEER
@@ -1953,15 +994,8 @@ MoltresEvosMoves:
 	db 60, SKY_ATTACK
 	db 0
 
-<<<<<<< HEAD
-Mon061_EvosMoves:
-;POLIWAG
-;Evolutions
-	db EV_LEVEL,25,POLIWHIRL
-=======
 ArticunoEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 51, BLIZZARD
@@ -1969,14 +1003,8 @@ ArticunoEvosMoves:
 	db 60, MIST
 	db 0
 
-<<<<<<< HEAD
-Mon125_EvosMoves:
-;JYNX
-;Evolutions
-=======
 ZapdosEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 51, THUNDER
@@ -1984,27 +1012,15 @@ ZapdosEvosMoves:
 	db 60, LIGHT_SCREEN
 	db 0
 
-<<<<<<< HEAD
-Mon147_EvosMoves:
-;MOLTRES
-;Evolutions
-=======
 DittoEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon145_EvosMoves:
-;ARTICUNO
-;Evolutions
-=======
 MeowthEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 28, PERSIAN
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 12, BITE
@@ -2014,15 +1030,9 @@ MeowthEvosMoves:
 	db 44, SLASH
 	db 0
 
-<<<<<<< HEAD
-Mon146_EvosMoves:
-;ZAPDOS
-;Evolutions
-=======
 KrabbyEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 28, KINGLER
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 20, VICEGRIP
@@ -2032,59 +1042,24 @@ KrabbyEvosMoves:
 	db 40, HARDEN
 	db 0
 
-<<<<<<< HEAD
-Mon133_EvosMoves:
-;DITTO
-;Evolutions
-=======
 MissingNo4FEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon053_EvosMoves:
-;MEOWTH
-;Evolutions
-	db EV_LEVEL,28,PERSIAN
-=======
 MissingNo50EvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon099_EvosMoves:
-;KRABBY
-;Evolutions
-	db EV_LEVEL,28,KINGLER
-=======
 MissingNo51EvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon164_EvosMoves:
-;NINJATOM
-;Evolutions
-	db 0
-;Learnset
-	db 15,CONFUSE_RAY
-	db 23,ABSORB
-	db 36,FURY_SWIPES
-	db 0
-
-Mon165_EvosMoves:
-;MISSINGNO_50
-;Evolutions
-=======
 VulpixEvosMoves:
 ; Evolutions
 	db EV_ITEM, FIRE_STONE, 1, NINETALES
@@ -2099,20 +1074,13 @@ VulpixEvosMoves:
 
 NinetalesEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon166_EvosMoves:
-;MISSINGNO_51
-;Evolutions
-=======
 PikachuEvosMoves:
 ; Evolutions
 	db EV_ITEM, THUNDER_STONE, 1, RAICHU
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 6, TAIL_WHIP
@@ -2126,66 +1094,24 @@ PikachuEvosMoves:
 	db 50, LIGHT_SCREEN
 	db 0
 
-<<<<<<< HEAD
-Mon038_EvosMoves:
-;VULPIX
-;Evolutions
-	db EV_ITEM,FIRE_STONE,1,NINETALES
-=======
 RaichuEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon039_EvosMoves:
-;NINETALES
-;Evolutions
-=======
 MissingNo56EvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon025_EvosMoves:
-;PIKACHU
-;Evolutions
-	db EV_LEVEL,30,RAICHU
-=======
 MissingNo57EvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon026_EvosMoves:
-;RAICHU
-;Evolutions
-	db EV_ITEM,THUNDER_STONE,1,GOROCHU
-	db 0
-;Learnset
-	db 9,TAIL_WHIP
-	db 11,THUNDER_WAVE
-	db 15,QUICK_ATTACK
-	db 19,DOUBLE_TEAM
-	db 25,SLAM
-	db 33,THUNDERBOLT
-	db 39,AGILITY
-	db 52,THUNDER
-	db 60,LIGHT_SCREEN
-	db 0
-
-Mon167_EvosMoves:
-;MISSINGNO_56
-;Evolutions
-=======
 DratiniEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 30, DRAGONAIR
@@ -2201,7 +1127,6 @@ DratiniEvosMoves:
 DragonairEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 55, DRAGONITE
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 10, THUNDER_WAVE
@@ -2211,15 +1136,9 @@ DragonairEvosMoves:
 	db 55, HYPER_BEAM
 	db 0
 
-<<<<<<< HEAD
-Mon168_EvosMoves:
-;MISSINGNO_57
-;Evolutions
-=======
 KabutoEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 40, KABUTOPS
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 34, ABSORB
@@ -2228,15 +1147,8 @@ KabutoEvosMoves:
 	db 49, HYDRO_PUMP
 	db 0
 
-<<<<<<< HEAD
-Mon148_EvosMoves:
-;DRATINI
-;Evolutions
-	db EV_LEVEL,30,DRAGONAIR
-=======
 KabutopsEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 34, ABSORB
@@ -2245,16 +1157,9 @@ KabutopsEvosMoves:
 	db 53, HYDRO_PUMP
 	db 0
 
-<<<<<<< HEAD
-Mon149_EvosMoves:
-;DRAGONAIR
-;Evolutions
-	db EV_LEVEL,55,DRAGONITE
-=======
 HorseaEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 32, SEADRA
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 19, SMOKESCREEN
@@ -2264,15 +1169,8 @@ HorseaEvosMoves:
 	db 45, HYDRO_PUMP
 	db 0
 
-<<<<<<< HEAD
-Mon141_EvosMoves:
-;KABUTO
-;Evolutions
-	db EV_LEVEL,40,KABUTOPS
-=======
 SeadraEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 19, SMOKESCREEN
@@ -2282,40 +1180,21 @@ SeadraEvosMoves:
 	db 52, HYDRO_PUMP
 	db 0
 
-<<<<<<< HEAD
-Mon142_EvosMoves:
-;KABUTOPS
-;Evolutions
-=======
 MissingNo5EEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon117_EvosMoves:
-;HORSEA
-;Evolutions
-	db EV_LEVEL,32,SEADRA
-=======
 MissingNo5FEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon118_EvosMoves:
-;SEADRA
-;Evolutions
-=======
 SandshrewEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 22, SANDSLASH
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 10, SAND_ATTACK
@@ -2325,14 +1204,8 @@ SandshrewEvosMoves:
 	db 38, FURY_SWIPES
 	db 0
 
-<<<<<<< HEAD
-Mon169_EvosMoves:
-;MISSINGNO_5E
-;Evolutions
-=======
 SandslashEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 10, SAND_ATTACK
@@ -2342,15 +1215,9 @@ SandslashEvosMoves:
 	db 47, FURY_SWIPES
 	db 0
 
-<<<<<<< HEAD
-Mon170_EvosMoves:
-;MISSINGNO_5F
-;Evolutions
-=======
 OmanyteEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 40, OMASTAR
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 34, HORN_ATTACK
@@ -2359,15 +1226,8 @@ OmanyteEvosMoves:
 	db 53, HYDRO_PUMP
 	db 0
 
-<<<<<<< HEAD
-Mon028_EvosMoves:
-;SANDSHREW
-;Evolutions
-	db EV_LEVEL,22,SANDSLASH
-=======
 OmastarEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 34, HORN_ATTACK
@@ -2376,15 +1236,9 @@ OmastarEvosMoves:
 	db 49, HYDRO_PUMP
 	db 0
 
-<<<<<<< HEAD
-Mon029_EvosMoves:
-;SANDSLASH
-;Evolutions
-=======
 JigglypuffEvosMoves:
 ; Evolutions
 	db EV_ITEM, MOON_STONE, 1, WIGGLYTUFF
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 9, POUND
@@ -2396,139 +1250,6 @@ JigglypuffEvosMoves:
 	db 39, DOUBLE_EDGE
 	db 0
 
-<<<<<<< HEAD
-Mon139_EvosMoves:
-;OMANYTE
-;Evolutions
-	db EV_LEVEL,40,OMASTAR
-	db 0
-;Learnset
-	db 34,HORN_ATTACK
-	db 39,LEER
-	db 46,SPIKE_CANNON
-	db 53,HYDRO_PUMP
-	db 0
-
-Mon140_EvosMoves:
-;OMASTAR
-;Evolutions
-	db 0
-;Learnset
-	db 34,HORN_ATTACK
-	db 39,LEER
-	db 44,SPIKE_CANNON
-	db 49,HYDRO_PUMP
-	db 0
-
-Mon040_EvosMoves:
-;JIGGLYPUFF
-;Evolutions
-	db EV_ITEM,MOON_STONE,1,WIGGLYTUFF
-	db 0
-;Learnset
-	db 9,POUND
-	db 14,DISABLE
-	db 19,DEFENSE_CURL
-	db 24,DOUBLESLAP
-	db 29,REST
-	db 34,BODY_SLAM
-	db 39,DOUBLE_EDGE
-	db 0
-
-Mon041_EvosMoves:
-;WIGGLYTUFF
-;Evolutions
-	db 0
-;Learnset
-	db 0
-
-Mon134_EvosMoves:
-;EEVEE
-;Evolutions
-	db EV_ITEM,FIRE_STONE,1,FLAREON
-	db EV_ITEM,THUNDER_STONE,1,JOLTEON
-	db EV_ITEM,WATER_STONE,1,VAPOREON
-	db 0
-;Learnset
-	db 8,SAND_ATTACK
-	db 16,GROWL
-	db 23,QUICK_ATTACK
-	db 30,BITE
-	db 36,FOCUS_ENERGY
-	db 42,TAKE_DOWN
-	db 0
-
-Mon137_EvosMoves:
-;FLAREON
-;Evolutions
-	db 0
-;Learnset
-	db 8,SAND_ATTACK
-	db 16,EMBER
-	db 23,QUICK_ATTACK
-	db 30,BITE
-	db 36,FIRE_SPIN
-	db 42,SMOG
-	db 47,LEER
-	db 52,FLAMETHROWER
-	db 0
-
-Mon136_EvosMoves:
-;JOLTEON
-;Evolutions
-	db 0
-;Learnset
-	db 8,SAND_ATTACK
-	db 16,THUNDERSHOCK
-	db 23,QUICK_ATTACK
-	db 30,DOUBLE_KICK
-	db 36,PIN_MISSILE
-	db 42,THUNDER_WAVE
-	db 47,AGILITY
-	db 52,THUNDER
-	db 0
-
-Mon135_EvosMoves:
-;VAPOREON
-;Evolutions
-	db 0
-;Learnset
-	db 8,SAND_ATTACK
-	db 16,WATER_GUN
-	db 23,QUICK_ATTACK
-	db 30,BITE
-	db 36,AURORA_BEAM
-	db 42,HAZE
-	db 42,MIST
-	db 47,ACID_ARMOR
-	db 52,HYDRO_PUMP
-	db 0
-
-Mon067_EvosMoves:
-;MACHOP
-;Evolutions
-	db EV_LEVEL,28,MACHOKE
-	db 0
-;Learnset
-	db 20,LOW_KICK
-	db 25,LEER
-	db 32,FOCUS_ENERGY
-	db 39,SEISMIC_TOSS
-	db 46,SUBMISSION
-	db 0
-
-Mon042_EvosMoves:
-;ZUBAT
-;Evolutions
-	db EV_LEVEL,22,GOLBAT
-	db 0
-;Learnset
-	db 10,SUPERSONIC
-	db 15,BITE
-	db 21,CONFUSE_RAY
-	db 28,WING_ATTACK
-	db 36,HAZE
-=======
 WigglytuffEvosMoves:
 ; Evolutions
 	db 0
@@ -2576,62 +1297,11 @@ JolteonEvosMoves:
 	db 42, THUNDER_WAVE
 	db 47, AGILITY
 	db 52, THUNDER
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 
 VaporeonEvosMoves:
 ; Evolutions
 	db 0
-<<<<<<< HEAD
-;Learnset
-	db 10,POISON_STING
-	db 17,BITE
-	db 24,GLARE
-	db 31,SCREECH
-	db 38,ACID
-	db 0
-
-Mon047_EvosMoves:
-;PARAS
-;Evolutions
-	db EV_LEVEL,24,PARASECT
-	db 0
-;Learnset
-	db 13,STUN_SPORE
-	db 20,LEECH_LIFE
-	db 27,SPORE
-	db 34,SLASH
-	db 41,GROWTH
-	db 0
-
-Mon062_EvosMoves:
-;POLIWHIRL
-;Evolutions
-	db EV_ITEM,WATER_STONE,1,POLIWRATH
-	db 0
-;Learnset
-	db 16,HYPNOSIS
-	db 19,WATER_GUN
-	db 26,DOUBLESLAP
-	db 33,BODY_SLAM
-	db 41,AMNESIA
-	db 49,HYDRO_PUMP
-	db 0
-
-Mon063_EvosMoves:
-;POLIWRATH
-;Evolutions
-	db 0
-;Learnset
-	db 16,HYPNOSIS
-	db 19,WATER_GUN
-	db 0
-
-Mon013_EvosMoves:
-;WEEDLE
-;Evolutions
-	db EV_LEVEL,7,KAKUNA
-=======
 ; Learnset
 	db 8, SAND_ATTACK
 	db 16, WATER_GUN
@@ -2659,7 +1329,6 @@ MachopEvosMoves:
 ZubatEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 22, GOLBAT
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 10, SUPERSONIC
@@ -2673,17 +1342,12 @@ EkansEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 22, ARBOK
 	db 0
-<<<<<<< HEAD
-;Learnset
-	db 7,HARDEN
-=======
 ; Learnset
 	db 10, POISON_STING
 	db 17, BITE
 	db 24, GLARE
 	db 31, SCREECH
 	db 38, ACID
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 
 ParasEvosMoves:
@@ -2698,15 +1362,9 @@ ParasEvosMoves:
 	db 41, GROWTH
 	db 0
 
-<<<<<<< HEAD
-Mon171_EvosMoves:
-;MISSINGNO_73
-;Evolutions
-=======
 PoliwhirlEvosMoves:
 ; Evolutions
 	db EV_ITEM, WATER_STONE, 1, POLIWRATH
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 16, HYPNOSIS
@@ -2717,65 +1375,28 @@ PoliwhirlEvosMoves:
 	db 49, HYDRO_PUMP
 	db 0
 
-<<<<<<< HEAD
-Mon086_EvosMoves:
-;DODRIO
-;Evolutions
-=======
 PoliwrathEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 16, HYPNOSIS
 	db 19, WATER_GUN
 	db 0
 
-<<<<<<< HEAD
-Mon058_EvosMoves:
-;PRIMEAPE
-;Evolutions
-=======
 WeedleEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 7, KAKUNA
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon052_EvosMoves:
-;DUGTRIO
-;Evolutions
-=======
 KakunaEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 10, BEEDRILL
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon050_EvosMoves:
-;VENOMOTH
-;Evolutions
-	db 0
-;Learnset
-	db 22,POISONPOWDER
-	db 27,LEECH_LIFE
-	db 30,STUN_SPORE
-	db 31,GUST
-	db 38,PSYBEAM
-	db 43,SLEEP_POWDER
-	db 50,PSYCHIC_M
-	db 0
-
-Mon088_EvosMoves:
-;DEWGONG
-;Evolutions
-=======
 BeedrillEvosMoves:
 ; Evolutions
 	db 0
@@ -2790,19 +1411,12 @@ BeedrillEvosMoves:
 
 MissingNo73EvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon172_EvosMoves:
-;MISSINGNO_79
-;Evolutions
-=======
 DodrioEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 20, GROWL
@@ -2813,14 +1427,8 @@ DodrioEvosMoves:
 	db 51, AGILITY
 	db 0
 
-<<<<<<< HEAD
-Mon173_EvosMoves:
-;MISSINGNO_7A
-;Evolutions
-=======
 PrimeapeEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 9, LOW_KICK
@@ -2867,66 +1475,35 @@ DewgongEvosMoves:
 	db 56, ICE_BEAM
 	db 0
 
-<<<<<<< HEAD
-Mon069_EvosMoves:
-;MACHAMP
-;Evolutions
-=======
 MissingNo79EvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon174_EvosMoves:
-;MISSINGNO_7F
-;Evolutions
-=======
 MissingNo7AEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon056_EvosMoves:
-;GOLDUCK
-;Evolutions
-=======
 CaterpieEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 7, METAPOD
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon098_EvosMoves:
-;HYPNO
-;Evolutions
-=======
 MetapodEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 10, BUTTERFREE
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 7, HARDEN
 	db 0
 
-<<<<<<< HEAD
-Mon043_EvosMoves:
-;GOLBAT
-;Evolutions
-	db EV_LEVEL,55,IKSBAT
-=======
 ButterfreeEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 10, CONFUSION
@@ -2939,14 +1516,8 @@ ButterfreeEvosMoves:
 	db 34, PSYBEAM
 	db 0
 
-<<<<<<< HEAD
-Mon151_EvosMoves:
-;MEWTWO
-;Evolutions
-=======
 MachampEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 20, LOW_KICK
@@ -2956,27 +1527,14 @@ MachampEvosMoves:
 	db 52, SUBMISSION
 	db 0
 
-<<<<<<< HEAD
-Mon144_EvosMoves:
-;SNORLAX
-;Evolutions
-=======
 MissingNo7FEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon130_EvosMoves:
-;MAGIKARP
-;Evolutions
-	db EV_LEVEL,20,GYARADOS
-=======
 GolduckEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 28, TAIL_WHIP
@@ -2986,11 +1544,6 @@ GolduckEvosMoves:
 	db 59, HYDRO_PUMP
 	db 0
 
-<<<<<<< HEAD
-Mon175_EvosMoves:
-;MISSINGNO_87
-;Evolutions
-=======
 HypnoEvosMoves:
 ; Evolutions
 	db 0
@@ -3005,7 +1558,6 @@ HypnoEvosMoves:
 
 GolbatEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 10, SUPERSONIC
@@ -3015,14 +1567,8 @@ GolbatEvosMoves:
 	db 43, HAZE
 	db 0
 
-<<<<<<< HEAD
-Mon090_EvosMoves:
-;MUK
-;Evolutions
-=======
 MewtwoEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 63, BARRIER
@@ -3042,28 +1588,16 @@ SnorlaxEvosMoves:
 	db 56, HYPER_BEAM
 	db 0
 
-<<<<<<< HEAD
-Mon100_EvosMoves:
-;KINGLER
-;Evolutions
-=======
 MagikarpEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 20, GYARADOS
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 15, TACKLE
 	db 0
 
-<<<<<<< HEAD
-Mon092_EvosMoves:
-;CLOYSTER
-;Evolutions
-=======
 MissingNo86EvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
@@ -3074,14 +1608,8 @@ MissingNo87EvosMoves:
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon102_EvosMoves:
-;ELECTRODE
-;Evolutions
-=======
 MukEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 30, POISON_GAS
@@ -3092,26 +1620,14 @@ MukEvosMoves:
 	db 60, ACID_ARMOR
 	db 0
 
-<<<<<<< HEAD
-Mon037_EvosMoves:
-;CLEFABLE
-;Evolutions
-=======
 MissingNo8AEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon111_EvosMoves:
-;WEEZING
-;Evolutions
-=======
 KinglerEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 20, VICEGRIP
@@ -3121,27 +1637,15 @@ KinglerEvosMoves:
 	db 49, HARDEN
 	db 0
 
-<<<<<<< HEAD
-Mon054_EvosMoves:
-;PERSIAN
-;Evolutions
-=======
 CloysterEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 50, SPIKE_CANNON
 	db 0
 
-<<<<<<< HEAD
-Mon106_EvosMoves:
-;MAROWAK
-;Evolutions
-=======
 MissingNo8CEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
@@ -3157,28 +1661,14 @@ ElectrodeEvosMoves:
 	db 50, EXPLOSION
 	db 0
 
-<<<<<<< HEAD
-Mon094_EvosMoves:
-;HAUNTER
-;Evolutions
-	db EV_LEVEL,36,GENGAR
-=======
 ClefableEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon064_EvosMoves:
-;ABRA
-;Evolutions
-	db EV_LEVEL,16,KADABRA
-=======
 WeezingEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 32, SLUDGE
@@ -3188,14 +1678,8 @@ WeezingEvosMoves:
 	db 53, EXPLOSION
 	db 0
 
-<<<<<<< HEAD
-Mon066_EvosMoves:
-;ALAKAZAM
-;Evolutions
-=======
 PersianEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 12, BITE
@@ -3225,15 +1709,9 @@ MissingNo92EvosMoves:
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon122_EvosMoves:
-;STARMIE
-;Evolutions
-=======
 HaunterEvosMoves:
 ; Evolutions
 	db EV_TRADE, 1, GENGAR
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 29, HYPNOSIS
@@ -3259,15 +1737,9 @@ AlakazamEvosMoves:
 	db 42, REFLECT
 	db 0
 
-<<<<<<< HEAD
-Mon074_EvosMoves:
-;TENTACRUEL
-;Evolutions
-=======
 PidgeottoEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 36, PIDGEOT
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 5, SAND_ATTACK
@@ -3290,28 +1762,15 @@ PidgeotEvosMoves:
 	db 54, MIRROR_MOVE
 	db 0
 
-<<<<<<< HEAD
-Mon119_EvosMoves:
-;GOLDEEN
-;Evolutions
-	db EV_LEVEL,33,SEAKING
-=======
 StarmieEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon120_EvosMoves:
-;SEAKING
-;Evolutions
-=======
 BulbasaurEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 16, IVYSAUR
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 7, LEECH_SEED
@@ -3369,15 +1828,8 @@ GoldeenEvosMoves:
 	db 54, AGILITY
 	db 0
 
-<<<<<<< HEAD
-Mon078_EvosMoves:
-;PONYTA
-;Evolutions
-	db EV_LEVEL,40,RAPIDASH
-=======
 SeakingEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 19, SUPERSONIC
@@ -3388,14 +1840,8 @@ SeakingEvosMoves:
 	db 54, AGILITY
 	db 0
 
-<<<<<<< HEAD
-Mon079_EvosMoves:
-;RAPIDASH
-;Evolutions
-=======
 MissingNo9FEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
@@ -3403,59 +1849,24 @@ MissingNo9FEvosMoves:
 MissingNoA0EvosMoves:
 ; Evolutions
 	db 0
-<<<<<<< HEAD
-;Learnset
-	db 4,QUICK_ATTACK
-	db 7,FOCUS_ENERGY
-	db 10,BITE
-	db 16,HYPER_FANG
-	db 22,KNIRSCHER
-	db 28,SUPER_FANG
-	db 31,DOUBLE_EDGE
-=======
 ; Learnset
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 
 MissingNoA1EvosMoves:
 ; Evolutions
 	db 0
-<<<<<<< HEAD
-;Learnset
-	db 4,QUICK_ATTACK
-	db 7,FOCUS_ENERGY
-	db 10,BITE
-	db 14,HYPER_FANG
-	db 24,KNIRSCHER
-	db 34,SUPER_FANG
-	db 39,DOUBLE_EDGE
-	db 0
-
-Mon034_EvosMoves:
-;NIDORINO
-;Evolutions
-	db EV_ITEM,MOON_STONE,1,NIDOKING
-=======
 ; Learnset
 	db 0
 
 MissingNoA2EvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon031_EvosMoves:
-;NIDORINA
-;Evolutions
-	db EV_ITEM,MOON_STONE,1,NIDOQUEEN
-=======
 PonytaEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 40, RAPIDASH
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 30, TAIL_WHIP
@@ -3466,15 +1877,8 @@ PonytaEvosMoves:
 	db 48, AGILITY
 	db 0
 
-<<<<<<< HEAD
-Mon075_EvosMoves:
-;GEODUDE
-;Evolutions
-	db EV_LEVEL,25,GRAVELER
-=======
 RapidashEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 30, TAIL_WHIP
@@ -3485,23 +1889,6 @@ RapidashEvosMoves:
 	db 55, AGILITY
 	db 0
 
-<<<<<<< HEAD
-Mon138_EvosMoves:
-;PORYGON
-;Evolutions
-	db EV_ITEM,UPGRADE,1,PORYGON2
-	db 0
-;Learnset
-	db 23,PSYBEAM
-	db 28,RECOVER
-	db 35,AGILITY
-	db 42,TRI_ATTACK
-	db 0
-
-Mon143_EvosMoves:
-;AERODACTYL
-;Evolutions
-=======
 RattataEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 20, RATICATE
@@ -3511,7 +1898,6 @@ RattataEvosMoves:
 	db 14, HYPER_FANG
 	db 23, FOCUS_ENERGY
 	db 34, SUPER_FANG
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 
 RaticateEvosMoves:
@@ -3550,16 +1936,9 @@ NidorinaEvosMoves:
 	db 46, FURY_SWIPES
 	db 0
 
-<<<<<<< HEAD
-Mon082_EvosMoves:
-;MAGNEMITE
-;Evolutions
-	db EV_LEVEL,30,MAGNETON
-=======
 GeodudeEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 25, GRAVELER
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 11, DEFENSE_CURL
@@ -3588,13 +1967,6 @@ AerodactylEvosMoves:
 	db 38, BITE
 	db 45, TAKE_DOWN
 	db 54, HYPER_BEAM
-	db 0
-	
-Mon027_EvosMoves:
-;GOROCHU
-;Evolutions
-	db 0
-;Learnset
 	db 0
 
 MissingNoACEvosMoves:
@@ -3692,67 +2064,33 @@ CharizardEvosMoves:
 	db 55, FIRE_SPIN
 	db 0
 
-<<<<<<< HEAD
-Mon044_EvosMoves:
-;ODDISH
-;Evolutions
-	db EV_LEVEL,21,GLOOM
-=======
 MissingNoB5EvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon045_EvosMoves:
-;GLOOM
-;Evolutions
-	db EV_ITEM,LEAF_STONE,1,VILEPLUME
-=======
 FossilKabutopsEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon046_EvosMoves:
-;VILEPLUME
-;Evolutions
-=======
 FossilAerodactylEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon070_EvosMoves:
-;BELLSPROUT
-;Evolutions
-	db EV_LEVEL,21,WEEPINBELL
-=======
 MonGhostEvosMoves:
 ; Evolutions
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 0
 
-<<<<<<< HEAD
-Mon071_EvosMoves:
-;WEEPINBELL
-;Evolutions
-	db EV_ITEM,LEAF_STONE,1,VICTREEBEL
-=======
 OddishEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 21, GLOOM
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 15, POISONPOWDER
@@ -3763,15 +2101,9 @@ OddishEvosMoves:
 	db 46, SOLARBEAM
 	db 0
 
-<<<<<<< HEAD
-Mon072_EvosMoves:
-;VICTREEBEL
-;Evolutions
-=======
 GloomEvosMoves:
 ; Evolutions
 	db EV_ITEM, LEAF_STONE, 1, VILEPLUME
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 	db 0
 ; Learnset
 	db 15, POISONPOWDER

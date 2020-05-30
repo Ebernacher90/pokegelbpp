@@ -1,27 +1,15 @@
 PYTHON := python
-<<<<<<< HEAD
-MD5 := md5sum -c --quiet
-=======
 pcm    := $(PYTHON) tools/pokemontools/pcm.py pcm
->>>>>>> 500d99c258145d233af8d14cdb5c6e0200dfc1d8
 
-2bpp     := $(PYTHON) gfx.py 2bpp
-1bpp     := $(PYTHON) gfx.py 1bpp
-pcm      := $(PYTHON) extras/pokemontools/pcm.py pcm
-pic      := $(PYTHON) extras/pokemontools/pic.py compress
-includes := $(PYTHON) extras/pokemontools/scan_includes.py
+rom := pokeyellow.gbc
 
-objs := \
-	audio.o \
-	main.o \
-	text.o \
-	wram.o
+objs := audio.o main.o text.o wram.o
 
-<<<<<<< HEAD
-$(foreach obj, $(objs:.o=), \
-	$(eval $(obj)_dep := $(shell $(includes) $(obj).asm)) \
-)
-=======
+
+### Build tools
+
+MD5 := md5sum -c
+
 RGBDS ?=
 RGBASM  ?= $(RGBDS)rgbasm
 RGBFIX  ?= $(RGBDS)rgbfix
@@ -32,7 +20,6 @@ RGBLINK ?= $(RGBDS)rgblink
 ### Build targets
 
 .SUFFIXES:
-.SUFFIXES: .asm .o .gbc .png .2bpp .1bpp .pic .wav .pcm
 .SECONDEXPANSION:
 .PRECIOUS:
 .SECONDARY:
@@ -42,7 +29,7 @@ all: $(rom)
 yellow: $(rom)
 
 # For contributors to make sure a change didn't affect the contents of the rom.
-compare: yellow
+compare: $(rom)
 	@$(MD5) roms.md5
 
 clean:
@@ -66,13 +53,14 @@ endif
 
 
 %.asm: ;
-$(objs): %.o: %.asm $$(%_dep)
-	rgbasm -h -o $@ $*.asm
 
-opts = -cjsv -k 01 -l 0x33 -m 0x1b -p 0 -r 03 -t "POKEMON GELB++"
+%.o: dep = $(shell tools/scan_includes $(@D)/$*.asm)
+$(objs): %.o: %.asm $$(dep)
+	$(RGBASM) -h -o $@ $*.asm
+
+opts = -cjsv -k 01 -l 0x33 -m 0x1b -p 0 -r 03 -t "POKEMON YELLOW"
 
 $(rom): $(objs)
-
 	$(RGBLINK) -n pokeyellow.sym -l pokeyellow.link -o $@ $^
 	$(RGBFIX) $(opts) $@
 	sort $(rom:.gbc=.sym) -o $(rom:.gbc=.sym)

@@ -1,8 +1,8 @@
-Route26Script:
+Route26_Script:
 
 
-Route26ScriptPointers:
+Route26_ScriptPointers:
 
-Route26TextPointers:
+Route26_TextPointers:
 
-Route26TrainerHeaders:
+Route26_TrainerHeaders:

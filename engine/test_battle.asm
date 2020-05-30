@@ -20,8 +20,8 @@ TestBattle:
 	ld [hl], a
 
 	; Give the player a
-	; level 20 Rhydon.
-	ld a, RHYDON
+	; level 20 Rizeros.
+	ld a, RIZEROS
 	ld [wcf91], a
 	ld a, 20
 	ld [wCurEnemyLVL], a
@@ -31,8 +31,8 @@ TestBattle:
 	call AddPartyMon
 
 	; Fight against a
-	; level 20 Rhydon.
-	ld a, RHYDON
+	; level 20 Rizeros.
+	ld a, RIZEROS
 	ld [wCurOpponent], a
 
 	predef InitOpponent

@@ -1341,6 +1341,9 @@ wFieldMovesLeftmostXCoord:: ; cd42
 
 wcd42:: ; cd42
 	ds 1
+	
+wLastFieldMoveID:: ; cd43
+; unused
 
 wSlotMachineWheel1TopTile:: ; cd43
 	ds 1

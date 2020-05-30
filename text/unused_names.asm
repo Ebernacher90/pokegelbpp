@@ -18,3 +18,4 @@ UnusedNames:
 	db "プチマスター@"
 	db "マスター@"
 	db "エクセレント" ; note the lack of a terminator
+	
