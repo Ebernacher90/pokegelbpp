@@ -15,17 +15,22 @@ _NinjatomDexEntry::
 	dex
 
 _JirachiDexEntry::
-	text "Ninjatom ist"
-	next "ein äusserst"
-	next "sonderbares"
+	text "Einer Legende"
+	next "nach erfüllt"
+	next "Jirachi jeden"
 
-	page "#MON. Es"
-	next "fliegt umher,"
-	next "ohne seine Flügel"
+	page "Wunsch, der auf"
+	next "einen"
+	next "Notizzettel an"
 	
-	page "zu bewegen, sein"
-	next "Körper ist hohl"
-	next "und es atmet"
+	page "seinem Kopf"
+	next "geschrieben wird."
+	next "Wenn dieses #-"
 	
-	page "nicht"
+	page "MON Gefahr"
+	next "wittert, kämpft"
+	next "es bereits, bevor"
+	
+	page "es überhaupt"
+	next "aufgewacht ist"
 	dex
