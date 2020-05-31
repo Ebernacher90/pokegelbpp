@@ -7,7 +7,7 @@ db 30 ; base special
 db BUG ; species type 1
 db GHOST ; species type 2
 db 45 ; catch rate
-db 140 ; base exp yield
+db 95 ; base exp yield
 INCBIN "pic/ymon/ninjatom.pic",0,1 ; 66, sprite dimensions
 dw NinjatomPicFront
 dw NinjatomPicBack

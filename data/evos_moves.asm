@@ -1112,6 +1112,10 @@ JirachiEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 7, SWIFT
+	db 42, PSYCHIC_M
+	db 63, REST
+	db 77, DOUBLE_EDGE
 	db 0
 
 MissingNo51EvosMoves:

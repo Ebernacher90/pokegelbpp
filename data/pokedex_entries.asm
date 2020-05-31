@@ -1344,9 +1344,9 @@ NinjatomDexEntry:
 	db "@"
 
 JirachiDexEntry:
-	db "Häutungs@"
-	db 2,07
-	dw 26
+	db "Wünscher@"
+	db 1,00
+	dw 24
 	TX_FAR _JirachiDexEntry
 	db "@"
 

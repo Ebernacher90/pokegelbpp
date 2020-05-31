@@ -7,7 +7,7 @@ db 50 ; base special
 db BUG ; species type 1
 db FLYING ; species type 2
 db 120 ; catch rate
-db 140 ; base exp yield
+db 155 ; base exp yield
 INCBIN "pic/ymon/ninjask.pic",0,1 ; 77, sprite dimensions
 dw NinjaskPicFront
 dw NinjaskPicBack

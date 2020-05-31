@@ -7,7 +7,7 @@ db 30 ; base special
 db BUG ; species type 1
 db GROUND ; species type 2
 db 255 ; catch rate
-db 80 ; base exp yield
+db 65 ; base exp yield
 INCBIN "pic/ymon/nincada.pic",0,1 ; 77, sprite dimensions
 dw NincadaPicFront
 dw NincadaPicBack

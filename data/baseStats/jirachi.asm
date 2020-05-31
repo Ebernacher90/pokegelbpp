@@ -4,15 +4,15 @@ db 100 ; base attack
 db 100 ; base defense
 db 100 ; base speed
 db 100 ; base special
-db PSYCHIC ; species type 1
+db STEEL ; species type 1
 db PSYCHIC ; species type 2
-db 45 ; catch rate
-db 64 ; base exp yield
+db 3 ; catch rate
+db 215 ; base exp yield
 INCBIN "pic/ymon/jirachi.pic",0,1 ; 55, sprite dimensions
 dw JirachiPicFront
 dw JirachiPicBack
 ; attacks known at lvl 0
-db POUND
+db CONFUSION
 db 0
 db 0
 db 0
