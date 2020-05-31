@@ -78,7 +78,7 @@ PokedexEntryPointers:
 	dw MeowthDexEntry
 	dw KrabbyDexEntry
 	dw NinjatomDexEntry
-	dw MissingNoDexEntry
+	dw JirachiDexEntry
 	dw MissingNoDexEntry
 	dw VulpixDexEntry
 	dw NinetalesDexEntry
@@ -1341,6 +1341,13 @@ NinjatomDexEntry:
 	db 2,07
 	dw 26
 	TX_FAR _NinjatomDexEntry
+	db "@"
+
+JirachiDexEntry:
+	db "Häutungs@"
+	db 2,07
+	dw 26
+	TX_FAR _JirachiDexEntry
 	db "@"
 
 MissingNoDexEntry:

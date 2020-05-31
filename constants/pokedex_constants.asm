@@ -164,5 +164,6 @@ const_value = 1
 	const DEX_NINCADA	 ; 162
 	const DEX_NINJASK	 ; 163
 	const DEX_NINJATOM	 ; 164
+	const DEX_JIRACHI	 ; 165
 
 NUM_POKEMON EQU const_value + -1

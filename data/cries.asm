@@ -79,7 +79,7 @@ CryData:
 	db $19, $77, $10; Meowth
 	db $20, $20, $E0; Krabby
 	db $09, $CA, $67; Ninjatom
-	db $00, $00, $00; MissingNo.
+	db $04, $DE, $FF; Jirachi
 	db $0E, $E0, $60; MissingNo.
 	db $24, $4F, $10; Vulpix
 	db $24, $88, $60; Ninetales

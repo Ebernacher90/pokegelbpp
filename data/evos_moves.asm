@@ -81,7 +81,7 @@ EvosMovesPointerTable:
 	dw MeowthEvosMoves
 	dw KrabbyEvosMoves
 	dw NinjatomEvosMoves
-	dw MissingNo50EvosMoves
+	dw JirachiEvosMoves
 	dw MissingNo51EvosMoves
 	dw VulpixEvosMoves
 	dw NinetalesEvosMoves
@@ -1108,7 +1108,7 @@ NinjatomEvosMoves:
 	db 36, FURY_SWIPES
 	db 0
 
-MissingNo50EvosMoves:
+JirachiEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset

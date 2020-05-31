@@ -18,7 +18,7 @@ ENDM
 	mapconst INDIGO_PLATEAU,                 9, 10 ; $09
 	mapconst SAFFRON_CITY,                  18, 20 ; $0A
 	mapconst UNUSED_MAP_0B,                  0,  0 ; $0B
-	mapconst ROUTE_1,                       18, 10 ; $0C
+	mapconst ROUTE_1,                       18, 12 ; $0C
 	mapconst ROUTE_2,                       36, 10 ; $0D
 	mapconst ROUTE_3,                        9, 35 ; $0E
 	mapconst ROUTE_4,                        9, 45 ; $0F

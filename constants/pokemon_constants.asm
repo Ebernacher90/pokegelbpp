@@ -79,7 +79,7 @@ const_value = 1
 	const MEOWTH       ; $4D
 	const KRABBY       ; $4E
 	const NINJATOM	   ; $4F
-	const MISSINGNO_50 ; $50
+	const JIRACHI      ; $50
 	const MISSINGNO_51 ; $51
 	const VULPIX       ; $52
 	const NINETALES    ; $53
