@@ -79,7 +79,7 @@ PokedexEntryPointers:
 	dw KrabbyDexEntry
 	dw NinjatomDexEntry
 	dw JirachiDexEntry
-	dw MissingNoDexEntry
+	dw MagnezoneDexEntry
 	dw VulpixDexEntry
 	dw NinetalesDexEntry
 	dw PikachuDexEntry
