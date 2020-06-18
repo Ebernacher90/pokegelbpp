@@ -2146,6 +2146,8 @@ NinjatomPicFront:	  INCBIN "pic/ymon/ninjatom.pic"
 NinjatomPicBack:	  INCBIN "pic/monback/ninjatomb.pic"
 JirachiPicFront:	  INCBIN "pic/ymon/jirachi.pic"
 JirachiPicBack:		  INCBIN "pic/monback/jirachib.pic"
+MagnezonePicFront:	  INCBIN "pic/ymon/magnezone.pic"
+MagnezonePicBack:	  INCBIN "pic/monback/magnezoneb.pic"
 
 SECTION "bank46", ROMX
 

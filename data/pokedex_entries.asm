@@ -1350,6 +1350,13 @@ JirachiDexEntry:
 	TX_FAR _JirachiDexEntry
 	db "@"
 
+MagnezoneDexEntry:
+	db "Magnet@"
+	db 3,11
+	dw 3968
+	TX_FAR _MagnezoneDexEntry
+	db "@"
+
 MissingNoDexEntry:
 	db "???@"
 	db 10 ; 1.0 m

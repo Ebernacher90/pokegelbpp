@@ -81,5 +81,5 @@ MonPartyData:
 	dn SPRITE_MON, SPRITE_HELIX						   ;PorygonZ/Koknodon
 	dn SPRITE_HELIX, SPRITE_BUG						   ;Rameidon/Nincada
 	dn SPRITE_BUG, SPRITE_BUG						   ;Ninjask/Ninjatom
-	dn SPRITE_MON, 0								   ;Jirachi/padding
+	dn SPRITE_MON, SPRITE_BALL_M					   ;Jirachi/Magnezone
 	dn 0, 0											   ;padding/padding

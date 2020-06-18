@@ -34,3 +34,24 @@ _JirachiDexEntry::
 	page "es überhaupt"
 	next "aufgewacht ist"
 	dex
+
+_MagnezoneDexEntry::
+	text "Einer Legende"
+	next "nach erfüllt"
+	next "Jirachi jeden"
+
+	page "Wunsch, der auf"
+	next "einen"
+	next "Notizzettel an"
+	
+	page "seinem Kopf"
+	next "geschrieben wird."
+	next "Wenn dieses #-"
+	
+	page "MON Gefahr"
+	next "wittert, kämpft"
+	next "es bereits, bevor"
+	
+	page "es überhaupt"
+	next "aufgewacht ist"
+	dex

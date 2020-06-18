@@ -82,7 +82,7 @@ EvosMovesPointerTable:
 	dw KrabbyEvosMoves
 	dw NinjatomEvosMoves
 	dw JirachiEvosMoves
-	dw MissingNo51EvosMoves
+	dw MagnezoneEvosMoves
 	dw VulpixEvosMoves
 	dw NinetalesEvosMoves
 	dw PikachuEvosMoves
@@ -823,6 +823,7 @@ ElectabuzzEvosMoves:
 
 MagnetonEvosMoves:
 ; Evolutions
+	db EV_ITEM, THUNDER_STONE, 1, MAGNEZONE
 	db 0
 ; Learnset
 	db 21, SONICBOOM
@@ -1118,7 +1119,7 @@ JirachiEvosMoves:
 	db 77, DOUBLE_EDGE
 	db 0
 
-MissingNo51EvosMoves:
+MagnezoneEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset

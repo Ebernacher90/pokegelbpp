@@ -79,7 +79,7 @@ MonsterNames:
 	db "Krabby@@@@"
 	db "Ninjatom@@"
 	db "Jirachi@@@"
-	db "MISSINGNO."
+	db "MAGNEZONE@"
 	db "Vulpix@@@@"
 	db "Vulnona@@@"
 	db "Pikachu@@@"

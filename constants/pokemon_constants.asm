@@ -80,7 +80,7 @@ const_value = 1
 	const KRABBY       ; $4E
 	const NINJATOM	   ; $4F
 	const JIRACHI      ; $50
-	const MISSINGNO_51 ; $51
+	const MAGNEZONE	   ; $51
 	const VULPIX       ; $52
 	const NINETALES    ; $53
 	const PIKACHU      ; $54
