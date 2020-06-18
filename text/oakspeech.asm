@@ -14,7 +14,7 @@ _OakSpeechText1::
 	cont "verbesserte"
 	cont "Inhalte hat. Dies"
 	cont "ist Version:"
-	cont "0.1.7.3!"
+	cont "0.1.7.3.2.1!"
 	cont "dies ist die"
 	cont "allerneuste"
 	cont "Version, viel"
