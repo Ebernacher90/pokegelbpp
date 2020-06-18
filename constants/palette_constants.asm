@@ -65,3 +65,6 @@ const_value = 0
 	const PAL_26        ; $26
 	const PAL_27        ; $27
 	const PAL_JIRACHI	; $28
+	const PAL_STAHLOS	; $29
+	const PAL_IKSBAT	; $2A
+	const PAL_DITTO		; $2B

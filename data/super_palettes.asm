@@ -485,3 +485,21 @@ GBCBasePalettes:
 	RGB 31, 28, 11
 	RGB 11, 26, 27
 	RGB  3,  3,  3
+
+	; PAL_STAHLOS
+	RGB 31, 31, 31
+	RGB 15, 18, 20
+	RGB 27, 28, 27
+	RGB  3,  3,  3
+
+	; PAL_IKSBAT
+	RGB 31, 31, 31
+	RGB 24, 11, 25
+	RGB  1,  8, 13
+	RGB  3,  3,  3
+
+	; PAL_DITTO
+	RGB 31, 31, 31
+	RGB 23, 15, 28
+	RGB 13, 11, 17
+	RGB  3,  3,  3
