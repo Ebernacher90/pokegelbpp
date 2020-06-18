@@ -479,3 +479,9 @@ GBCBasePalettes:
 	RGB  9,  9,  9
 	RGB 31, 21,  0
 	RGB  3,  3,  3
+
+	; PAL_JIRACHI
+	RGB 31, 31, 31
+	RGB 31, 28, 11
+	RGB 11, 26, 27
+	RGB  3,  3,  3
