@@ -524,12 +524,12 @@ GBCBasePalettes:
 
 	; PAL_NINJASK
 	RGB 31, 31, 31
-	RGB 29,  3,  1
 	RGB 30, 18,  3
+	RGB 29,  3,  1
 	RGB  3,  3,  3
 
 	; PAL_NINJATOM
 	RGB 31, 31, 31
 	RGB 27, 22, 23
-	RGB 23, 13,  1
+	RGB 24, 19,  3
 	RGB  3,  3,  3
