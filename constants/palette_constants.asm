@@ -68,3 +68,8 @@ const_value = 0
 	const PAL_STAHLOS	; $29
 	const PAL_IKSBAT	; $2A
 	const PAL_DITTO		; $2B
+	const PAL_MAGNEZONE	; $2C
+	const PAL_KOKNODON	; $2D
+	const PAL_NINCADA	; $2E
+	const PAL_NINJASK	; $2F
+	const PAL_NINJATOM	; $30
