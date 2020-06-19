@@ -506,30 +506,30 @@ GBCBasePalettes:
 
 	; PAL_MAGNEZONE
 	RGB 31, 31, 31
-	RGB 30,  6,  4
-	RGB 13, 16, 25 
+	RGB 13, 16, 25
+	RGB 30,  6,  4 
 	RGB  3,  3,  3
 
 	; PAL_KOKNODON
 	RGB 31, 31, 31
-	RGB  9,  9, 13
 	RGB  8, 13, 25
+	RGB  9,  9, 13
 	RGB  3,  3,  3
 
 	; PAL_NINCADA
 	RGB 31, 31, 31
-	RGB  1,  1,  1
-	RGB  1,  1,  1
+	RGB 30, 18,  3
+	RGB 12, 17,  6
 	RGB  3,  3,  3
 
 	; PAL_NINJASK
 	RGB 31, 31, 31
-	RGB  1,  1,  1
-	RGB  1,  1,  1
+	RGB 30, 18,  3
+	RGB 29,  3,  1
 	RGB  3,  3,  3
 
 	; PAL_NINJATOM
 	RGB 31, 31, 31
-	RGB  1,  1,  1
-	RGB  1,  1,  1
+	RGB 23, 13,  1
+	RGB 27, 22, 23
 	RGB  3,  3,  3
