@@ -533,3 +533,39 @@ GBCBasePalettes:
 	RGB 27, 22, 23
 	RGB 24, 19,  3
 	RGB  3,  3,  3
+
+	; PAL_PORYGON
+	RGB 31, 31, 31
+	RGB 31, 12, 12
+	RGB  1, 21, 26
+	RGB  3,  3,  3
+
+	; PAL_PORYGON2
+	RGB 31, 31, 31
+	RGB 29, 11, 12
+	RGB  9, 19, 26
+	RGB  3,  3,  3
+
+	; PAL_PORYGONZ
+	RGB 31, 31, 31
+	RGB 29, 11, 12
+	RGB  9, 19, 26 
+	RGB  3,  3,  3
+
+	; PAL_MYRAPLA
+	RGB 31, 31, 31
+	RGB 19, 26,  9
+	RGB 14, 18, 20
+	RGB  3,  3,  3
+
+	; PAL_DUFLOR
+	RGB 31, 31, 31
+	RGB 14, 15, 20
+	RGB 16,  7,  3
+	RGB  3,  3,  3
+
+	; PAL_GIFLOR
+	RGB 31, 31, 31
+	RGB 11, 12, 16
+	RGB 28,  6,  6
+	RGB  3,  3,  3

@@ -73,3 +73,9 @@ const_value = 0
 	const PAL_NINCADA	; $2E
 	const PAL_NINJASK	; $2F
 	const PAL_NINJATOM	; $30
+	const PAL_PORYGON	; $31
+	const PAL_PORYGON2	; $32
+	const PAL_PORYGONZ	; $33
+	const PAL_MYRAPLA	; $34
+	const PAL_DUFLOR	; $35
+	const PAL_GIFLOR	; $36
