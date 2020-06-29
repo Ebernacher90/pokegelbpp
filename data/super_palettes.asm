@@ -569,3 +569,45 @@ GBCBasePalettes:
 	RGB 11, 12, 16
 	RGB 28,  6,  6
 	RGB  3,  3,  3
+
+	; PAL_MEW
+	RGB 31, 31, 31
+	RGB 22, 12, 18
+	RGB 31, 22, 26
+	RGB  3,  3,  3
+
+	; PAL_LAPRAS
+	RGB 31, 31, 31
+	RGB  7, 15, 20
+	RGB 30, 27, 21
+	RGB  3,  3,  3
+
+	; PAL_MEWTU
+	RGB 31, 31, 31
+	RGB 13,  6, 18
+	RGB 22, 21, 24
+	RGB  3,  3,  3
+
+	; PAL_EVOLI
+	RGB 31, 31, 31
+	RGB 26, 19,  9
+	RGB 31, 28, 21
+	RGB  3,  3,  3
+
+	; PAL_AQUANA
+	RGB 31, 31, 31
+	RGB  1,  1,  1
+	RGB  1,  1,  1
+	RGB  3,  3,  3
+
+	; PAL_BLITZA
+	RGB 31, 31, 31
+	RGB  1,  1,  1
+	RGB  1,  1,  1
+	RGB  3,  3,  3
+
+	; PAL_FLAMARA
+	RGB 31, 31, 31
+	RGB  1,  1,  1
+	RGB  1,  1,  1
+	RGB  3,  3,  3

@@ -79,3 +79,10 @@ const_value = 0
 	const PAL_MYRAPLA	; $34
 	const PAL_DUFLOR	; $35
 	const PAL_GIFLOR	; $36
+	const PAL_MEW		; $37
+	const PAL_LAPRAS	; $38
+	const PAL_MEWTU		; $39
+	const PAL_EVOLI		; $3A
+	const PAL_AQUANA	; $3B
+	const PAL_BLITZA	; $3C
+	const PAL_FLAMARA	; $3D
