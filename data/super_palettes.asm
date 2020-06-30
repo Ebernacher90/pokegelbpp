@@ -596,18 +596,18 @@ GBCBasePalettes:
 
 	; PAL_AQUANA
 	RGB 31, 31, 31
-	RGB  1,  1,  1
-	RGB  1,  1,  1
+	RGB 11, 24, 28
+	RGB  2,  9, 12
 	RGB  3,  3,  3
 
 	; PAL_BLITZA
 	RGB 31, 31, 31
-	RGB  1,  1,  1
-	RGB  1,  1,  1
+	RGB 31, 27,  9
+	RGB 24, 21,  9
 	RGB  3,  3,  3
 
 	; PAL_FLAMARA
 	RGB 31, 31, 31
-	RGB  1,  1,  1
-	RGB  1,  1,  1
+	RGB 31, 24, 18
+	RGB 30, 14,  9
 	RGB  3,  3,  3
