@@ -620,12 +620,24 @@ GBCBasePalettes:
 
 	; PAL_MAGBRANT
 	RGB 31, 31, 31
-	RGB 28,  8,  6
 	RGB 31, 24,  7
+	RGB 28,  8,  6
 	RGB  3,  3,  3
 
 	; PAL_ELEVOLTEK
 	RGB 31, 31, 31
-	RGB 30,  9,  7
 	RGB 31, 27,  4
+	RGB 24, 21,  8
+	RGB  3,  3,  3
+
+	; PAL_RATTFRATZ
+	RGB 31, 31, 31
+	RGB 22, 14, 23
+	RGB 27, 11, 14
+	RGB  3,  3,  3
+
+	; PAL_RATTIKARL
+	RGB 31, 31, 31
+	RGB 24, 18,  7
+	RGB 18,  9,  2
 	RGB  3,  3,  3

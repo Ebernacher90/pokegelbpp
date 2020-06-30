@@ -89,3 +89,5 @@ const_value = 0
 	const PAL_RIHORNIOR	; $3E
 	const PAL_MAGBRANT	; $3F
 	const PAL_ELEVOLTEK	; $40
+	const PAL_RATTFRATZ	; $41
+	const PAL_RATTIKARL	; $42
