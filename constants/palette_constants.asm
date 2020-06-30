@@ -87,3 +87,5 @@ const_value = 0
 	const PAL_BLITZA	; $3C
 	const PAL_FLAMARA	; $3D
 	const PAL_RIHORNIOR	; $3E
+	const PAL_MAGBRANT	; $3F
+	const PAL_ELEVOLTEK	; $40
