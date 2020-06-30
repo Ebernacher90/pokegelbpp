@@ -86,3 +86,4 @@ const_value = 0
 	const PAL_AQUANA	; $3B
 	const PAL_BLITZA	; $3C
 	const PAL_FLAMARA	; $3D
+	const PAL_RIHORNIOR	; $3E

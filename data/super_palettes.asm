@@ -611,3 +611,9 @@ GBCBasePalettes:
 	RGB 31, 24, 18
 	RGB 30, 14,  9
 	RGB  3,  3,  3
+
+	; PAL_RIHORNIOR
+	RGB 31, 31, 31
+	RGB 29,  9,  0
+	RGB 14, 13, 14
+	RGB  3,  3,  3
