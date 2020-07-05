@@ -578,8 +578,8 @@ GBCBasePalettes:
 
 	; PAL_LAPRAS
 	RGB 31, 31, 31
+	RGB  8, 20, 28
 	RGB  7, 15, 20
-	RGB 30, 27, 21
 	RGB  3,  3,  3
 
 	; PAL_MEWTU
