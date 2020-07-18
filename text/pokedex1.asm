@@ -1541,10 +1541,10 @@ _IksbatDexEntry::
 
 	page "Nahrung. Ohne"
 	next "konstanten"
-	next "Nachschub wird"
+	next "Nachschub wird es"
 	
-	page "es schwach und"
-	next "kann nicht mehr"
+	page "schwach und kann"
+	next "nicht mehr"
 	next "fliegen"
 	dex
 
@@ -1604,6 +1604,7 @@ _Porygon2DexEntry::
 	next "ist jedoch auch"
 	next "viel Unnützes"
 	dex
+
 _PorygonZDexEntry::
 	text "Eine fehlerhafte"
 	next "neue Software"

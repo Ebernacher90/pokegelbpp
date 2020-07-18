@@ -590,8 +590,8 @@ GBCBasePalettes:
 
 	; PAL_EVOLI
 	RGB 31, 31, 31
-	RGB 26, 19,  9
-	RGB 31, 28, 21
+	RGB 26, 19,  9 ; Hellbraun
+	RGB 19, 12,  8 ; Dunkelbraun
 	RGB  3,  3,  3
 
 	; PAL_AQUANA
@@ -632,12 +632,12 @@ GBCBasePalettes:
 
 	; PAL_RATTFRATZ
 	RGB 31, 31, 31
-	RGB 22, 14, 23
-	RGB 27, 11, 14
+	RGB 26, 18, 26 ; Helllila
+	RGB 22, 14, 23 ; Lila
 	RGB  3,  3,  3
 
 	; PAL_RATTIKARL
 	RGB 31, 31, 31
-	RGB 24, 18,  7
-	RGB 18,  9,  2
+	RGB 28, 24, 14 ; Hellbraun
+	RGB 24, 18,  7 ; Dunkelbraun
 	RGB  3,  3,  3

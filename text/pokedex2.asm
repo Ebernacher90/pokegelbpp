@@ -1,13 +1,13 @@
 _NinjatomDexEntry::
-	text "Ninjatom ist"
-	next "ein äusserst"
+	text "Ninjatom ist ein"
+	next "äusserst"
 	next "sonderbares"
 
-	page "#MON. Es"
-	next "fliegt umher,"
-	next "ohne seine Flügel"
+	page "#MON. Es fliegt"
+	next "umher, ohne seine"
+	next "Flügel zu"
 	
-	page "zu bewegen, sein"
+	page "bewegen, sein"
 	next "Körper ist hohl"
 	next "und es atmet"
 	
@@ -15,43 +15,25 @@ _NinjatomDexEntry::
 	dex
 
 _JirachiDexEntry::
-	text "Einer Legende"
-	next "nach erfüllt"
-	next "Jirachi jeden"
+	text "Einer Legende nach"
+	next "erfüllt Jirachi"
+	next "jeden Wunsch, der"
 
-	page "Wunsch, der auf"
-	next "einen"
+	page "auf einen"
 	next "Notizzettel an"
+	next "seinem Kopf"
 	
-	page "seinem Kopf"
-	next "geschrieben wird."
+	page "geschrieben wird."
 	next "Wenn dieses #-"
+	next "MON Gefahr"
 	
-	page "MON Gefahr"
-	next "wittert, kämpft"
-	next "es bereits, bevor"
+	page "wittert, kämpft es"
+	next "bereits, bevor "
+	next "es überhaupt"
 	
-	page "es überhaupt"
-	next "aufgewacht ist"
+	page "aufgewacht ist"
 	dex
 
 _MagnezoneDexEntry::
-	text "Einer Legende"
-	next "nach erfüllt"
-	next "Jirachi jeden"
-
-	page "Wunsch, der auf"
-	next "einen"
-	next "Notizzettel an"
-	
-	page "seinem Kopf"
-	next "geschrieben wird."
-	next "Wenn dieses #-"
-	
-	page "MON Gefahr"
-	next "wittert, kämpft"
-	next "es bereits, bevor"
-	
-	page "es überhaupt"
-	next "aufgewacht ist"
+	text "Unused yet!"
 	dex
