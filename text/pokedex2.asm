@@ -35,5 +35,17 @@ _JirachiDexEntry::
 	dex
 
 _MagnezoneDexEntry::
-	text "Unused yet!"
+	text "Man vermutet, es"
+	next "habe sich"
+	next "entwickelt,"
+	
+	page "nachdem es einem"
+	next "besonderen"
+	next "Magnetfeld"
+	
+	page "ausgesetzt war,"
+	next "das seine"
+	next "Molekularstruktur"
+	
+	page "veränderte"
 	dex
