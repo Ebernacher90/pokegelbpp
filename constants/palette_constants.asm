@@ -91,3 +91,4 @@ const_value = 0
 	const PAL_ELEVOLTEK	; $40
 	const PAL_RATTFRATZ	; $41
 	const PAL_RATTIKARL	; $42
+	const PAL_VOLTOBAL	; $43

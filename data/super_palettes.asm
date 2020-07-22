@@ -641,3 +641,9 @@ GBCBasePalettes:
 	RGB 28, 24, 14 ; Hellbraun
 	RGB 24, 18,  7 ; Dunkelbraun
 	RGB  3,  3,  3
+
+	; PAL_VOLTOBAL
+	RGB 31, 31, 31
+	RGB 22, 21, 23 ; Grau	
+	RGB 31,  9,  4 ; Rot
+	RGB  3,  3,  3
