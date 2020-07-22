@@ -632,14 +632,19 @@ GetMonHeader::
 	ld de, FossilKabutopsPic
 	ld b, $66 ; size of Kabutops fossil and Ghost sprites
 	cp FOSSIL_KABUTOPS ; Kabutops fossil
-	jr z, .specialID
+	jr z, .RecallBank
 	ld de, GhostPic
 	cp MON_GHOST ; Ghost
-	jr z, .specialID
+	jr z, .RecallBank
 	ld de, FossilAerodactylPic
 	ld b, $77 ; size of Aerodactyl fossil sprite
 	cp FOSSIL_AERODACTYL ; Aerodactyl fossil
-	jr z, .specialID
+	jr z, .RecallBank
+	ld a, [wMonHSpriteBank]
+.RecallBank
+	ld a, BANK(FossilKabutopsPic)
+	ld a, Bank(FossilAerodactylPic)
+	ld a, BANK(GhostPic)
 	;cp MEW
 	;jr z, .mew
 	predef IndexToPokedex   ; convert pokemon ID in [wd11e] to pokedex number

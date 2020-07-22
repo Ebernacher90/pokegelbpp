@@ -191,7 +191,6 @@ ROMX $20
 	"Music Headers 4"
 	"Sound Effects 4"
 	"Audio Engine 4"
-	"Music 4"
 
 ROMX $21
 	org $4000
@@ -358,6 +357,10 @@ ROMX $49
 ROMX $4A
 	org $4000
 	"bank4a"
+
+ROMX $4B
+	org $4000
+	"Music 4"
 
 WRAM0
 	org $c000
