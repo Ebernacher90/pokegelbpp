@@ -797,8 +797,6 @@ UncompressMonSprite::
 	jr .GotBank
 .RecallBank
 	ld a, BANK(FossilKabutopsPic)
-	ld a, BANK(FossilAerodactylPic)
-	ld a, BANK(GhostPic)
 .GotBank
 	jp UncompressSpriteData
 

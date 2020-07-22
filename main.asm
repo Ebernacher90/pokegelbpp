@@ -1996,8 +1996,6 @@ KakunaPicBack:       INCBIN "pic/monback/kakunab.pic"
 BeedrillPicFront:    INCBIN "pic/ymon/beedrill.pic"
 BeedrillPicBack:     INCBIN "pic/monback/beedrillb.pic"
 
-FossilKabutopsPic:   INCBIN "pic/ymon/fossilkabutops.pic"
-
 SECTION "Pics 4", ROMX ; BANK $43
 
 DodrioPicFront:       INCBIN "pic/ymon/dodrio.pic"
@@ -2101,8 +2099,6 @@ WartortlePicFront:    INCBIN "pic/ymon/wartortle.pic"
 WartortlePicBack:     INCBIN "pic/monback/wartortleb.pic"
 CharizardPicFront:    INCBIN "pic/ymon/charizard.pic"
 CharizardPicBack:     INCBIN "pic/monback/charizardb.pic"
-FossilAerodactylPic:  INCBIN "pic/ymon/fossilaerodactyl.pic"
-GhostPic:             INCBIN "pic/other/ghost.pic"
 OddishPicFront:       INCBIN "pic/ymon/oddish.pic"
 OddishPicBack:        INCBIN "pic/monback/oddishb.pic"
 GloomPicFront:        INCBIN "pic/ymon/gloom.pic"
@@ -2180,3 +2176,9 @@ Interior_Block:    INCBIN "gfx/blocksets/interior.bst"
 Plateau_GFX:       INCBIN "gfx/tilesets/plateau.t10.2bpp"
 Plateau_Block:     INCBIN "gfx/blocksets/plateau.bst"
 
+
+SECTION "bank4c", ROMX
+
+FossilAerodactylPic:  INCBIN "pic/ymon/fossilaerodactyl.pic"
+GhostPic:             INCBIN "pic/other/ghost.pic"
+FossilKabutopsPic:    INCBIN "pic/ymon/fossilkabutops.pic"

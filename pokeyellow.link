@@ -362,6 +362,10 @@ ROMX $4B
 	org $4000
 	"Music 4"
 
+ROMX $4C
+	org $4000
+	"bank4c"
+
 WRAM0
 	org $c000
 	"WRAM Bank 0"
