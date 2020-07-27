@@ -560,14 +560,14 @@ GBCBasePalettes:
 
 	; PAL_DUFLOR
 	RGB 31, 31, 31
-	RGB 14, 15, 20
-	RGB 16,  7,  3
+	RGB 16,  7,  3 ; Blau
+	RGB 14, 15, 20 ; Orange
 	RGB  3,  3,  3
 
 	; PAL_GIFLOR
 	RGB 31, 31, 31
-	RGB 11, 12, 16
-	RGB 28,  6,  6
+	RGB 28,  6,  6 ; Blau
+	RGB 11, 12, 16 ; Rot
 	RGB  3,  3,  3
 
 	; PAL_MEW
