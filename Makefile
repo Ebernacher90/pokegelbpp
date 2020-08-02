@@ -61,7 +61,7 @@ $(objs): %.o: %.asm $$(dep)
 opts = -cjsv -k 01 -l 0x33 -m 0x1b -p 0 -r 03 -t "POKEMON YELLOW"
 
 $(rom): $(objs)
-	$(RGBLINK) -n pokeyellow.sym -l pokeyellow.link -o $@ $^
+	$(RGBLINK) -n pokeyellow.sym -m pokeyellow.map -l pokeyellow.link -o $@ $^
 	$(RGBFIX) $(opts) $@
 	sort $(rom:.gbc=.sym) -o $(rom:.gbc=.sym)
 

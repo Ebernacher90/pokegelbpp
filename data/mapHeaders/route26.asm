@@ -6,4 +6,4 @@ Route26_h:
 	dw Route26_Script ; scripts
 	db WEST ; connections
 	WEST_MAP_CONNECTION ROUTE_26, ROUTE_12, 0, -2, Route12_Blocks
-	dw Route26Object ; objects
+	dw Route26_Object ; objects

@@ -3151,135 +3151,137 @@ wRoute11CurScript:: ; d622
 	ds 1
 wRoute12CurScript:: ; d623
 	ds 1
-wRoute15CurScript:: ; d624
+wRoute26CurScript:: ; d624
 	ds 1
-wRoute16CurScript:: ; d625
+wRoute15CurScript:: ; d625
 	ds 1
-wRoute18CurScript:: ; d626
+wRoute16CurScript:: ; d626
 	ds 1
-wRoute20CurScript:: ; d627
+wRoute18CurScript:: ; d627
 	ds 1
-wSSAnneB1FRoomsCurScript:: ; d628
+wRoute20CurScript:: ; d628
 	ds 1
-wVermilionCityCurScript:: ; d629
+wSSAnneB1FRoomsCurScript:: ; d629
 	ds 1
-wPokemonTower2FCurScript:: ; d62a
+wVermilionCityCurScript:: ; d62a
 	ds 1
-wPokemonTower3FCurScript:: ; d62b
+wPokemonTower2FCurScript:: ; d62b
 	ds 1
-wPokemonTower4FCurScript:: ; d62c
+wPokemonTower3FCurScript:: ; d62c
 	ds 1
-wPokemonTower5FCurScript:: ; d62d
+wPokemonTower4FCurScript:: ; d62d
 	ds 1
-wPokemonTower6FCurScript:: ; d62e
+wPokemonTower5FCurScript:: ; d62e
 	ds 1
-wPokemonTower7FCurScript:: ; d62f
+wPokemonTower6FCurScript:: ; d62f
 	ds 1
-wRocketHideoutB1FCurScript:: ; d630
+wPokemonTower7FCurScript:: ; d630
 	ds 1
-wRocketHideoutB2FCurScript:: ; d631
+wRocketHideoutB1FCurScript:: ; d631
 	ds 1
-wRocketHideoutB3FCurScript:: ; d632
+wRocketHideoutB2FCurScript:: ; d632
 	ds 1
-wRocketHideoutB4FCurScript:: ; d633
+wRocketHideoutB3FCurScript:: ; d633
+	ds 1
+wRocketHideoutB4FCurScript:: ; d634
 	ds 2
-wRoute6GateCurScript:: ; d635
+wRoute6GateCurScript:: ; d637
 	ds 1
-wRoute8GateCurScript:: ; d636
+wRoute8GateCurScript:: ; d638
 	ds 2
-wCinnabarIslandCurScript:: ; d638
+wCinnabarIslandCurScript:: ; d639
 	ds 1
-wPokemonMansion1FCurScript:: ; d639
+wPokemonMansion1FCurScript:: ; d63a
 	ds 2
-wPokemonMansion2FCurScript:: ; d63b
+wPokemonMansion2FCurScript:: ; d63c
 	ds 1
-wPokemonMansion3FCurScript:: ; d63c
+wPokemonMansion3FCurScript:: ; d63d
 	ds 1
-wPokemonMansionB1FCurScript:: ; d63d
+wPokemonMansionB1FCurScript:: ; d63e
 	ds 1
-wVictoryRoad2FCurScript:: ; d63e
+wVictoryRoad2FCurScript:: ; d63f
 	ds 1
-wVictoryRoad3FCurScript:: ; d63f
+wVictoryRoad3FCurScript:: ; d640
 	ds 1
-wCeladonCityCurScript:: ; d640
+wCeladonCityCurScript:: ; d641
 	ds 1
-wFightingDojoCurScript:: ; d641
+wFightingDojoCurScript:: ; d642
 	ds 1
-wSilphCo2FCurScript:: ; d642
+wSilphCo2FCurScript:: ; d643
 	ds 1
-wSilphCo3FCurScript:: ; d643
+wSilphCo3FCurScript:: ; d644
 	ds 1
-wSilphCo4FCurScript:: ; d644
+wSilphCo4FCurScript:: ; d645
 	ds 1
-wSilphCo5FCurScript:: ; d645
+wSilphCo5FCurScript:: ; d646
 	ds 1
-wSilphCo6FCurScript:: ; d646
+wSilphCo6FCurScript:: ; d647
 	ds 1
-wSilphCo7FCurScript:: ; d647
+wSilphCo7FCurScript:: ; d648
 	ds 1
-wSilphCo8FCurScript:: ; d648
+wSilphCo8FCurScript:: ; d649
 	ds 1
-wSilphCo9FCurScript:: ; d649
+wSilphCo9FCurScript:: ; d64a
 	ds 1
-wHallOfFameCurScript:: ; d64a
+wHallOfFameCurScript:: ; d64b
 	ds 1
-wChampionsRoomCurScript:: ; d64b
+wChampionsRoomCurScript:: ; d64c
 	ds 1
-wLoreleisRoomCurScript:: ; d64c
+wLoreleisRoomCurScript:: ; d64d
 	ds 1
-wBrunosRoomCurScript:: ; d64d
+wBrunosRoomCurScript:: ; d64e
 	ds 1
-wAgathasRoomCurScript:: ; d64e
+wAgathasRoomCurScript:: ; d64f
 	ds 1
-wCeruleanCaveB1FCurScript:: ; d64f
+wCeruleanCaveB1FCurScript:: ; d650
 	ds 1
-wVictoryRoad1FCurScript:: ; d650
+wVictoryRoad1FCurScript:: ; d651
 	ds 1
 	ds 1
-wLancesRoomCurScript:: ; d652
+wLancesRoomCurScript:: ; d653
 	ds 1
 	ds 4
-wSilphCo10FCurScript:: ; d657
+wSilphCo10FCurScript:: ; d658
 	ds 1
-wSilphCo11FCurScript:: ; d658
-	ds 1
-	ds 1
-wFuchsiaGymCurScript:: ; d65a
-	ds 1
-wSaffronGymCurScript:: ; d65b
+wSilphCo11FCurScript:: ; d659
 	ds 1
 	ds 1
-wCinnabarGymCurScript:: ; d65d
+wFuchsiaGymCurScript:: ; d65b
 	ds 1
-wGameCornerCurScript:: ; d65e
+wSaffronGymCurScript:: ; d65c
 	ds 1
-wRoute16Gate1FCurScript:: ; d65f
 	ds 1
-wBillsHouseCurScript:: ; d660
+wCinnabarGymCurScript:: ; d65e
 	ds 1
-wRoute5GateCurScript:: ; d661
+wGameCornerCurScript:: ; d65f
 	ds 1
-wPowerPlantCurScript:: ; d662
-wRoute7GateCurScript:: ; d662
+wRoute16Gate1FCurScript:: ; d660
+	ds 1
+wBillsHouseCurScript:: ; d661
+	ds 1
+wRoute5GateCurScript:: ; d662
+	ds 1
+wPowerPlantCurScript:: ; d663
+wRoute7GateCurScript:: ; d663
 ; overload
 	ds 1
 	ds 1
-wSSAnne2FCurScript:: ; d664
+wSSAnne2FCurScript:: ; d665
 	ds 1
-wSeafoamIslandsB3FCurScript:: ; d665
+wSeafoamIslandsB3FCurScript:: ; d666
 	ds 1
-wRoute23CurScript:: ; d666
+wRoute23CurScript:: ; d667
 	ds 1
-wSeafoamIslandsB4FCurScript:: ; d667
+wSeafoamIslandsB4FCurScript:: ; d668
 	ds 1
-wRoute18Gate1FCurScript:: ; d668
+wRoute18Gate1FCurScript:: ; d669
 	ds 1
 
 	ds 78
-wGameProgressFlagsEnd:: ; d6b7
+wGameProgressFlagsEnd:: ; d6b8
 
 wEvolutionData::
-	ds 56
+	ds 55
 
 wObtainedHiddenItemsFlags:: ; d6ef
 	ds 14

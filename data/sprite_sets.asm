@@ -36,6 +36,7 @@ MapSpriteSets:
 	db $06 ; ROUTE_23
 	db $02 ; ROUTE_24
 	db $02 ; ROUTE_25
+	db $fd ; ROUTE_26
 
 ; Format:
 ; 00: determines whether the map is split East/West or North/South
@@ -57,6 +58,7 @@ SplitMapSpriteSets:
 	db $02,$02,$07,$04 ; $fa
 	db $01,$11,$05,$07 ; $fb
 	db $01,$03,$07,$03 ; $fc
+	db $02,$15,$03,$08 ; $fd
 
 SpriteSets:
 ; sprite set $01

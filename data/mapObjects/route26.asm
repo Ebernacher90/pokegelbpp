@@ -1,4 +1,4 @@
-Route26Object:
+Route26_Object:
 	db $67 ; border block
 
 	db $0 ; warps

@@ -2117,15 +2117,16 @@ IksbatPicFront:		  INCBIN "pic/ymon/iksbat.pic"
 IksbatPicBack:		  INCBIN "pic/monback/iksbatb.pic"
 RihorniorPicFront:    INCBIN "pic/ymon/rihornior.pic"
 RihorniorPicBack:	  INCBIN "pic/monback/rihorniorb.pic"
-
-SECTION "Pics 6", ROMX ; BANK $45
-
 MagbrantPicFront:	  INCBIN "pic/ymon/magbrant.pic"
 MagbrantPicBack:	  INCBIN "pic/monback/magbrantb.pic"
 ElevoltekPicFront:	  INCBIN "pic/ymon/elevoltek.pic"
 ElevoltekPicBack:	  INCBIN "pic/monback/elevoltekb.pic"
 Porygon2PicFront:	  INCBIN "pic/ymon/porygon2.pic"
 Porygon2PicBack:	  INCBIN "pic/monback/porygon2b.pic"
+
+
+SECTION "Pics 6", ROMX ; BANK $45
+
 PorygonZPicFront:	  INCBIN "pic/ymon/porygonz.pic"
 PorygonZPicBack:	  INCBIN "pic/monback/porygonzb.pic"
 KoknodonPicFront:	  INCBIN "pic/ymon/koknodon.pic"
