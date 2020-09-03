@@ -647,3 +647,9 @@ GBCBasePalettes:
 	RGB 22, 21, 23 ; Grau	
 	RGB 31,  9,  4 ; Rot
 	RGB  3,  3,  3
+
+	; PAL_GOROCHU
+	RGB 31, 31, 31
+	RGB 28,  9,  0 ; Orange
+	RGB 31, 21,  7 ; Hellorange
+	RGB  3,  3,  3

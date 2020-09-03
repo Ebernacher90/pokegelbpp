@@ -1,49 +1,56 @@
 _Route1ViridianMartSampleText::
-	text "Hi! I work at a"
-	line "#MON MART."
+	text "Hi! Ich arbeite"
+	line "in einem #-"
+	cont "MON MART."
 
-	para "It's a convenient"
-	line "shop, so please"
-	cont "visit us in"
-	cont "VIRIDIAN CITY."
+	para "Es ist ein kleiner"
+	line "Laden, so bitte,"
+	cont "besuch uns in"
+	cont "VERTANIA CITY."
 
-	para "I know, I'll give"
-	line "you a sample!"
-	cont "Here you go!"
+	para "Ich weiss, ich"
+	line "gib dir ein"
+	cont "klienes Werbe-"
+	cont "geschenk!"
 	prompt
 
 _Route1Text_1cae8::
-	text "<PLAYER> got"
+	text "<PLAYER> erhält"
 	line "@"
 	TX_RAM wcf4b
 	text "!@@"
 
 _Route1Text_1caee::
-	text "We also carry"
-	line "# BALLs for"
-	cont "catching #MON!"
+	text "Wir verkaufen"
+	line "auch #BÄLLE,"
+	cont "um #MON"
+	cont "fangen zu können!"
 	done
 
 _Route1Text_1caf3::
-	text "You have too much"
-	line "stuff with you!"
+	text "Du hast zuviel"
+	line "Gepäck bei dir!"
 	done
 
 _Route1Text2::
-	text "See those ledges"
-	line "along the road?"
+	text "Siesht du diese,"
+	line "Stufen an diesem"
+	cont "Weg?"
 
-	para "It's a bit scary,"
-	line "but you can jump"
-	cont "from them."
+	para "Es ist ein"
+	line "bisschen"
+	cont "erschreckend,"
+	cont "aber du kannst"
+	cont "da runter"
+	cont "springen."
 
-	para "You can get back"
-	line "to PALLET TOWN"
-	cont "quicker that way."
+	para "So kommst du"
+	line "schneller nach"
+	cont "Alabastia zurück!"
 	done
 
 _Route1Text3::
 	text "ROUTE 1"
-	line "PALLET TOWN -"
-	cont "VIRIDIAN CITY"
+	line "ALABASTIA -"
+	cont "VERTANIA CITY"
 	done

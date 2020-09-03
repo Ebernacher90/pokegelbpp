@@ -366,6 +366,10 @@ ROMX $4C
 	org $4000
 	"bank4c"
 
+ROMX $4D
+	org $4000
+	"bank4d"
+
 WRAM0
 	org $c000
 	"WRAM Bank 0"

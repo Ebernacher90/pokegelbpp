@@ -1,35 +1,37 @@
 _Route4Text1::
-	text "Ouch! I tripped"
-	line "over a rocky"
-	cont "#MON, GEODUDE!"
+	text "Aua! Ich bin über"
+	line "einem harten"
+	cont "#MON gestolpert,"
+	cont "einem KLEINSTEIN!"
 	done
 
 _Route4BattleText1::
-	text "I came to get my"
-	line "mushroom #MON!"
+	text "Ich bi angereist"
+	line "um, ein Pilzartiges"
+	cont "#MON zu fangen"
 	done
 
 _Route4EndBattleText1::
-	text "Oh! My cute"
-	line "mushroom #MON!"
+	text "Oh! Mein süsses"
+	line "Pilz #MON!"
 	prompt
 
 _Route4AfterBattleText1::
-	text "There might not"
-	line "be any more"
-	cont "mushrooms here."
+	text "Dort könnten noch"
+	line "mehr Pilze sein."
 
-	para "I think I got"
-	line "them all."
+	para "Ich denke, ich"
+	line "habe sie schon"
+	cont "alle gefangen!"
 	done
 
 _Route4Text5::
-	text "MT.MOON"
-	line "Tunnel Entrance"
+	text "MONDSTEINBERG"
+	line "EINGANG"
 	done
 
 _Route4Text6::
 	text "ROUTE 4"
-	line "MT.MOON -"
-	cont "CERULEAN CITY"
+	line "MONDSTEINBERG -"
+	cont "AZURIA CITY"
 	done

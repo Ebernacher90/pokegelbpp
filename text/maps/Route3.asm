@@ -1,142 +1,157 @@
 _Route3Text1::
-	text "Whew... I better"
-	line "take a rest..."
-	cont "Groan..."
+	text "Whew... Ich mach"
+	line "besser eine"
+	cont "Pause... Groan..."
 
-	para "That tunnel from"
-	line "CERULEAN takes a"
-	cont "lot out of you!"
+	para "Diese Höhle nach"
+	line "AZURIA, verlangt"
+	cont "eine Menge von ab"
+	cont "von dir"
 	done
 
 _Route3BattleText1::
-	text "Hey! I met you in"
-	line "VIRIDIAN FOREST!"
+	text "Hey! Ich habe dich"
+	line "schon im"
+	cont "VERTANIA WALD"
+	cont "getroffen!"
 	done
 
 _Route3EndBattleText1::
-	text "You"
-	line "beat me again!"
+	text "Du"
+	line "hast mich wieder"
+	cont "geschlagen!"
 	prompt
 
 _Route3AfterBattleText1::
-	text "There are other"
-	line "kinds of #MON"
-	cont "than those found"
-	cont "in the forest!"
+	text "Da sind noch ne"
+	line "Menge verschiedene"
+	cont "Arten von #MON"
+	cont "im Wald vorhanden!"
 	done
 
 _Route3BattleText2::
-	text "Hi! I like shorts!"
-	line "They're comfy and"
-	cont "easy to wear!"
+	text "Hi! Ich liebe"
+	line "Shorts! Sie sind"
+	cont "so bequem und"
+	cont "einfach zu tragen!"
 	done
 
 _Route3EndBattleText2::
-	text "I don't"
-	line "believe it!"
+	text "Ich kann"
+	line "es nicht fassen!"
 	prompt
 
 _Route3AfterBattleText2::
-	text "Are you storing"
-	line "your #MON on"
-	cont "PC? Each BOX can"
-	cont "hold 20 #MON!"
+	text "Lagerst du deine"
+	line "#MON aufdem"
+	cont "PC? Jede BOX kann"
+	cont "bis zu 20 #MON"
+	cont "lagern."
 	done
 
 _Route3BattleText3::
-	text "You looked at me,"
-	line "didn't you?"
+	text "Du hast mich"
+	line "angesehen, oder"
+	cont "etwa nicht?"
 	done
 
 _Route3EndBattleText3::
-	text "You're"
-	line "mean!"
+	text "Du bist so"
+	line "gemein!"
 	prompt
 
 _Route3AfterBattleText3::
-	text "Quit staring if"
-	line "you don't want to"
-	cont "fight!"
+	text "Wenn du mich nicht"
+	line "ansiehst, dann"
+	cont "musst du auch"
+	cont "nicht kämpfen!"
 	done
 
 _Route3BattleText4::
-	text "Are you a trainer?"
-	line "Let's fight!"
+	text "Bist du ein Trainer?"
+	line "Lass uns kämpfen!"
 	done
 
 _Route3EndBattleText4::
-	text "If I"
-	line "had new #MON,"
-	cont "I would've won!"
+	text "Wenn ich andere,"
+	line "neue #MON"
+	cont "hätte dann, hätt"
+	cont "ich gewinnen"
+	cont "können! Was du"
+	cont "glaubst mir nicht?"
 	prompt
 
 _Route3AfterBattleText4::
-	text "If a #MON BOX"
-	line "on the PC gets"
-	cont "full, just switch"
-	cont "to another BOX!"
+	text "Wenn eine #MON"
+	line "Box voll wird"
+	cont "auf dem PC,"
+	cont "tausche einfach"
+	cont "die BOX;-)"
 	done
 
 _Route3BattleText5::
-	text "That look you"
-	line "gave me, it's so"
-	cont "intriguing!"
+	text "Dieser look"
+	line "gibt mir soviel"
+	cont "Selbstvertrauen!"
 	done
 
 _Route3EndBattleText5::
-	text "Be nice!"
+	text "Sei nett!"
 	prompt
 
 _Route3AfterBattleText5::
-	text "Avoid fights by"
-	line "not letting"
-	cont "people see you!"
+	text "Um #MON Kämpfe"
+	line "aus den Weg zu"
+	cont "gehen, schau ihnen"
+	cont "nicht ins Gesicht!"
 	done
 
 _Route3BattleText6::
-	text "Hey! You're not"
-	line "wearing shorts!"
+	text "Hey! Du trägst"
+	line "keine Shorts!"
 	done
 
 _Route3EndBattleText6::
-	text "Lost!"
-	line "Lost! Lost!"
+	text "Verloren!"
+	line "Verloren!"
+	cont "Verloren!"
 	prompt
 
 _Route3AfterBattleText6::
-	text "I always wear"
-	line "shorts, even in"
-	cont "winter!"
+	text "Ich trage immer"
+	line "Shorts, auch im"
+	cont "Winter!"
 	done
 
 _Route3BattleText7::
-	text "You can fight my"
-	line "new #MON!"
+	text "Kämpfe gegen meine"
+	line "neuen #MON!"
 	done
 
 _Route3EndBattleText7::
-	text "Done"
-	line "like dinner!"
+	text "Erledigt,"
+	line "wie ein Date!"
 	prompt
 
 _Route3AfterBattleText7::
-	text "Trained #MON"
-	line "are stronger than"
-	cont "the wild ones!"
+	text "Trainierte #-"
+	line "MON, sind stärker"
+	cont "als wilde!"
 	done
 
 _Route3BattleText8::
-	text "Eek! Did you"
-	line "touch me?"
+	text "Eek! Hast du"
+	line "mich angefasst?"
 	done
 
 _Route3EndBattleText8::
-	text "That's it?"
+	text "Das war's?"
 	prompt
 
 _Route3AfterBattleText8::
-	text "ROUTE 4 is at the"
-	line "foot of MT.MOON."
+	text "ROUTE 4 ist der"
+	line "Fuss von dem"
+	cont "MONDSTEINBERG"
 	done
 
 _Route3Text10::

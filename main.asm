@@ -1477,7 +1477,6 @@ INCLUDE "engine/battle/battle_transitions.asm"
 INCLUDE "engine/town_map.asm"
 INCLUDE "engine/mon_party_sprites.asm"
 INCLUDE "engine/in_game_trades.asm"
-INCLUDE "engine/palettes.asm"
 INCLUDE "engine/save.asm"
 
 
@@ -2183,3 +2182,7 @@ SECTION "bank4c", ROMX
 FossilAerodactylPic:  INCBIN "pic/ymon/fossilaerodactyl.pic"
 GhostPic:             INCBIN "pic/other/ghost.pic"
 FossilKabutopsPic:    INCBIN "pic/ymon/fossilkabutops.pic"
+
+SECTION "bank4d", ROMX
+
+INCLUDE "engine/palettes.asm"
