@@ -572,8 +572,8 @@ GBCBasePalettes:
 
 	; PAL_MEW
 	RGB 31, 31, 31
-	RGB 22, 12, 18
-	RGB 31, 22, 26
+	RGB 31, 22, 26 ; Pink
+	RGB 22, 12, 18 ; Lila
 	RGB  3,  3,  3
 
 	; PAL_LAPRAS
@@ -652,4 +652,10 @@ GBCBasePalettes:
 	RGB 31, 31, 31
 	RGB 28,  9,  0 ; Orange
 	RGB 31, 21,  7 ; Hellorange
+	RGB  3,  3,  3
+
+	; PAL_QUAPSEL
+	RGB 31, 31, 31
+	RGB 31, 13, 13 ; Pink
+	RGB  9, 12, 18 ; Blau
 	RGB  3,  3,  3
