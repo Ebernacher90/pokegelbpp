@@ -94,3 +94,4 @@ const_value = 0
 	const PAL_VOLTOBAL	; $43
 	const PAL_GOROCHU	; $44
 	const PAL_QUAPSEL	; $45
+	const PAL_QUAPUTZI	; $46

@@ -659,3 +659,9 @@ GBCBasePalettes:
 	RGB 31, 13, 13 ; Pink
 	RGB  9, 12, 18 ; Blau
 	RGB  3,  3,  3
+
+	; PAL_QUAPUTZI
+	RGB 31, 31, 31
+	RGB 14, 16, 24 ; Hellblau
+	RGB  4,  6, 16 ; Dunkelblau
+	RGB  3,  3,  3
