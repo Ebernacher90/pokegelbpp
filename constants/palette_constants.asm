@@ -95,3 +95,5 @@ const_value = 0
 	const PAL_GOROCHU	; $44
 	const PAL_QUAPSEL	; $45
 	const PAL_QUAPUTZI	; $46
+	const PAL_PIKACHU	; $47
+	const PAL_RAICHU	; $48

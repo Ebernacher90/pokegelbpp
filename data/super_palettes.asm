@@ -665,3 +665,15 @@ GBCBasePalettes:
 	RGB 14, 16, 24 ; Hellblau
 	RGB  4,  6, 16 ; Dunkelblau
 	RGB  3,  3,  3
+
+	; PAL_PIKACHU
+	RGB 31, 31, 31
+	RGB 30, 23,  3 ; Gelb
+	RGB 24,  3,  2 ; Rot
+	RGB  3,  3,  3
+
+	; PAL_RAICHU
+	RGB 31, 31, 31
+	RGB 31, 23,  0 ; Gelb
+	RGB 27, 14,  6 ; Orange
+	RGB  3,  3,  3
