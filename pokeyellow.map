@@ -19683,7 +19683,7 @@ ROMX bank #65:
     SLACK: $005e bytes
 
 ROMX bank #66:
-  SECTION: $4000-$78b4 ($38b5 bytes) ["Pics 3"]
+  SECTION: $4000-$78ce ($38cf bytes) ["Pics 3"]
            $4000 = ArticunoPicFront
            $41fe = ArticunoPicBack
            $4263 = ZapdosPicFront
@@ -19700,59 +19700,59 @@ ROMX bank #66:
            $4c44 = NinetalesPicBack
            $4cc6 = PikachuPicFront
            $4def = PikachuPicBack
-           $4e67 = RaichuPicFront
-           $4ff6 = RaichuPicBack
-           $5084 = DratiniPicFront
-           $5153 = DratiniPicBack
-           $51b6 = DragonairPicFront
-           $530e = DragonairPicBack
-           $5399 = KabutoPicFront
-           $544a = KabutoPicBack
-           $54a4 = KabutopsPicFront
-           $5605 = KabutopsPicBack
-           $568a = HorseaPicFront
-           $573e = HorseaPicBack
-           $578f = SeadraPicFront
-           $5901 = SeadraPicBack
-           $599f = SandshrewPicFront
-           $5a9b = SandshrewPicBack
-           $5b1f = SandslashPicFront
-           $5ce7 = SandslashPicBack
-           $5d80 = OmanytePicFront
-           $5e58 = OmanytePicBack
-           $5eb5 = OmastarPicFront
-           $6074 = OmastarPicBack
-           $6118 = JigglypuffPicFront
-           $61de = JigglypuffPicBack
-           $6217 = WigglytuffPicFront
-           $6394 = WigglytuffPicBack
-           $6406 = EeveePicFront
-           $652d = EeveePicBack
-           $6595 = FlareonPicFront
-           $66f6 = FlareonPicBack
-           $6782 = JolteonPicFront
-           $6907 = JolteonPicBack
-           $69b1 = VaporeonPicFront
-           $6ae8 = VaporeonPicBack
-           $6b86 = MachopPicFront
-           $6c82 = MachopPicBack
-           $6cec = ZubatPicFront
-           $6de3 = ZubatPicBack
-           $6e37 = EkansPicFront
-           $6f0a = EkansPicBack
-           $6f51 = ParasPicFront
-           $7033 = ParasPicBack
-           $70a9 = PoliwhirlPicFront
-           $7214 = PoliwhirlPicBack
-           $7277 = PoliwrathPicFront
-           $741a = PoliwrathPicBack
-           $746b = WeedlePicFront
-           $7504 = WeedlePicBack
-           $7557 = KakunaPicFront
-           $760b = KakunaPicBack
-           $765d = BeedrillPicFront
-           $784d = BeedrillPicBack
-    SLACK: $074b bytes
+           $4e84 = RaichuPicFront
+           $5013 = RaichuPicBack
+           $509e = DratiniPicFront
+           $516d = DratiniPicBack
+           $51d0 = DragonairPicFront
+           $5328 = DragonairPicBack
+           $53b3 = KabutoPicFront
+           $5464 = KabutoPicBack
+           $54be = KabutopsPicFront
+           $561f = KabutopsPicBack
+           $56a4 = HorseaPicFront
+           $5758 = HorseaPicBack
+           $57a9 = SeadraPicFront
+           $591b = SeadraPicBack
+           $59b9 = SandshrewPicFront
+           $5ab5 = SandshrewPicBack
+           $5b39 = SandslashPicFront
+           $5d01 = SandslashPicBack
+           $5d9a = OmanytePicFront
+           $5e72 = OmanytePicBack
+           $5ecf = OmastarPicFront
+           $608e = OmastarPicBack
+           $6132 = JigglypuffPicFront
+           $61f8 = JigglypuffPicBack
+           $6231 = WigglytuffPicFront
+           $63ae = WigglytuffPicBack
+           $6420 = EeveePicFront
+           $6547 = EeveePicBack
+           $65af = FlareonPicFront
+           $6710 = FlareonPicBack
+           $679c = JolteonPicFront
+           $6921 = JolteonPicBack
+           $69cb = VaporeonPicFront
+           $6b02 = VaporeonPicBack
+           $6ba0 = MachopPicFront
+           $6c9c = MachopPicBack
+           $6d06 = ZubatPicFront
+           $6dfd = ZubatPicBack
+           $6e51 = EkansPicFront
+           $6f24 = EkansPicBack
+           $6f6b = ParasPicFront
+           $704d = ParasPicBack
+           $70c3 = PoliwhirlPicFront
+           $722e = PoliwhirlPicBack
+           $7291 = PoliwrathPicFront
+           $7434 = PoliwrathPicBack
+           $7485 = WeedlePicFront
+           $751e = WeedlePicBack
+           $7571 = KakunaPicFront
+           $7625 = KakunaPicBack
+           $7677 = BeedrillPicFront
+           $7867 = BeedrillPicBack
+    SLACK: $0731 bytes
 
 ROMX bank #67:
   SECTION: $4000-$7ff4 ($3ff5 bytes) ["Pics 4"]
