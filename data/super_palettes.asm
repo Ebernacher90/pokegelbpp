@@ -677,3 +677,21 @@ GBCBasePalettes:
 	RGB 31, 23,  0 ; Gelb
 	RGB 27, 14,  6 ; Orange
 	RGB  3,  3,  3
+
+	; PAL_TAUBSI
+	RGB 31, 31, 31
+	RGB 23,  5,  4 ; rot
+	RGB 19, 12, 11 ; brown
+	RGB  3,  3,  3
+
+	; PAL_TAUBOGA
+	RGB 31, 31, 31
+	RGB 23,  6,  5 ; rot
+	RGB 16, 09, 06 ; brown
+	RGB  3,  3,  3
+
+	; PAL_TAUBOSS
+	RGB 31, 31, 31
+	RGB 26,  6,  3 ; rot
+	RGB 21, 14, 11 ; brown
+	RGB  3,  3,  3

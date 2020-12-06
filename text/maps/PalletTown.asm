@@ -1,7 +1,7 @@
 _OakAppearsText::
 	text "EICH: Halt! Warte!"
-	line "Geh nicht ins hohe"
-	cont "Gras!@@"
+	line "Geh nicht ins"
+	cont "hohe Gras!@@"
 
 _OakWalksUpText::
 	text "EICH: Das war"

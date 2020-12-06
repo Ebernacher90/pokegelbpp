@@ -10,7 +10,7 @@ _Route1ViridianMartSampleText::
 
 	para "Ich weiss, ich"
 	line "gib dir ein"
-	cont "klienes Werbe-"
+	cont "kleines Werbe-"
 	cont "geschenk!"
 	prompt
 

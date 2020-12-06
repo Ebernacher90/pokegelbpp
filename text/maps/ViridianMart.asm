@@ -1,6 +1,7 @@
 _ViridianMartText1::
 	text "Okay! Sag hi zu"
-	line "PROF.EICH für mich!"
+	line "PROF.EICH für"
+	cont "mich!"
 	done
 
 _ViridianMartText4::

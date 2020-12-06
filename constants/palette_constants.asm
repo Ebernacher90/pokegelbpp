@@ -97,3 +97,6 @@ const_value = 0
 	const PAL_QUAPUTZI	; $46
 	const PAL_PIKACHU	; $47
 	const PAL_RAICHU	; $48
+	const PAL_TAUBSI	; $49
+	const PAL_TAUBOGA	; $4A
+	const PAL_TAUBOSS	; $4B

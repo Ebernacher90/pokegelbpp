@@ -247,7 +247,7 @@ _OaksLabRivalTakesText5::
 	done
 
 _OaksLabOakGivesText::
-	text "OAK: <PLAYER>,"
+	text "EICH: <PLAYER>,"
 	line "ich habe noch ein"
 	cont "#MON gefangen!"
 
@@ -264,8 +264,10 @@ _OaksLabReceivedText::
 	text "!@@"
 
 _OaksLabLeavingText::
-	text "OAK: Hey! Don't go"
-	line "away yet!"
+	text "OAK: Hey! Geh"
+	line "nicht weg, du!"
+	cont "bekommst dein"
+	cont "erstes #MON!"
 	done
 
 _OaksLabRivalChallengeText::
@@ -288,8 +290,9 @@ _OaksLabText_1d3be::
 	prompt
 
 _OaksLabText_1d3c3::
-	text "<RIVAL>: Yeah! Am"
-	line "I great or what?"
+	text "<RIVAL>: Yeah!"
+	line "Bin ich der"
+	cont "grösste?"
 	prompt
 
 _OaksLabRivalToughenUpText::
