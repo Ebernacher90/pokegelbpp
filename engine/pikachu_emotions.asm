@@ -325,7 +325,7 @@ IsPlayerPikachuAsleepInParty:
 	ld a, [hl]
 	cp $ff
 	jr z, .done
-	cp PIKACHU
+	cp STARTER_PIKACHU
 	jr nz, .curMonNotStarterPikachu
 	callab IsThisPartymonStarterPikachu
 	jr nc, .curMonNotStarterPikachu

@@ -191,6 +191,14 @@ const_value = 1
 	const WEEPINBELL   ; $BD
 	const VICTREEBEL   ; $BE
 
+; player starter
+STARTER_PIKACHU EQU PIKACHU
+
+; rival starters
+RIVAL_STARTER_JOLTEON EQU 1
+RIVAL_STARTER_FLAREON EQU 2
+RIVAL_STARTER_VAPOREON EQU 3
+
 NUM_POKEMON_INDEXES EQU const_value + -1
 
 ; ghost Marowak in Pokémon Tower

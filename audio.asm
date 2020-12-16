@@ -702,7 +702,7 @@ INCLUDE "audio/music/pokecenter.asm"
 
 SECTION "Music 2", ROMX ; BANK $08
 
-INCLUDE "audio/sfx/unused2_2.asm"
+INCLUDE "audio/sfx/unused_fanfare.asm"
 INCLUDE "audio/music/gymleaderbattle.asm"
 INCLUDE "audio/music/trainerbattle.asm"
 INCLUDE "audio/music/wildbattle.asm"

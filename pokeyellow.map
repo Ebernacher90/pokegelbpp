@@ -4297,7 +4297,7 @@ ROMX bank #7:
            $45f2 = OaksLabScript12
            $463e = OaksLabScript13
            $4675 = OaksLabScript14
-           $4684 = OaksLabScript14.asm_1c660
+           $4684 = OaksLabScript14.got_rival_starter
            $46b6 = OaksLabScript15
            $46df = OaksLabScript15.asm_1c6bb
            $46e1 = OaksLabScript15.asm_1c6bd
@@ -6086,7 +6086,7 @@ ROMX bank #14:
            $6467 = TamerData
            $6481 = BirdKeeperData
            $64d4 = BlackbeltData
-           $64fa = Green1Data
+           $64fa = Rival1Data
            $650d = ProfOakData
            $6531 = ChiefData
            $6531 = ScientistData
@@ -6103,8 +6103,8 @@ ROMX bank #14:
            $66fd = BlaineData
            $6707 = SabrinaData
            $670f = GentlemanData
-           $6722 = Green2Data
-           $679e = Green3Data
+           $6722 = Rival2Data
+           $679e = Rival3Data
            $67c8 = LoreleiData
            $67d6 = ChannelerData
            $6825 = AgathaData
@@ -9014,7 +9014,7 @@ ROMX bank #20:
            $4fab = Route22RivalDefeatedText1
            $4fb0 = Route22Text_511bc
            $4fb5 = Route22Script2
-           $4fc9 = Route22Script2.asm_50fc9
+           $4fc9 = Route22Script2.keep_rival_starter
            $4fd3 = Route22Script2.notDown
            $4fd5 = Route22Script2.done
            $5006 = Route22Script2.asm_50fff
@@ -21169,7 +21169,6 @@ WRAM0 bank #0:
            $cd3d = wNumShakes
            $cd3d = wBoxNumString
            $cd3d = wWhichTownMapLocation
-           $cd3d = wRivalStarterTemp
            $cd3d = wUnusedCD3D
            $cd3d = wInwardSpiralUpdateScreenCounter
            $cd3d = wHoFTeamIndex
@@ -21203,7 +21202,6 @@ WRAM0 bank #0:
            $cd3e = wOptionsBattleAnimCursorX
            $cd3e = wTradingWhichEnemyMon
            $cd3e = wBadgeNameTile
-           $cd3e = wRivalStarterBallSpriteIndex
            $cd3e = wSSAnneSmokeX
            $cd3e = wHUDPokeballGfxOffsetX
            $cd3e = wSlotMachineWheel1Offset

@@ -164,3 +164,6 @@ INCLUDE "data/baseStats/ninjask.asm"
 INCLUDE "data/baseStats/ninjatom.asm"
 INCLUDE "data/baseStats/jirachi.asm"
 INCLUDE "data/baseStats/magnezone.asm"
+; BaseStatsEnd::
+;	assert BasewstatsEnd - BaseStats == (wMonHeaderEnd - wMonHeader) * (NUM_POKEMON)
+	
