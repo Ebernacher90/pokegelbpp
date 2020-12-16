@@ -49,7 +49,8 @@ INCLUDE "audio/sfx/noise_instrument17_1.asm"
 INCLUDE "audio/sfx/noise_instrument18_1.asm"
 INCLUDE "audio/sfx/noise_instrument19_1.asm"
 
-; Audio1_WavePointers: INCLUDE "audio/wave_instruments.asm"
+; Audio1_WavePointers:
+INCLUDE "audio/wave_instruments.asm"
 
 INCLUDE "audio/sfx/start_menu_1.asm"
 INCLUDE "audio/sfx/pokeflute.asm"
@@ -148,7 +149,8 @@ INCLUDE "audio/sfx/noise_instrument17_2.asm"
 INCLUDE "audio/sfx/noise_instrument18_2.asm"
 INCLUDE "audio/sfx/noise_instrument19_2.asm"
 
-; Audio2_WavePointers: INCLUDE "audio/wave_instruments.asm"
+Audio2_WavePointers:
+INCLUDE "audio/wave_instruments.asm"
 
 INCLUDE "audio/sfx/press_ab_2.asm"
 INCLUDE "audio/sfx/start_menu_2.asm"
@@ -274,7 +276,8 @@ INCLUDE "audio/sfx/noise_instrument17_3.asm"
 INCLUDE "audio/sfx/noise_instrument18_3.asm"
 INCLUDE "audio/sfx/noise_instrument19_3.asm"
 
-; Audio3_WavePointers: INCLUDE "audio/wave_instruments.asm"
+Audio3_WavePointers:
+INCLUDE "audio/wave_instruments.asm"
 
 INCLUDE "audio/sfx/start_menu_3.asm"
 INCLUDE "audio/sfx/cut_3.asm"
@@ -671,7 +674,8 @@ INCLUDE "audio/engine_4.asm"
 
 SECTION "Music 1", ROMX ; BANK $02
 
-Audio1_WavePointers: INCLUDE "audio/wave_instruments.asm"
+Audio1_WavePointers:
+INCLUDE "audio/wave_instruments.asm"
 
 INCLUDE "audio/music/pkmnhealed.asm"
 INCLUDE "audio/music/routes1.asm"

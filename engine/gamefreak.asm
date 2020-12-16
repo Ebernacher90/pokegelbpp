@@ -113,7 +113,7 @@ AnimateShootingStar:
 	ld c, 4
 .smallStarsInnerLoop ; introduce new wave of 4 small stars OAM entries
 	ld a, [de]
-	cp $ff
+	cp -1
 	jr z, .next2
 	ld [hli], a ; Y
 	inc de
@@ -179,7 +179,6 @@ SmallStarsWave1Coords:
 	db $68,$58
 	db $04,$68
 	db $78,$07
-
 SmallStarsWave2Coords:
 	db $68,$38
 	db $05,$68
@@ -187,7 +186,6 @@ SmallStarsWave2Coords:
 	db $68,$60
 	db $04,$68
 	db $70,$07
-
 SmallStarsWave3Coords:
 	db $68,$34
 	db $05,$68
@@ -195,7 +193,6 @@ SmallStarsWave3Coords:
 	db $68,$54
 	db $06,$68
 	db $64,$07
-
 SmallStarsWave4Coords:
 	db $68,$3c
 	db $05,$68
@@ -203,9 +200,8 @@ SmallStarsWave4Coords:
 	db $68,$6c
 	db $07,$68
 	db $74,$07
-
 SmallStarsEmptyWave:
-	db $FF
+	db -1 ; end
 
 MoveDownSmallStars:
 	ld b, 8

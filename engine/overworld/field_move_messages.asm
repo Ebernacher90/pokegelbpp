@@ -46,7 +46,8 @@ IsSurfingAllowed:
 	jp PrintText
 
 CoordsData_f5b64:
-	db $0B,$07,$FF
+	db 7, 11
+					db -1 ; end
 
 CurrentTooFastText:
 	TX_FAR _CurrentTooFastText

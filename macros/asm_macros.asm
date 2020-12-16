@@ -164,7 +164,8 @@ tx_pre_const: MACRO
 ENDM
 
 add_tx_pre: MACRO
-\1_id:: dw \1
+\1_id::
+	  dw \1
 ENDM
 
 db_tx_pre: MACRO

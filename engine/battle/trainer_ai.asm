@@ -150,7 +150,7 @@ StatusAilmentMoveEffects:
 	db SLEEP_EFFECT
 	db POISON_EFFECT
 	db PARALYZE_EFFECT
-	db $FF
+	db -1
 
 ; slightly encourage moves with specific effects.
 ; in particular, stat-modifying moves and other move effects
