@@ -93,7 +93,7 @@ UpdateMusicCTimes::
 .loop
 	push bc
 	push hl
-	callba Audio1_UpdateMusic
+	farcall Audio1_UpdateMusic
 	pop hl
 	pop bc
 	dec c
@@ -144,11 +144,11 @@ Func_2223::
 	ld [wChannelSoundIDs + Ch6], a
 	ld [wChannelSoundIDs + Ch7], a
 	ld [wChannelSoundIDs + Ch8], a
-	ld [rNR10], a
+	ldh [rNR10], a
 	ret
 
 StopAllMusic::
-	ld a, $FF
+	ld a, SFX_STOP_ALL_MUSIC
 	ld [wNewSoundID], a
 ; plays music specified by a. If value is $ff, music is stopped
 PlaySound::
@@ -200,7 +200,7 @@ PlaySound::
 	ret
 
 GetNextMusicByte::
-	ld a, [H_LOADEDROMBANK]
+	ldh a, [hLoadedROMBank]
 	push af
 	ld a, [wAudioROMBank]
 	call BankswitchCommon
@@ -256,39 +256,41 @@ StopAllAudio::
 	ret
 
 DetermineAudioFunction::
-	ld a, [H_LOADEDROMBANK]
+	ldh a, [hLoadedROMBank]
 	push af
 	ld a, [wAudioROMBank]
 	call BankswitchCommon
 ; determine the audio function, based on the bank
 	cp BANK(Audio1_PlaySound)
-	jr nz, .checkForBank08
-; bank 02 (audio 1)
+	jr nz, .checkForAudio2
+; audio 1
 	ld a, b
 	call Audio1_PlaySound
 	jr .done
 
-.checkForBank08
+.checkForAudio2
 	cp BANK(Audio2_PlaySound)
-	jr nz, .checkForBank1F
-; bank 08 (audio 2)
+	jr nz, .checkForAudio3
+; audio 2
 	ld a, b
 	call Audio2_PlaySound
 	jr .done
 
-.checkForBank1F
+.checkForAudio3
 	cp BANK(Audio3_PlaySound)
-	jr nz, .bank20
-; bank 1f (audio 3)
+	jr nz, .audio4
+; audio 3
 	ld a, b
 	call Audio3_PlaySound
 	jr .done
 
-.bank20
-; invalid banks will default to XX:6bd4
-; this is seen when encountering Missingno, as its sprite dimensions overflow to wAudioROMBank
+.audio4
+; invalid banks will default to audio 4
+; this is seen when encountering Missingno,
+; as its sprite dimensions overflow to wAudioROMBank
 	ld a, b
 	call Audio4_PlaySound
+
 .done
 	pop af
 	call BankswitchCommon

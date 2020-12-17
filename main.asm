@@ -1,394 +1,151 @@
 INCLUDE "constants.asm"
 
-INCLUDE "home.asm"
-
 
 SECTION "bank1", ROMX
 
-INCLUDE "data/facing.asm"
-
+INCLUDE "data/sprites/facings.asm"
 INCLUDE "engine/battle/safari_zone.asm"
-
-INCLUDE "engine/titlescreen.asm"
-INCLUDE "engine/load_mon_data.asm"
-
-INCLUDE "data/item_prices.asm"
-INCLUDE "text/item_names.asm"
-INCLUDE "text/unused_names.asm"
-
-INCLUDE "engine/overworld/oam.asm"
-
-INCLUDE "engine/print_waiting_text.asm"
-
-INCLUDE "engine/overworld/map_sprite_functions1.asm"
-
-INCLUDE "engine/overworld/item.asm"
+INCLUDE "engine/movie/title.asm"
+INCLUDE "engine/pokemon/load_mon_data.asm"
+INCLUDE "data/items/prices.asm"
+INCLUDE "data/items/names.asm"
+INCLUDE "data/text/unused_names.asm"
+INCLUDE "engine/gfx/sprite_oam.asm"
+INCLUDE "engine/link/print_waiting_text.asm"
+INCLUDE "engine/overworld/sprite_collisions.asm"
+INCLUDE "engine/events/pick_up_item.asm"
 INCLUDE "engine/overworld/movement.asm"
-
-INCLUDE "engine/cable_club.asm"
-
-INCLUDE "engine/menu/main_menu.asm"
-
-INCLUDE "engine/oak_speech.asm"
-
-INCLUDE "engine/special_warps.asm"
-
-INCLUDE "engine/debug1.asm"
-
-INCLUDE "engine/menu/naming_screen.asm"
-
-INCLUDE "engine/oak_speech2.asm"
-
-INCLUDE "engine/subtract_paid_money.asm"
-
-INCLUDE "engine/menu/swap_items.asm"
-
-INCLUDE "engine/overworld/pokemart.asm"
-
-INCLUDE "engine/learn_move.asm"
-
-INCLUDE "engine/overworld/pokecenter.asm"
-
-INCLUDE "engine/overworld/set_blackout_map.asm"
-
-INCLUDE "engine/display_text_id_init.asm"
-INCLUDE "engine/menu/draw_start_menu.asm"
-
-INCLUDE "engine/overworld/cable_club_npc.asm"
-
-INCLUDE "engine/menu/text_box.asm"
-
-INCLUDE "engine/battle/moveEffects/drain_hp_effect.asm"
-
-INCLUDE "engine/menu/players_pc.asm"
-
-INCLUDE "engine/remove_pokemon.asm"
-
-INCLUDE "engine/display_pokedex.asm"
+INCLUDE "engine/link/cable_club.asm"
+INCLUDE "engine/menus/main_menu.asm"
+INCLUDE "engine/movie/oak_speech/oak_speech.asm"
+INCLUDE "engine/overworld/special_warps.asm"
+INCLUDE "engine/debug/debug_party.asm"
+INCLUDE "engine/menus/naming_screen.asm"
+INCLUDE "engine/movie/oak_speech/oak_speech2.asm"
+INCLUDE "engine/items/subtract_paid_money.asm"
+INCLUDE "engine/menus/swap_items.asm"
+INCLUDE "engine/events/pokemart.asm"
+INCLUDE "engine/pokemon/learn_move.asm"
+INCLUDE "engine/events/pokecenter.asm"
+INCLUDE "engine/events/set_blackout_map.asm"
+INCLUDE "engine/menus/display_text_id_init.asm"
+INCLUDE "engine/menus/draw_start_menu.asm"
+INCLUDE "engine/link/cable_club_npc.asm"
+INCLUDE "engine/menus/text_box.asm"
+INCLUDE "engine/battle/move_effects/drain_hp.asm"
+INCLUDE "engine/menus/players_pc.asm"
+INCLUDE "engine/pokemon/remove_mon.asm"
+INCLUDE "engine/events/display_pokedex.asm"
 
 
 SECTION "bank3", ROMX
 
 INCLUDE "engine/joypad.asm"
-
 INCLUDE "engine/overworld/clear_variables.asm"
 INCLUDE "engine/overworld/player_state.asm"
-INCLUDE "engine/overworld/poison.asm"
-INCLUDE "engine/overworld/tileset_header.asm"
+INCLUDE "engine/events/poison.asm"
+INCLUDE "engine/overworld/tilesets.asm"
 INCLUDE "engine/overworld/daycare_exp.asm"
-
-INCLUDE "data/hide_show_data.asm"
-
+INCLUDE "data/maps/hide_show_data.asm"
 INCLUDE "engine/overworld/wild_mons.asm"
-
-INCLUDE "engine/items/items.asm"
-
-INCLUDE "engine/menu/draw_badges.asm"
-
+INCLUDE "engine/items/item_effects.asm"
+INCLUDE "engine/menus/draw_badges.asm"
 INCLUDE "engine/overworld/update_map.asm"
 INCLUDE "engine/overworld/cut.asm"
 INCLUDE "engine/overworld/missable_objects.asm"
 INCLUDE "engine/overworld/push_boulder.asm"
-
-INCLUDE "engine/add_mon.asm"
+INCLUDE "engine/pokemon/add_mon.asm"
 INCLUDE "engine/flag_action.asm"
-INCLUDE "engine/heal_party.asm"
-INCLUDE "engine/bcd.asm"
-INCLUDE "engine/init_player_data.asm"
-INCLUDE "engine/get_bag_item_quantity.asm"
-INCLUDE "engine/pathfinding.asm"
-INCLUDE "engine/hp_bar.asm"
-INCLUDE "engine/hidden_object_functions3.asm"
+INCLUDE "engine/events/heal_party.asm"
+INCLUDE "engine/math/bcd.asm"
+INCLUDE "engine/movie/oak_speech/init_player_data.asm"
+INCLUDE "engine/items/get_bag_item_quantity.asm"
+INCLUDE "engine/overworld/pathfinding.asm"
+INCLUDE "engine/gfx/hp_bar.asm"
+INCLUDE "engine/events/hidden_objects/bookshelves.asm"
+INCLUDE "engine/events/hidden_objects/indigo_plateau_statues.asm"
+INCLUDE "engine/events/hidden_objects/book_or_sculpture.asm"
+INCLUDE "engine/events/hidden_objects/elevator.asm"
+INCLUDE "engine/events/hidden_objects/town_map.asm"
+INCLUDE "engine/events/hidden_objects/pokemon_stuff.asm"
 
 
-SECTION "Graphics (BANK 4)", ROMX
+SECTION "bank4", ROMX
 
-PokemonLogoJapanGraphics:       INCBIN "gfx/pokemon_logo_japan.2bpp"
-FontGraphics:                   INCBIN "gfx/font.1bpp"
-FontGraphicsEnd:
-ABTiles:                        INCBIN "gfx/AB.2bpp"
-HpBarAndStatusGraphics:         INCBIN "gfx/hp_bar_and_status.2bpp"
-HpBarAndStatusGraphicsEnd:
-BattleHudTiles1:                INCBIN "gfx/battle_hud1.1bpp"
-BattleHudTiles1End:
-BattleHudTiles2:                INCBIN "gfx/battle_hud2.1bpp"
-BattleHudTiles3:                INCBIN "gfx/battle_hud3.1bpp"
-BattleHudTiles3End:
-NintendoCopyrightLogoGraphics:  INCBIN "gfx/copyright.2bpp"
-GamefreakLogoGraphics:          INCBIN "gfx/gamefreak.2bpp"
-GamefreakLogoGraphicsEnd:
-NineTile:                       INCBIN "gfx/9_tile.2bpp"
-TextBoxGraphics:                INCBIN "gfx/text_box.2bpp"
-TextBoxGraphicsEnd:
-PokedexTileGraphics:            INCBIN "gfx/pokedex.2bpp"
-PokedexTileGraphicsEnd:
-WorldMapTileGraphics:           INCBIN "gfx/town_map.2bpp"
-WorldMapTileGraphicsEnd:
-PlayerCharacterTitleGraphics:   INCBIN "gfx/player_title.2bpp"
-
-INCLUDE "engine/menu/status_screen.asm"
-INCLUDE "engine/menu/party_menu.asm"
-
-RedPicFront: INCBIN "pic/ytrainer/red.pic"
-ShrinkPic1:  INCBIN "pic/trainer/shrink1.pic"
-ShrinkPic2:  INCBIN "pic/trainer/shrink2.pic"
-
-INCLUDE "engine/menu/start_sub_menus.asm"
+INCLUDE "gfx/font.asm"
+INCLUDE "engine/pokemon/status_screen.asm"
+INCLUDE "engine/menus/party_menu.asm"
+INCLUDE "gfx/player.asm"
+INCLUDE "engine/menus/start_sub_menus.asm"
 INCLUDE "engine/items/tms.asm"
 
 
-SECTION "NPC Sprites 1", ROMX ; BANK $04
-
-OakAideSprite:         INCBIN "gfx/sprites/oak_aide.2bpp"
-RockerSprite:          INCBIN "gfx/sprites/rocker.2bpp"
-SwimmerSprite:         INCBIN "gfx/sprites/swimmer.2bpp"
-WhitePlayerSprite:     INCBIN "gfx/sprites/white_player.2bpp"
-GymHelperSprite:       INCBIN "gfx/sprites/gym_helper.2bpp"
-OldPersonSprite:       INCBIN "gfx/sprites/old_person.2bpp"
-MartGuySprite:         INCBIN "gfx/sprites/mart_guy.2bpp"
-FisherSprite:          INCBIN "gfx/sprites/fisher.2bpp"
-OldMediumWomanSprite:  INCBIN "gfx/sprites/old_medium_woman.2bpp"
-NurseSprite:           INCBIN "gfx/sprites/nurse.2bpp"
-CableClubWomanSprite:  INCBIN "gfx/sprites/cable_club_woman.2bpp"
-MrMasterballSprite:    INCBIN "gfx/sprites/mr_masterball.2bpp"
-LaprasGiverSprite:     INCBIN "gfx/sprites/lapras_giver.2bpp"
-WardenSprite:          INCBIN "gfx/sprites/warden.2bpp"
-SsCaptainSprite:       INCBIN "gfx/sprites/ss_captain.2bpp"
-Fisher2Sprite:         INCBIN "gfx/sprites/fisher2.2bpp"
-BlackbeltSprite:       INCBIN "gfx/sprites/blackbelt.2bpp"
-GuardSprite:           INCBIN "gfx/sprites/guard.2bpp"
-BallSprite:            INCBIN "gfx/sprites/ball.2bpp"
-OmanyteSprite:         INCBIN "gfx/sprites/omanyte.2bpp"
-BoulderSprite:         INCBIN "gfx/sprites/boulder.2bpp"
-PaperSheetSprite:      INCBIN "gfx/sprites/paper_sheet.2bpp"
-BookMapDexSprite:      INCBIN "gfx/sprites/book_map_dex.2bpp"
-ClipboardSprite:       INCBIN "gfx/sprites/clipboard.2bpp"
-SnorlaxSprite:         INCBIN "gfx/sprites/snorlax.2bpp"
-OldAmberSprite:        INCBIN "gfx/sprites/old_amber.2bpp"
-LyingOldManSprite:     INCBIN "gfx/sprites/lying_old_man.2bpp"
-QuestionMarkSprite:    INCBIN "gfx/sprites/question_mark.2bpp"
+SECTION "Battle Engine 1", ROMX
 
 INCLUDE "engine/battle/end_of_battle.asm"
 INCLUDE "engine/battle/wild_encounters.asm"
-INCLUDE "engine/battle/moveEffects/recoil_effect.asm"
-INCLUDE "engine/battle/moveEffects/conversion_effect.asm"
-INCLUDE "engine/battle/moveEffects/haze_effect.asm"
+INCLUDE "engine/battle/move_effects/recoil.asm"
+INCLUDE "engine/battle/move_effects/conversion.asm"
+INCLUDE "engine/battle/move_effects/haze.asm"
 
 
-SECTION "NPC Sprites 2", ROMX ; BANK $05
+SECTION "bank5", ROMX
 
-INCLUDE "engine/load_pokedex_tiles.asm"
+INCLUDE "engine/gfx/load_pokedex_tiles.asm"
 INCLUDE "engine/overworld/map_sprites.asm"
 
-RedCyclingSprite:     INCBIN "gfx/sprites/cycling.2bpp"
-RedSprite:            INCBIN "gfx/sprites/red.2bpp"
-BlueSprite:           INCBIN "gfx/sprites/blue.2bpp"
-OakSprite:            INCBIN "gfx/sprites/oak.2bpp"
-BugCatcherSprite:     INCBIN "gfx/sprites/bug_catcher.2bpp"
-SlowbroSprite:        INCBIN "gfx/sprites/slowbro.2bpp"
-LassSprite:           INCBIN "gfx/sprites/lass.2bpp"
-BlackHairBoy1Sprite:  INCBIN "gfx/sprites/black_hair_boy_1.2bpp"
-LittleGirlSprite:     INCBIN "gfx/sprites/little_girl.2bpp"
-BirdSprite:           INCBIN "gfx/sprites/bird.2bpp"
-FatBaldGuySprite:     INCBIN "gfx/sprites/fat_bald_guy.2bpp"
-GamblerSprite:        INCBIN "gfx/sprites/gambler.2bpp"
-BlackHairBoy2Sprite:  INCBIN "gfx/sprites/black_hair_boy_2.2bpp"
-GirlSprite:           INCBIN "gfx/sprites/girl.2bpp"
-HikerSprite:          INCBIN "gfx/sprites/hiker.2bpp"
-FoulardWomanSprite:   INCBIN "gfx/sprites/foulard_woman.2bpp"
-GentlemanSprite:      INCBIN "gfx/sprites/gentleman.2bpp"
-DaisySprite:          INCBIN "gfx/sprites/daisy.2bpp"
-BikerSprite:          INCBIN "gfx/sprites/biker.2bpp"
-SailorSprite:         INCBIN "gfx/sprites/sailor.2bpp"
-CookSprite:           INCBIN "gfx/sprites/cook.2bpp"
-BikeShopGuySprite:    INCBIN "gfx/sprites/bike_shop_guy.2bpp"
-MrFujiSprite:         INCBIN "gfx/sprites/mr_fuji.2bpp"
-GiovanniSprite:       INCBIN "gfx/sprites/giovanni.2bpp"
-RocketSprite:         INCBIN "gfx/sprites/rocket.2bpp"
-MediumSprite:         INCBIN "gfx/sprites/medium.2bpp"
-WaiterSprite:         INCBIN "gfx/sprites/waiter.2bpp"
-ErikaSprite:          INCBIN "gfx/sprites/erika.2bpp"
-MomGeishaSprite:      INCBIN "gfx/sprites/mom_geisha.2bpp"
-BrunetteGirlSprite:   INCBIN "gfx/sprites/brunette_girl.2bpp"
-LanceSprite:          INCBIN "gfx/sprites/lance.2bpp"
-MomSprite:            INCBIN "gfx/sprites/mom.2bpp"
-BaldingGuySprite:     INCBIN "gfx/sprites/balding_guy.2bpp"
-YoungBoySprite:       INCBIN "gfx/sprites/young_boy.2bpp"
-GameboyKidSprite:     INCBIN "gfx/sprites/gameboy_kid.2bpp"
-ClefairySprite:       INCBIN "gfx/sprites/clefairy.2bpp"
-AgathaSprite:         INCBIN "gfx/sprites/agatha.2bpp"
-BrunoSprite:          INCBIN "gfx/sprites/bruno.2bpp"
-LoreleiSprite:        INCBIN "gfx/sprites/lorelei.2bpp"
-SeelSprite:           INCBIN "gfx/sprites/seel.2bpp"
 
-INCLUDE "engine/battle/moveEffects/substitute_effect.asm"
-INCLUDE "engine/menu/pc.asm"
+SECTION "Battle Engine 2", ROMX
+
+INCLUDE "engine/battle/move_effects/substitute.asm"
+INCLUDE "engine/menus/pc.asm"
 
 
-SECTION "bank6", ROMX
+SECTION "Doors and Ledges", ROMX
 
-INCLUDE "data/mapHeaders/CeladonCity.asm"
-INCLUDE "data/mapObjects/CeladonCity.asm"
-CeladonCity_Blocks: INCBIN "maps/CeladonCity.blk"
-
-INCLUDE "data/mapHeaders/PalletTown.asm"
-INCLUDE "data/mapObjects/PalletTown.asm"
-PalletTown_Blocks: INCBIN "maps/PalletTown.blk"
-
-INCLUDE "data/mapHeaders/ViridianCity.asm"
-INCLUDE "data/mapObjects/ViridianCity.asm"
-ViridianCity_Blocks: INCBIN "maps/ViridianCity.blk"
-
-INCLUDE "data/mapHeaders/PewterCity.asm"
-	ds 1
-INCLUDE "data/mapObjects/PewterCity.asm"
-PewterCity_Blocks: INCBIN "maps/PewterCity.blk"
-
-INCLUDE "data/mapHeaders/CeruleanCity.asm"
-INCLUDE "data/mapObjects/CeruleanCity.asm"
-CeruleanCity_Blocks: INCBIN "maps/CeruleanCity.blk"
-
-INCLUDE "data/mapHeaders/VermilionCity.asm"
-INCLUDE "data/mapObjects/VermilionCity.asm"
-VermilionCity_Blocks: INCBIN "maps/VermilionCity.blk"
-
-INCLUDE "data/mapHeaders/FuchsiaCity.asm"
-INCLUDE "data/mapObjects/FuchsiaCity.asm"
-FuchsiaCity_Blocks: INCBIN "maps/FuchsiaCity.blk"
-
-INCLUDE "scripts/PalletTown.asm"
-INCLUDE "scripts/ViridianCity.asm"
-INCLUDE "scripts/PewterCity.asm"
-INCLUDE "scripts/CeruleanCity.asm"
-INCLUDE "scripts/VermilionCity.asm"
-INCLUDE "scripts/CeladonCity.asm"
-INCLUDE "scripts/FuchsiaCity.asm"
-
-INCLUDE "data/mapHeaders/BluesHouse.asm"
-INCLUDE "scripts/BluesHouse.asm"
-INCLUDE "data/mapObjects/BluesHouse.asm"
-BluesHouse_Blocks: INCBIN "maps/BluesHouse.blk"
-
-INCLUDE "data/mapHeaders/VermilionTradeHouse.asm"
-INCLUDE "scripts/VermilionTradeHouse.asm"
-INCLUDE "data/mapObjects/VermilionTradeHouse.asm"
-VermilionTradeHouse_Blocks: INCBIN "maps/VermilionTradeHouse.blk"
-
-INCLUDE "data/mapHeaders/IndigoPlateauLobby.asm"
-INCLUDE "scripts/IndigoPlateauLobby.asm"
-INCLUDE "data/mapObjects/IndigoPlateauLobby.asm"
-IndigoPlateauLobby_Blocks: INCBIN "maps/IndigoPlateauLobby.blk"
-
-INCLUDE "data/mapHeaders/SilphCo4F.asm"
-INCLUDE "scripts/SilphCo4F.asm"
-INCLUDE "data/mapObjects/SilphCo4F.asm"
-SilphCo4F_Blocks: INCBIN "maps/SilphCo4F.blk"
-
-INCLUDE "data/mapHeaders/SilphCo5F.asm"
-INCLUDE "scripts/SilphCo5F.asm"
-INCLUDE "data/mapObjects/SilphCo5F.asm"
-SilphCo5F_Blocks: INCBIN "maps/SilphCo5F.blk"
-
-INCLUDE "data/mapHeaders/SilphCo6F.asm"
-INCLUDE "scripts/SilphCo6F.asm"
-INCLUDE "data/mapObjects/SilphCo6F.asm"
-SilphCo6F_Blocks: INCBIN "maps/SilphCo6F.blk"
-
-INCLUDE "engine/overworld/npc_movement.asm"
+INCLUDE "engine/overworld/auto_movement.asm"
 INCLUDE "engine/overworld/doors.asm"
 INCLUDE "engine/overworld/ledges.asm"
 
 
 SECTION "bank7", ROMX
 
-INCLUDE "data/mapHeaders/CinnabarIsland.asm"
-INCLUDE "data/mapObjects/CinnabarIsland.asm"
-CinnabarIsland_Blocks: INCBIN "maps/CinnabarIsland.blk"
+INCLUDE "engine/movie/oak_speech/clear_save.asm"
+INCLUDE "engine/events/elevator.asm"
 
-INCLUDE "data/mapHeaders/Route1.asm"
-INCLUDE "data/mapObjects/Route1.asm"
-Route1_Blocks: INCBIN "maps/Route1.blk"
 
-UndergroundPathRoute8_Blocks: INCBIN "maps/UndergroundPathRoute8.blk"
+SECTION "Hidden Objects 1", ROMX
 
-OaksLab_Blocks: INCBIN "maps/OaksLab.blk"
+INCLUDE "engine/menus/oaks_pc.asm"
+INCLUDE "engine/events/hidden_objects/new_bike.asm"
+INCLUDE "engine/events/hidden_objects/oaks_lab_posters.asm"
+INCLUDE "engine/events/hidden_objects/safari_game.asm"
+INCLUDE "engine/events/hidden_objects/cinnabar_gym_quiz.asm"
+INCLUDE "engine/events/hidden_objects/magazines.asm"
+INCLUDE "engine/events/hidden_objects/bills_house_pc.asm"
+INCLUDE "engine/events/hidden_objects/oaks_lab_email.asm"
 
-MrPsychicsHouse_Blocks:
-NameRatersHouse_Blocks:
-MrFujisHouse_Blocks:
-Route16FlyHouse_Blocks:
-Route2TradeHouse_Blocks:
-SaffronPidgeyHouse_Blocks:
-VermilionPidgeyHouse_Blocks:
-LavenderCuboneHouse_Blocks:
-CeruleanTradeHouse_Blocks:
-PewterNidoranHouse_Blocks:
-PewterSpeechHouse_Blocks:
-ViridianNicknameHouse_Blocks: INCBIN "maps/ViridianNicknameHouse.blk"
 
-CeladonMansionRoofHouse_Blocks:
-ViridianSchoolHouse_Blocks: INCBIN "maps/ViridianSchoolHouse.blk"
+SECTION "Bill's PC", ROMX
 
-CeruleanTrashedHouse_Blocks: INCBIN "maps/CeruleanTrashedHouse.blk"
+INCLUDE "engine/pokemon/bills_pc.asm"
 
-DiglettsCaveRoute11_Blocks:
-DiglettsCaveRoute2_Blocks: INCBIN "maps/DiglettsCaveRoute2.blk"
 
-INCLUDE "engine/clear_save.asm"
+SECTION "Battle Engine 3", ROMX
 
-INCLUDE "engine/predefs7.asm"
+INCLUDE "engine/battle/print_type.asm"
+INCLUDE "engine/battle/save_trainer_name.asm"
 
-INCLUDE "scripts/CinnabarIsland.asm"
 
-INCLUDE "scripts/Route1.asm"
+SECTION "Battle Engine 4", ROMX
 
-INCLUDE "data/mapHeaders/OaksLab.asm"
-INCLUDE "scripts/OaksLab.asm"
-INCLUDE "data/mapObjects/OaksLab.asm"
+INCLUDE "engine/gfx/screen_effects.asm"
+INCLUDE "engine/battle/move_effects/leech_seed.asm"
 
-INCLUDE "data/mapHeaders/ViridianMart.asm"
-INCLUDE "scripts/ViridianMart.asm"
-INCLUDE "data/mapObjects/ViridianMart.asm"
-ViridianMart_Blocks: INCBIN "maps/ViridianMart.blk"
 
-INCLUDE "data/mapHeaders/ViridianSchoolHouse.asm"
-INCLUDE "scripts/ViridianSchoolHouse.asm"
-INCLUDE "data/mapObjects/ViridianSchoolHouse.asm"
+SECTION "Battle Engine 5", ROMX
 
-INCLUDE "data/mapHeaders/ViridianNicknameHouse.asm"
-	ds 1
-INCLUDE "scripts/ViridianNicknameHouse.asm"
-INCLUDE "data/mapObjects/ViridianNicknameHouse.asm"
-
-INCLUDE "data/mapHeaders/PewterNidoranHouse.asm"
-INCLUDE "scripts/PewterNidoranHouse.asm"
-INCLUDE "data/mapObjects/PewterNidoranHouse.asm"
-
-INCLUDE "data/mapHeaders/PewterSpeechHouse.asm"
-INCLUDE "scripts/PewterSpeechHouse.asm"
-INCLUDE "data/mapObjects/PewterSpeechHouse.asm"
-
-INCLUDE "data/mapHeaders/CeruleanTrashedHouse.asm"
-INCLUDE "scripts/CeruleanTrashedHouse.asm"
-INCLUDE "data/mapObjects/CeruleanTrashedHouse.asm"
-
-INCLUDE "data/mapHeaders/CeruleanTradeHouse.asm"
-INCLUDE "scripts/CeruleanTradeHouse.asm"
-INCLUDE "data/mapObjects/CeruleanTradeHouse.asm"
-
-INCLUDE "data/mapHeaders/BikeShop.asm"
-INCLUDE "scripts/BikeShop.asm"
-INCLUDE "data/mapObjects/BikeShop.asm"
-BikeShop_Blocks: INCBIN "maps/BikeShop.blk"
-
-INCLUDE "data/mapHeaders/MrFujisHouse.asm"
-INCLUDE "scripts/MrFujisHouse.asm"
-INCLUDE "data/mapObjects/MrFujisHouse.asm"
-
-INCLUDE "data/mapHeaders/LavenderCuboneHouse.asm"
-INCLUDE "scripts/LavenderCuboneHouse.asm"
-INCLUDE "data/mapObjects/LavenderCuboneHouse.asm"
-
+<<<<<<< HEAD
 INCLUDE "data/mapHeaders/NameRatersHouse.asm"
 INCLUDE "scripts/NameRatersHouse.asm"
 INCLUDE "data/mapObjects/NameRatersHouse.asm"
@@ -480,10 +237,16 @@ INCLUDE "engine/hidden_object_functions7.asm"
 
 
 SECTION "bank09", ROMX
+=======
+INCLUDE "engine/battle/display_effectiveness.asm"
+INCLUDE "engine/items/tmhm.asm"
+INCLUDE "engine/pikachu/respawn_overworld_pikachu.asm"
+INCLUDE "engine/battle/scale_sprites.asm"
+INCLUDE "engine/slots/game_corner_slots2.asm"
+>>>>>>> 2654da5d157540d482790308f1c2948e1431fa46
 
-INCLUDE "engine/battle/print_type.asm"
-INCLUDE "engine/battle/save_trainer_name.asm"
 
+<<<<<<< HEAD
 SECTION "bank0A", ROMX
 
 
@@ -491,17 +254,18 @@ INCLUDE "engine/predefsA.asm"
 INCLUDE "engine/battle/moveEffects/leech_seed_effect.asm"
 
 SECTION "bank0B", ROMX
+=======
+SECTION "Slot Machines", ROMX
 
-INCLUDE "engine/battle/display_effectiveness.asm"
-INCLUDE "engine/items/tmhm.asm"
+INCLUDE "engine/movie/title_rb.asm"
+INCLUDE "engine/slots/slot_machine.asm"
+INCLUDE "engine/slots/game_corner_slots.asm"
+>>>>>>> 2654da5d157540d482790308f1c2948e1431fa46
 
-Func_2fd6a:
-	callab IsThisPartymonStarterPikachu_Party
-	ret nc
-	ld a, $3
-	ld [wPikachuSpawnState], a
-	ret
 
+SECTION "Battle Engine 6", ROMX
+
+<<<<<<< HEAD
 INCLUDE "engine/battle/scale_sprites.asm"
 INCLUDE "engine/game_corner_slots2.asm"
 
@@ -519,186 +283,33 @@ SECTION "bankE", ROMX
 INCLUDE "data/moves.asm"
 BaseStats: INCLUDE "data/base_stats.asm"
 INCLUDE "data/cries.asm"
+=======
+INCLUDE "data/moves/moves.asm"
+INCLUDE "data/pokemon/base_stats.asm"
+INCLUDE "data/pokemon/cries.asm"
+>>>>>>> 2654da5d157540d482790308f1c2948e1431fa46
 INCLUDE "engine/battle/trainer_ai.asm"
 INCLUDE "engine/battle/draw_hud_pokeball_gfx.asm"
-
-TradingAnimationGraphics:
-INCBIN "gfx/game_boy.2bpp"
-INCBIN "gfx/link_cable.2bpp"
-TradingAnimationGraphicsEnd:
-
-; Pokeball traveling through the link cable.
-TradingAnimationGraphics2: INCBIN "gfx/trade2.2bpp"
-TradingAnimationGraphics2End:
-
-INCLUDE "engine/evos_moves.asm"
+INCLUDE "gfx/trade.asm"
+INCLUDE "engine/pokemon/evos_moves.asm"
 
 
-SECTION "bankF", ROMX
+SECTION "Battle Core", ROMX
 
 INCLUDE "engine/battle/core.asm"
+INCLUDE "engine/battle/effects.asm"
 
 
 SECTION "bank10", ROMX
 
-INCLUDE "engine/menu/pokedex.asm"
+INCLUDE "engine/menus/pokedex.asm"
 INCLUDE "engine/overworld/emotion_bubbles.asm"
-INCLUDE "engine/trade.asm"
-INCLUDE "engine/intro.asm"
-INCLUDE "engine/trade2.asm"
-INCLUDE "engine/menu/options.asm"
+INCLUDE "engine/movie/trade.asm"
+INCLUDE "engine/movie/intro.asm"
+INCLUDE "engine/movie/trade2.asm"
+INCLUDE "engine/menus/options.asm"
 
-
-SECTION "bank11", ROMX
-
-INCLUDE "data/mapHeaders/LavenderTown.asm"
-INCLUDE "data/mapObjects/LavenderTown.asm"
-LavenderTown_Blocks: INCBIN "maps/LavenderTown.blk"
-
-ViridianPokecenter_Blocks: INCBIN "maps/ViridianPokecenter.blk"
-
-SafariZoneCenterRestHouse_Blocks:
-SafariZoneWestRestHouse_Blocks:
-SafariZoneEastRestHouse_Blocks:
-SafariZoneNorthRestHouse_Blocks: INCBIN "maps/SafariZoneCenterRestHouse.blk"
-
-INCLUDE "scripts/LavenderTown.asm"
-
-INCLUDE "engine/pokedex_rating.asm"
-
-INCLUDE "data/mapHeaders/ViridianPokecenter.asm"
-INCLUDE "scripts/ViridianPokecenter.asm"
-INCLUDE "data/mapObjects/ViridianPokecenter.asm"
-
-INCLUDE "data/mapHeaders/CeladonMart1F.asm"
-INCLUDE "scripts/CeladonMart1F.asm"
-INCLUDE "data/mapObjects/CeladonMart1F.asm"
-CeladonMart1F_Blocks: INCBIN "maps/CeladonMart1F.blk"
-
-INCLUDE "data/mapHeaders/PokemonMansion1F.asm"
-INCLUDE "scripts/PokemonMansion1F.asm"
-INCLUDE "data/mapObjects/PokemonMansion1F.asm"
-PokemonMansion1F_Blocks: INCBIN "maps/PokemonMansion1F.blk"
-
-INCLUDE "data/mapHeaders/RockTunnel1F.asm"
-INCLUDE "scripts/RockTunnel1F.asm"
-INCLUDE "data/mapObjects/RockTunnel1F.asm"
-RockTunnel1F_Blocks: INCBIN "maps/RockTunnel1F.blk"
-
-INCLUDE "data/mapHeaders/SeafoamIslands1F.asm"
-INCLUDE "scripts/SeafoamIslands1F.asm"
-INCLUDE "data/mapObjects/SeafoamIslands1F.asm"
-SeafoamIslands1F_Blocks: INCBIN "maps/SeafoamIslands1F.blk"
-
-INCLUDE "data/mapHeaders/SSAnne3F.asm"
-INCLUDE "scripts/SSAnne3F.asm"
-INCLUDE "data/mapObjects/SSAnne3F.asm"
-SSAnne3F_Blocks: INCBIN "maps/SSAnne3F.blk"
-
-INCLUDE "data/mapHeaders/VictoryRoad3F.asm"
-INCLUDE "scripts/VictoryRoad3F.asm"
-INCLUDE "data/mapObjects/VictoryRoad3F.asm"
-VictoryRoad3F_Blocks: INCBIN "maps/VictoryRoad3F.blk"
-
-INCLUDE "data/mapHeaders/RocketHideoutB1F.asm"
-INCLUDE "scripts/RocketHideoutB1F.asm"
-INCLUDE "data/mapObjects/RocketHideoutB1F.asm"
-RocketHideoutB1F_Blocks: INCBIN "maps/RocketHideoutB1F.blk"
-
-INCLUDE "data/mapHeaders/RocketHideoutB2F.asm"
-INCLUDE "scripts/RocketHideoutB2F.asm"
-INCLUDE "data/mapObjects/RocketHideoutB2F.asm"
-RocketHideoutB2F_Blocks: INCBIN "maps/RocketHideoutB2F.blk"
-
-INCLUDE "data/mapHeaders/RocketHideoutB3F.asm"
-INCLUDE "scripts/RocketHideoutB3F.asm"
-INCLUDE "data/mapObjects/RocketHideoutB3F.asm"
-RocketHideoutB3F_Blocks: INCBIN "maps/RocketHideoutB3F.blk"
-
-INCLUDE "data/mapHeaders/RocketHideoutB4F.asm"
-INCLUDE "scripts/RocketHideoutB4F.asm"
-INCLUDE "data/mapObjects/RocketHideoutB4F.asm"
-RocketHideoutB4F_Blocks: INCBIN "maps/RocketHideoutB4F.blk"
-
-INCLUDE "data/mapHeaders/RocketHideoutElevator.asm"
-INCLUDE "scripts/RocketHideoutElevator.asm"
-INCLUDE "data/mapObjects/RocketHideoutElevator.asm"
-RocketHideoutElevator_Blocks: INCBIN "maps/RocketHideoutElevator.blk"
-
-INCLUDE "data/mapHeaders/SilphCoElevator.asm"
-INCLUDE "scripts/SilphCoElevator.asm"
-INCLUDE "data/mapObjects/SilphCoElevator.asm"
-SilphCoElevator_Blocks: INCBIN "maps/SilphCoElevator.blk"
-
-INCLUDE "data/mapHeaders/SafariZoneEast.asm"
-INCLUDE "scripts/SafariZoneEast.asm"
-INCLUDE "data/mapObjects/SafariZoneEast.asm"
-SafariZoneEast_Blocks: INCBIN "maps/SafariZoneEast.blk"
-
-INCLUDE "data/mapHeaders/SafariZoneNorth.asm"
-INCLUDE "scripts/SafariZoneNorth.asm"
-INCLUDE "data/mapObjects/SafariZoneNorth.asm"
-SafariZoneNorth_Blocks: INCBIN "maps/SafariZoneNorth.blk"
-
-INCLUDE "data/mapHeaders/SafariZoneCenter.asm"
-INCLUDE "scripts/SafariZoneCenter.asm"
-INCLUDE "data/mapObjects/SafariZoneCenter.asm"
-SafariZoneCenter_Blocks: INCBIN "maps/SafariZoneCenter.blk"
-
-INCLUDE "data/mapHeaders/SafariZoneCenterRestHouse.asm"
-INCLUDE "scripts/SafariZoneCenterRestHouse.asm"
-INCLUDE "data/mapObjects/SafariZoneCenterRestHouse.asm"
-
-INCLUDE "data/mapHeaders/SafariZoneWestRestHouse.asm"
-INCLUDE "scripts/SafariZoneWestRestHouse.asm"
-INCLUDE "data/mapObjects/SafariZoneWestRestHouse.asm"
-
-INCLUDE "data/mapHeaders/SafariZoneEastRestHouse.asm"
-INCLUDE "scripts/SafariZoneEastRestHouse.asm"
-INCLUDE "data/mapObjects/SafariZoneEastRestHouse.asm"
-
-INCLUDE "data/mapHeaders/SafariZoneNorthRestHouse.asm"
-INCLUDE "scripts/SafariZoneNorthRestHouse.asm"
-INCLUDE "data/mapObjects/SafariZoneNorthRestHouse.asm"
-
-INCLUDE "data/mapHeaders/CeruleanCave2F.asm"
-INCLUDE "scripts/CeruleanCave2F.asm"
-INCLUDE "data/mapObjects/CeruleanCave2F.asm"
-CeruleanCave2F_Blocks: INCBIN "maps/CeruleanCave2F.blk"
-
-INCLUDE "data/mapHeaders/CeruleanCaveB1F.asm"
-INCLUDE "scripts/CeruleanCaveB1F.asm"
-INCLUDE "data/mapObjects/CeruleanCaveB1F.asm"
-CeruleanCaveB1F_Blocks: INCBIN "maps/CeruleanCaveB1F.blk"
-
-INCLUDE "data/mapHeaders/RockTunnelB1F.asm"
-INCLUDE "scripts/RockTunnelB1F.asm"
-INCLUDE "data/mapObjects/RockTunnelB1F.asm"
-RockTunnelB1F_Blocks: INCBIN "maps/RockTunnelB1F.blk"
-
-INCLUDE "data/mapHeaders/SeafoamIslandsB1F.asm"
-INCLUDE "scripts/SeafoamIslandsB1F.asm"
-INCLUDE "data/mapObjects/SeafoamIslandsB1F.asm"
-SeafoamIslandsB1F_Blocks: INCBIN "maps/SeafoamIslandsB1F.blk"
-
-INCLUDE "data/mapHeaders/SeafoamIslandsB2F.asm"
-INCLUDE "scripts/SeafoamIslandsB2F.asm"
-INCLUDE "data/mapObjects/SeafoamIslandsB2F.asm"
-SeafoamIslandsB2F_Blocks: INCBIN "maps/SeafoamIslandsB2F.blk"
-
-INCLUDE "data/mapHeaders/SeafoamIslandsB3F.asm"
-INCLUDE "scripts/SeafoamIslandsB3F.asm"
-INCLUDE "data/mapObjects/SeafoamIslandsB3F.asm"
-SeafoamIslandsB3F_Blocks: INCBIN "maps/SeafoamIslandsB3F.blk"
-
-INCLUDE "data/mapHeaders/SeafoamIslandsB4F.asm"
-INCLUDE "scripts/SeafoamIslandsB4F.asm"
-INCLUDE "data/mapObjects/SeafoamIslandsB4F.asm"
-SeafoamIslandsB4F_Blocks: INCBIN "maps/SeafoamIslandsB4F.blk"
-
-INCLUDE "engine/overworld/dungeon_warps.asm"
-
-
+<<<<<<< HEAD
 SECTION "bank12", ROMX
 
 INCLUDE "data/mapHeaders/Route7.asm"
@@ -966,191 +577,89 @@ INCLUDE "engine/hidden_object_functions14.asm"
 
 
 SECTION "bank15", ROMX
+=======
+>>>>>>> 2654da5d157540d482790308f1c2948e1431fa46
 
-INCLUDE "data/mapHeaders/Route2.asm"
-INCLUDE "data/mapObjects/Route2.asm"
-Route2_Blocks: INCBIN "maps/Route2.blk"
+SECTION "Pokédex Rating", ROMX
 
-INCLUDE "data/mapHeaders/Route3.asm"
-INCLUDE "data/mapObjects/Route3.asm"
-Route3_Blocks: INCBIN "maps/Route3.blk"
+INCLUDE "engine/events/pokedex_rating.asm"
 
-INCLUDE "data/mapHeaders/Route4.asm"
-INCLUDE "data/mapObjects/Route4.asm"
-Route4_Blocks: INCBIN "maps/Route4.blk"
 
-INCLUDE "data/mapHeaders/Route5.asm"
-INCLUDE "data/mapObjects/Route5.asm"
-Route5_Blocks: INCBIN "maps/Route5.blk"
+SECTION "Dungeon Warps", ROMX
 
-INCLUDE "data/mapHeaders/Route9.asm"
-INCLUDE "data/mapObjects/Route9.asm"
-Route9_Blocks: INCBIN "maps/Route9.blk"
+INCLUDE "engine/overworld/dungeon_warps.asm"
 
-INCLUDE "data/mapHeaders/Route13.asm"
-INCLUDE "data/mapObjects/Route13.asm"
-Route13_Blocks: INCBIN "maps/Route13.blk"
 
-INCLUDE "data/mapHeaders/Route14.asm"
-INCLUDE "data/mapObjects/Route14.asm"
-Route14_Blocks: INCBIN "maps/Route14.blk"
+SECTION "Hidden Objects 2", ROMX
 
-INCLUDE "data/mapHeaders/Route17.asm"
-INCLUDE "data/mapObjects/Route17.asm"
-Route17_Blocks: INCBIN "maps/Route17.blk"
+INCLUDE "engine/events/card_key.asm"
+INCLUDE "engine/events/prize_menu.asm"
+INCLUDE "engine/events/hidden_objects/school_notebooks.asm"
+INCLUDE "engine/events/hidden_objects/fighting_dojo.asm"
+INCLUDE "engine/events/hidden_objects/indigo_plateau_hq.asm"
 
-INCLUDE "data/mapHeaders/Route19.asm"
-INCLUDE "data/mapObjects/Route19.asm"
-Route19_Blocks: INCBIN "maps/Route19.blk"
 
-INCLUDE "data/mapHeaders/Route21.asm"
-INCLUDE "data/mapObjects/Route21.asm"
-Route21_Blocks: INCBIN "maps/Route21.blk"
-
-VermilionOldRodHouse_Blocks:
-Route12SuperRodHouse_Blocks:
-Daycare_Blocks: INCBIN "maps/Daycare.blk"
-
-FuchsiaGoodRodHouse_Blocks: INCBIN "maps/FuchsiaGoodRodHouse.blk"
+SECTION "Battle Engine 7", ROMX
 
 INCLUDE "engine/battle/experience.asm"
 
-INCLUDE "scripts/Route2.asm"
-INCLUDE "scripts/Route3.asm"
-INCLUDE "scripts/Route4.asm"
-INCLUDE "scripts/Route5.asm"
-INCLUDE "scripts/Route9.asm"
-INCLUDE "scripts/Route13.asm"
-INCLUDE "scripts/Route14.asm"
-INCLUDE "scripts/Route17.asm"
-INCLUDE "scripts/Route19.asm"
-INCLUDE "scripts/Route21.asm"
 
-INCLUDE "data/mapHeaders/VermilionOldRodHouse.asm"
-INCLUDE "scripts/VermilionOldRodHouse.asm"
-INCLUDE "data/mapObjects/VermilionOldRodHouse.asm"
+SECTION "Diploma", ROMX
 
-INCLUDE "data/mapHeaders/CeladonMart2F.asm"
-INCLUDE "scripts/CeladonMart2F.asm"
-INCLUDE "data/mapObjects/CeladonMart2F.asm"
-CeladonMart2F_Blocks: INCBIN "maps/CeladonMart2F.blk"
+INCLUDE "engine/events/diploma.asm"
 
-INCLUDE "data/mapHeaders/FuchsiaGoodRodHouse.asm"
-INCLUDE "scripts/FuchsiaGoodRodHouse.asm"
-INCLUDE "data/mapObjects/FuchsiaGoodRodHouse.asm"
 
-INCLUDE "data/mapHeaders/Daycare.asm"
-INCLUDE "scripts/Daycare.asm"
-INCLUDE "data/mapObjects/Daycare.asm"
+SECTION "Trainer Sight", ROMX
 
-INCLUDE "data/mapHeaders/Route12SuperRodHouse.asm"
-INCLUDE "scripts/Route12SuperRodHouse.asm"
-INCLUDE "data/mapObjects/Route12SuperRodHouse.asm"
-
-INCLUDE "data/mapHeaders/SilphCo8F.asm"
-INCLUDE "scripts/SilphCo8F.asm"
-INCLUDE "data/mapObjects/SilphCo8F.asm"
-SilphCo8F_Blocks: INCBIN "maps/SilphCo8F.blk"
-
-INCLUDE "engine/menu/diploma.asm"
-
-INCLUDE "engine/overworld/trainers.asm"
+INCLUDE "engine/overworld/trainer_sight.asm"
 
 
 SECTION "bank16", ROMX
 
-INCLUDE "data/mapHeaders/Route6.asm"
-INCLUDE "data/mapObjects/Route6.asm"
-Route6_Blocks: INCBIN "maps/Route6.blk"
-
-INCLUDE "data/mapHeaders/Route8.asm"
-INCLUDE "data/mapObjects/Route8.asm"
-Route8_Blocks: INCBIN "maps/Route8.blk"
-
-INCLUDE "data/mapHeaders/Route10.asm"
-INCLUDE "data/mapObjects/Route10.asm"
-Route10_Blocks: INCBIN "maps/Route10.blk"
-
-INCLUDE "data/mapHeaders/Route11.asm"
-INCLUDE "data/mapObjects/Route11.asm"
-Route11_Blocks: INCBIN "maps/Route11.blk"
-
-INCLUDE "data/mapHeaders/Route12.asm"
-INCLUDE "data/mapObjects/Route12.asm"
-Route12_Blocks: INCBIN "maps/Route12.blk"
-
-INCLUDE "data/mapHeaders/Route15.asm"
-INCLUDE "data/mapObjects/Route15.asm"
-Route15_Blocks: INCBIN "maps/Route15.blk"
-
-INCLUDE "data/mapHeaders/Route16.asm"
-INCLUDE "data/mapObjects/Route16.asm"
-Route16_Blocks: INCBIN "maps/Route16.blk"
-
-INCLUDE "data/mapHeaders/Route18.asm"
-INCLUDE "data/mapObjects/Route18.asm"
-Route18_Blocks: INCBIN "maps/Route18.blk"
-
-	INCBIN "maps/UnusedPokecenterCopy.blk"
-
-INCLUDE "engine/experience.asm"
-
-INCLUDE "engine/status_ailments.asm"
-
-INCLUDE "engine/overworld/oaks_aide.asm"
-
-INCLUDE "scripts/Route6.asm"
-INCLUDE "scripts/Route8.asm"
-INCLUDE "scripts/Route10.asm"
-INCLUDE "scripts/Route11.asm"
-INCLUDE "scripts/Route12.asm"
-INCLUDE "scripts/Route15.asm"
-INCLUDE "scripts/Route16.asm"
-INCLUDE "scripts/Route18.asm"
-
-INCLUDE "data/mapHeaders/PokemonFanClub.asm"
-INCLUDE "scripts/PokemonFanClub.asm"
-INCLUDE "data/mapObjects/PokemonFanClub.asm"
-PokemonFanClub_Blocks: INCBIN "maps/PokemonFanClub.blk"
-
-INCLUDE "data/mapHeaders/SilphCo2F.asm"
-INCLUDE "scripts/SilphCo2F.asm"
-INCLUDE "data/mapObjects/SilphCo2F.asm"
-SilphCo2F_Blocks: INCBIN "maps/SilphCo2F.blk"
-
-INCLUDE "data/mapHeaders/SilphCo3F.asm"
-INCLUDE "scripts/SilphCo3F.asm"
-INCLUDE "data/mapObjects/SilphCo3F.asm"
-SilphCo3F_Blocks: INCBIN "maps/SilphCo3F.blk"
-
-INCLUDE "data/mapHeaders/SilphCo10F.asm"
-INCLUDE "scripts/SilphCo10F.asm"
-INCLUDE "data/mapObjects/SilphCo10F.asm"
-SilphCo10F_Blocks: INCBIN "maps/SilphCo10F.blk"
-
-INCLUDE "data/mapHeaders/LancesRoom.asm"
-INCLUDE "scripts/LancesRoom.asm"
-INCLUDE "data/mapObjects/LancesRoom.asm"
-LancesRoom_Blocks: INCBIN "maps/LancesRoom.blk"
-
-INCLUDE "data/mapHeaders/HallOfFame.asm"
-INCLUDE "scripts/HallOfFame.asm"
-INCLUDE "data/mapObjects/HallOfFame.asm"
-HallOfFame_Blocks: INCBIN "maps/HallOfFame.blk"
-
-INCLUDE "engine/overworld/saffron_guards.asm"
+INCLUDE "engine/pokemon/experience.asm"
+INCLUDE "engine/pokemon/status_ailments.asm"
+INCLUDE "engine/events/oaks_aide.asm"
 
 
-SECTION "bank17", ROMX
+SECTION "Saffron Guards", ROMX
 
-SaffronMart_Blocks:
-LavenderMart_Blocks:
-CeruleanMart_Blocks:
-VermilionMart_Blocks: INCBIN "maps/VermilionMart.blk"
+INCLUDE "engine/events/saffron_guards.asm"
 
-CopycatsHouse2F_Blocks:
-RedsHouse2F_Blocks: INCBIN "maps/RedsHouse2F.blk"
 
+SECTION "Starter Dex", ROMX
+
+INCLUDE "engine/events/starter_dex.asm"
+
+
+SECTION "Hidden Objects 3", ROMX
+
+INCLUDE "engine/movie/evolution.asm"
+INCLUDE "engine/pokemon/set_types.asm"
+INCLUDE "engine/events/hidden_objects/reds_room.asm"
+INCLUDE "engine/events/hidden_objects/route_15_binoculars.asm"
+INCLUDE "engine/events/hidden_objects/museum_fossils.asm"
+INCLUDE "engine/events/hidden_objects/fanclub_pictures.asm"
+INCLUDE "engine/events/hidden_objects/museum_fossils2.asm"
+INCLUDE "engine/events/hidden_objects/school_blackboard.asm"
+INCLUDE "engine/events/hidden_objects/vermilion_gym_trash.asm"
+
+
+SECTION "Cinnabar Lab Fossils", ROMX
+
+INCLUDE "engine/events/cinnabar_lab.asm"
+
+
+SECTION "Hidden Objects 4", ROMX
+
+INCLUDE "engine/events/hidden_objects/gym_statues.asm"
+INCLUDE "engine/events/hidden_objects/bench_guys.asm"
+INCLUDE "engine/events/hidden_objects/blues_room.asm"
+INCLUDE "engine/events/hidden_objects/pokecenter_pc.asm"
+
+
+SECTION "Version Graphics", ROMX
+
+<<<<<<< HEAD
 Museum1F_Blocks: INCBIN "maps/Museum1F.blk"
 
 Museum2F_Blocks: INCBIN "maps/Museum2F.blk"
@@ -1464,334 +973,179 @@ Club_GFX:          INCBIN "gfx/tilesets/club.t5.2bpp"
 Club_Block:        INCBIN "gfx/blocksets/club.bst"
 Underground_GFX:   INCBIN "gfx/tilesets/underground.t7.2bpp"
 Underground_Block: INCBIN "gfx/blocksets/underground.bst"
+=======
+INCLUDE "gfx/version.asm"
+>>>>>>> 2654da5d157540d482790308f1c2948e1431fa46
 
 
 SECTION "bank1C", ROMX
 
-INCLUDE "engine/gamefreak.asm"
-INCLUDE "engine/hall_of_fame.asm"
+INCLUDE "engine/movie/splash.asm"
+INCLUDE "engine/movie/hall_of_fame.asm"
 INCLUDE "engine/overworld/healing_machine.asm"
 INCLUDE "engine/overworld/player_animations.asm"
 INCLUDE "engine/battle/ghost_marowak_anim.asm"
 INCLUDE "engine/battle/battle_transitions.asm"
+<<<<<<< HEAD
 INCLUDE "engine/town_map.asm"
 INCLUDE "engine/mon_party_sprites.asm"
 INCLUDE "engine/in_game_trades.asm"
 INCLUDE "engine/save.asm"
+=======
+INCLUDE "engine/items/town_map.asm"
+INCLUDE "engine/gfx/mon_icons.asm"
+INCLUDE "engine/events/in_game_trades.asm"
+INCLUDE "engine/gfx/palettes.asm"
+INCLUDE "engine/menus/save.asm"
+>>>>>>> 2654da5d157540d482790308f1c2948e1431fa46
 
 
-SECTION "bank1D", ROMX
-
-CopycatsHouse1F_Blocks: INCBIN "maps/CopycatsHouse1F.blk"
-
-CinnabarMart_Blocks:
-PewterMart_Blocks: INCBIN "maps/PewterMart.blk"
-
-FuchsiaBillsGrandpasHouse_Blocks: INCBIN "maps/FuchsiaBillsGrandpasHouse.blk"
-
-CinnabarPokecenter_Blocks:
-FuchsiaPokecenter_Blocks: INCBIN "maps/FuchsiaPokecenter.blk"
-
-CeruleanBadgeHouse_Blocks: INCBIN "maps/CeruleanBadgeHouse.blk"
+SECTION "Itemfinder 1", ROMX
 
 INCLUDE "engine/items/itemfinder.asm"
 
-INCLUDE "scripts/CeruleanCity_2.asm"
 
-INCLUDE "data/mapHeaders/ViridianGym.asm"
-INCLUDE "scripts/ViridianGym.asm"
-INCLUDE "data/mapObjects/ViridianGym.asm"
-ViridianGym_Blocks: INCBIN "maps/ViridianGym.blk"
+SECTION "Vending Machine", ROMX
 
-INCLUDE "data/mapHeaders/PewterMart.asm"
-INCLUDE "scripts/PewterMart.asm"
-INCLUDE "data/mapObjects/PewterMart.asm"
+INCLUDE "engine/events/vending_machine.asm"
 
-INCLUDE "data/mapHeaders/CeruleanCave1F.asm"
-INCLUDE "scripts/CeruleanCave1F.asm"
-INCLUDE "data/mapObjects/CeruleanCave1F.asm"
-CeruleanCave1F_Blocks: INCBIN "maps/CeruleanCave1F.blk"
 
-INCLUDE "data/mapHeaders/CeruleanBadgeHouse.asm"
-INCLUDE "scripts/CeruleanBadgeHouse.asm"
-INCLUDE "data/mapObjects/CeruleanBadgeHouse.asm"
+SECTION "Itemfinder 2", ROMX
 
-INCLUDE "engine/menu/vending_machine.asm"
-
-INCLUDE "data/mapHeaders/FuchsiaBillsGrandpasHouse.asm"
-INCLUDE "scripts/FuchsiaBillsGrandpasHouse.asm"
-INCLUDE "data/mapObjects/FuchsiaBillsGrandpasHouse.asm"
-
-INCLUDE "data/mapHeaders/FuchsiaPokecenter.asm"
-INCLUDE "scripts/FuchsiaPokecenter.asm"
-INCLUDE "data/mapObjects/FuchsiaPokecenter.asm"
-
-INCLUDE "data/mapHeaders/WardensHouse.asm"
-INCLUDE "scripts/WardensHouse.asm"
-INCLUDE "data/mapObjects/WardensHouse.asm"
-WardensHouse_Blocks: INCBIN "maps/WardensHouse.blk"
-
-INCLUDE "data/mapHeaders/SafariZoneGate.asm"
-INCLUDE "data/mapObjects/SafariZoneGate.asm"
-SafariZoneGate_Blocks: INCBIN "maps/SafariZoneGate.blk"
-INCLUDE "scripts/SafariZoneGate.asm"
-
-INCLUDE "data/mapHeaders/FuchsiaGym.asm"
-INCLUDE "scripts/FuchsiaGym.asm"
-INCLUDE "data/mapObjects/FuchsiaGym.asm"
-FuchsiaGym_Blocks: INCBIN "maps/FuchsiaGym.blk"
-
-INCLUDE "data/mapHeaders/FuchsiaMeetingRoom.asm"
-INCLUDE "scripts/FuchsiaMeetingRoom.asm"
-INCLUDE "data/mapObjects/FuchsiaMeetingRoom.asm"
-FuchsiaMeetingRoom_Blocks: INCBIN "maps/FuchsiaMeetingRoom.blk"
-
-INCLUDE "data/mapHeaders/CinnabarGym.asm"
-INCLUDE "scripts/CinnabarGym.asm"
-INCLUDE "data/mapObjects/CinnabarGym.asm"
-CinnabarGym_Blocks: INCBIN "maps/CinnabarGym.blk"
-INCLUDE "scripts/CinnabarGym_2.asm"
-
-INCLUDE "data/mapHeaders/CinnabarLab.asm"
-INCLUDE "scripts/CinnabarLab.asm"
-INCLUDE "data/mapObjects/CinnabarLab.asm"
-CinnabarLab_Blocks: INCBIN "maps/CinnabarLab.blk"
-
-INCLUDE "data/mapHeaders/CinnabarLabTradeRoom.asm"
-INCLUDE "scripts/CinnabarLabTradeRoom.asm"
-INCLUDE "data/mapObjects/CinnabarLabTradeRoom.asm"
-CinnabarLabTradeRoom_Blocks: INCBIN "maps/CinnabarLabTradeRoom.blk"
-
-INCLUDE "data/mapHeaders/CinnabarLabMetronomeRoom.asm"
-INCLUDE "scripts/CinnabarLabMetronomeRoom.asm"
-INCLUDE "data/mapObjects/CinnabarLabMetronomeRoom.asm"
-CinnabarLabMetronomeRoom_Blocks: INCBIN "maps/CinnabarLabMetronomeRoom.blk"
-
-INCLUDE "data/mapHeaders/CinnabarLabFossilRoom.asm"
-INCLUDE "scripts/CinnabarLabFossilRoom.asm"
-INCLUDE "data/mapObjects/CinnabarLabFossilRoom.asm"
-CinnabarLabFossilRoom_Blocks: INCBIN "maps/CinnabarLabFossilRoom.blk"
-
-INCLUDE "data/mapHeaders/CinnabarPokecenter.asm"
-INCLUDE "scripts/CinnabarPokecenter.asm"
-INCLUDE "data/mapObjects/CinnabarPokecenter.asm"
-
-INCLUDE "data/mapHeaders/CinnabarMart.asm"
-INCLUDE "scripts/CinnabarMart.asm"
-INCLUDE "data/mapObjects/CinnabarMart.asm"
-
-INCLUDE "data/mapHeaders/CopycatsHouse1F.asm"
-INCLUDE "scripts/CopycatsHouse1F.asm"
-INCLUDE "data/mapObjects/CopycatsHouse1F.asm"
-
-INCLUDE "data/mapHeaders/ChampionsRoom.asm"
-INCLUDE "scripts/ChampionsRoom.asm"
-INCLUDE "data/mapObjects/ChampionsRoom.asm"
-ChampionsRoom_Blocks: INCBIN "maps/ChampionsRoom.blk"
-
-INCLUDE "data/mapHeaders/LoreleisRoom.asm"
-INCLUDE "scripts/LoreleisRoom.asm"
-INCLUDE "data/mapObjects/LoreleisRoom.asm"
-LoreleisRoom_Blocks: INCBIN "maps/LoreleisRoom.blk"
-
-INCLUDE "data/mapHeaders/BrunosRoom.asm"
-INCLUDE "scripts/BrunosRoom.asm"
-INCLUDE "data/mapObjects/BrunosRoom.asm"
-BrunosRoom_Blocks: INCBIN "maps/BrunosRoom.blk"
-
-INCLUDE "data/mapHeaders/AgathasRoom.asm"
-INCLUDE "scripts/AgathasRoom.asm"
-INCLUDE "data/mapObjects/AgathasRoom.asm"
-AgathasRoom_Blocks: INCBIN "maps/AgathasRoom.blk"
-
-INCLUDE "engine/menu/league_pc.asm"
-
+INCLUDE "engine/menus/league_pc.asm"
 INCLUDE "engine/overworld/elevator.asm"
-
-INCLUDE "engine/overworld/hidden_items.asm"
+INCLUDE "engine/events/hidden_items.asm"
 
 
 SECTION "bank1E", ROMX
 
 INCLUDE "engine/battle/animations.asm"
-
 INCLUDE "engine/overworld/cut2.asm"
-
-INCLUDE "engine/overworld/ssanne.asm"
-
-RedFishingTilesFront: INCBIN "gfx/red_fishing_tile_front.2bpp"
-RedFishingTilesBack:  INCBIN "gfx/red_fishing_tile_back.2bpp"
-RedFishingTilesSide:  INCBIN "gfx/red_fishing_tile_side.2bpp"
-RedFishingRodTiles:   INCBIN "gfx/red_fishingrod_tiles.2bpp"
-
-INCLUDE "data/animations.asm"
+INCLUDE "engine/overworld/dust_smoke.asm"
+INCLUDE "gfx/fishing.asm"
+INCLUDE "data/moves/animations.asm"
+INCLUDE "data/battle_anims/subanimations.asm"
+INCLUDE "data/battle_anims/frame_blocks.asm"
 
 
-SECTION "bank2f", ROMX
+SECTION "BG Map Attributes (Debug)", ROMX
 
-INCLUDE "engine/bg_map_attributes.asm"
+IF DEF(_DEBUG)
+    INCLUDE "engine/gfx/bg_map_attributes.asm"
+ENDC
+
+
+SECTION "BG Map Attributes", ROMX
+
+INCLUDE "data/cgb/bg_map_attributes.asm"
+IF !DEF(_DEBUG)
+    INCLUDE "engine/gfx/bg_map_attributes.asm"
+ENDC
 
 
 SECTION "bank30", ROMX
 
 ; This whole bank is garbage data.
-INCBIN "engine/bank30.bin"
-
-
-SECTION "bank39", ROMX
-
-Pic_e4000:
-INCBIN "gfx/pikachu/unknown_e4000.pic"
-GFX_e40cc:
-INCBIN "gfx/pikachu/unknown_e40cc.2bpp"
-Pic_e411c:
-INCBIN "gfx/pikachu/unknown_e411c.pic"
-GFX_e41d2:
-INCBIN "gfx/pikachu/unknown_e41d2.2bpp"
-Pic_e4272:
-INCBIN "gfx/pikachu/unknown_e4272.pic"
-GFX_e4323:
-INCBIN "gfx/pikachu/unknown_e4323.2bpp"
-Pic_e4383:
-INCBIN "gfx/pikachu/unknown_e4383.pic"
-GFX_e444b:
-INCBIN "gfx/pikachu/unknown_e444b.2bpp"
-Pic_e458b:
-INCBIN "gfx/pikachu/unknown_e458b.pic"
-GFX_e463b:
-INCBIN "gfx/pikachu/unknown_e463b.2bpp"
-Pic_e467b:
-INCBIN "gfx/pikachu/unknown_e467b.pic"
-GFX_e472e:
-INCBIN "gfx/pikachu/unknown_e472e.2bpp"
-Pic_e476e:
-INCBIN "gfx/pikachu/unknown_e476e.pic"
-GFX_e4841:
-INCBIN "gfx/pikachu/unknown_e4841.2bpp"
-Pic_e49d1:
-INCBIN "gfx/pikachu/unknown_e49d1.pic"
-GFX_e4a99:
-INCBIN "gfx/pikachu/unknown_e4a99.2bpp"
-Pic_e4b39:
-INCBIN "gfx/pikachu/unknown_e4b39.pic"
-GFX_e4bde:
-INCBIN "gfx/pikachu/unknown_e4bde.2bpp"
-Pic_e4c3e:
-INCBIN "gfx/pikachu/unknown_e4c3e.pic"
-GFX_e4ce0:
-INCBIN "gfx/pikachu/unknown_e4ce0.2bpp"
-GFX_e4e70:
-INCBIN "gfx/pikachu/unknown_e4e70.2bpp"
-Pic_e5000:
-INCBIN "gfx/pikachu/unknown_e5000.pic"
-GFX_e50af:
-INCBIN "gfx/pikachu/unknown_e50af.2bpp"
-Pic_e523f:
-INCBIN "gfx/pikachu/unknown_e523f.pic"
-GFX_e52fe:
-INCBIN "gfx/pikachu/unknown_e52fe.2bpp"
-Pic_e548e:
-INCBIN "gfx/pikachu/unknown_e548e.pic"
-GFX_e5541:
-INCBIN "gfx/pikachu/unknown_e5541.2bpp"
-Pic_e56d1:
-INCBIN "gfx/pikachu/unknown_e56d1.pic"
-GFX_e5794:
-INCBIN "gfx/pikachu/unknown_e5794.2bpp"
-Pic_e5924:
-INCBIN "gfx/pikachu/unknown_e5924.pic"
-GFX_e59ed:
-INCBIN "gfx/pikachu/unknown_e59ed.2bpp"
-Pic_e5b7d:
-INCBIN "gfx/pikachu/unknown_e5b7d.pic"
-GFX_e5c4d:
-INCBIN "gfx/pikachu/unknown_e5c4d.2bpp"
-Pic_e5ddd:
-INCBIN "gfx/pikachu/unknown_e5ddd.pic"
-GFX_e5e90:
-INCBIN "gfx/pikachu/unknown_e5e90.2bpp"
-GFX_e6020:
-INCBIN "gfx/pikachu/unknown_e6020.2bpp"
-GFX_e61b0:
-INCBIN "gfx/pikachu/unknown_e61b0.2bpp"
-Pic_e6340:
-INCBIN "gfx/pikachu/unknown_e6340.pic"
-GFX_e63f7:
-INCBIN "gfx/pikachu/unknown_e63f7.2bpp"
-Pic_e6587:
-INCBIN "gfx/pikachu/unknown_e6587.pic"
-GFX_e6646:
-INCBIN "gfx/pikachu/unknown_e6646.2bpp"
-Pic_e67d6:
-INCBIN "gfx/pikachu/unknown_e67d6.pic"
-GFX_e682f:
-INCBIN "gfx/pikachu/unknown_e682f.2bpp"
-GFX_e69bf:
-INCBIN "gfx/pikachu/unknown_e69bf.2bpp"
-GFX_e6b4f:
-INCBIN "gfx/pikachu/unknown_e6b4f.2bpp"
-GFX_e6cdf:
-INCBIN "gfx/pikachu/unknown_e6cdf.2bpp"
-GFX_e6e6f:
-INCBIN "gfx/pikachu/unknown_e6e6f.2bpp"
-GFX_e6fff:
-INCBIN "gfx/pikachu/unknown_e6fff.2bpp"
-GFX_e718f:
-INCBIN "gfx/pikachu/unknown_e718f.2bpp"
-GFX_e731f:
-INCBIN "gfx/pikachu/unknown_e731f.2bpp"
-GFX_e74af:
-INCBIN "gfx/pikachu/unknown_e74af.2bpp"
-GFX_e763f:
-INCBIN "gfx/pikachu/unknown_e763f.2bpp"
-Pic_e77cf:
-INCBIN "gfx/pikachu/unknown_e77cf.pic"
-GFX_e7863:
-INCBIN "gfx/pikachu/unknown_e7863.2bpp"
-GFX_e79f3:
-INCBIN "gfx/pikachu/unknown_e79f3.2bpp"
-GFX_e7b83:
-INCBIN "gfx/pikachu/unknown_e7b83.2bpp"
-GFX_e7d13:
-INCBIN "gfx/pikachu/unknown_e7d13.2bpp"
+IF !DEF(_DEBUG)
+    INCBIN "garbage/bank30.bin"
+ENDC
 
 
 SECTION "bank3A", ROMX
 
-INCLUDE "text/monster_names.asm"
-
+INCLUDE "data/pokemon/names.asm"
 INCLUDE "engine/overworld/is_player_just_outside_map.asm"
-
-INCLUDE "engine/printer.asm"
-INCLUDE "engine/diploma_3a.asm"
-
-SurfingPikachu3Graphics:  INCBIN "gfx/surfing_pikachu_3.t1.2bpp"
-SurfingPikachu3GraphicsEnd:
-
-INCLUDE "engine/unknown_ea3ea.asm"
-
+INCLUDE "engine/printer/serial.asm"
+INCLUDE "engine/printer/printer.asm"
+INCLUDE "engine/events/diploma2.asm"
+INCLUDE "engine/printer/printer2.asm"
 INCLUDE "engine/overworld/npc_movement_2.asm"
 
-; bank $3b is empty
 
+<<<<<<< HEAD
+SurfingPikachu3Graphics:  INCBIN "gfx/surfing_pikachu_3.t1.2bpp"
+SurfingPikachu3GraphicsEnd:
+=======
+SECTION "Pikachu PCM", ROMX
+>>>>>>> 2654da5d157540d482790308f1c2948e1431fa46
+
+INCLUDE "engine/pikachu/pikachu_pcm.asm"
+INCLUDE "engine/overworld/advance_player_sprite.asm"
+INCLUDE "engine/events/black_out.asm"
+INCLUDE "engine/overworld/specific_script_flags.asm"
+
+
+SECTION "Try Pikachu Movement", ROMX
+
+INCLUDE "engine/overworld/unused_load_missable_object_data.asm"
+INCLUDE "engine/events/try_pikachu_movement.asm"
+
+
+SECTION "Credits", ROMX
+
+INCLUDE "engine/events/pokecenter_chansey.asm"
+INCLUDE "engine/movie/credits.asm"
+
+
+SECTION "Hidden Objects Core", ROMX
+
+INCLUDE "engine/overworld/hidden_objects.asm"
+INCLUDE "engine/events/hidden_objects/vermilion_gym_trash2.asm"
+
+
+<<<<<<< HEAD
 
 SECTION "bank3C", ROMX
+=======
+SECTION "Battle Engine 8", ROMX
+>>>>>>> 2654da5d157540d482790308f1c2948e1431fa46
 
-INCLUDE "engine/bank3c.asm"
+INCLUDE "engine/battle/common_text.asm"
+INCLUDE "engine/battle/link_battle_versus_text.asm"
+INCLUDE "engine/battle/unused_stats_functions.asm"
+INCLUDE "engine/battle/scroll_draw_trainer_pic.asm"
+INCLUDE "engine/battle/pikachu_entrance_anim.asm"
+INCLUDE "engine/battle/decrement_pp.asm"
+INCLUDE "engine/events/pikachu_happiness.asm"
 
 
-SECTION "bank3D", ROMX
+SECTION "Battle Engine 9", ROMX
 
-INCLUDE "engine/bank3d.asm"
+INCLUDE "engine/movie/title_yellow.asm"
+INCLUDE "engine/menus/link_menu.asm"
+INCLUDE "engine/menus/unused_input.asm"
+INCLUDE "engine/overworld/field_move_messages.asm"
+INCLUDE "engine/items/inventory.asm"
+INCLUDE "gfx/trainer_card.asm"
+INCLUDE "engine/items/super_rod.asm"
+INCLUDE "engine/battle/init_battle.asm"
+INCLUDE "engine/battle/init_battle_variables.asm"
+INCLUDE "engine/battle/move_effects/focus_energy.asm"
+INCLUDE "engine/battle/move_effects/heal.asm"
+INCLUDE "engine/battle/move_effects/transform.asm"
+INCLUDE "engine/battle/move_effects/reflect_light_screen.asm"
+INCLUDE "engine/battle/move_effects/mist.asm"
+INCLUDE "engine/battle/move_effects/one_hit_ko.asm"
+INCLUDE "engine/battle/move_effects/pay_day.asm"
+INCLUDE "engine/battle/move_effects/paralyze.asm"
+INCLUDE "engine/items/tm_prices.asm"
+INCLUDE "engine/math/multiply_divide.asm"
+INCLUDE "engine/events/give_pokemon.asm"
+INCLUDE "engine/battle/get_trainer_name.asm"
+INCLUDE "engine/math/random.asm"
+INCLUDE "engine/predefs.asm"
 
 
-SECTION "bank3E", ROMX
+SECTION "Surfing Minigame", ROMX
 
-INCLUDE "engine/bank3e.asm"
+INCLUDE "engine/minigame/surfing_pikachu.asm"
+INCLUDE "engine/movie/intro_yellow.asm"
+INCLUDE "engine/gfx/animated_objects.asm"
 
 
-SECTION "bank3F", ROMX
+SECTION "Overworld Pikachu", ROMX
 
+<<<<<<< HEAD
 INCLUDE "engine/bank3f.asm"
 
 SECTION "Pics 1", ROMX ; BANK $40
@@ -2186,3 +1540,14 @@ FossilKabutopsPic:    INCBIN "pic/ymon/fossilkabutops.pic"
 SECTION "bank4d", ROMX
 
 INCLUDE "engine/palettes.asm"
+=======
+INCLUDE "data/maps/songs.asm"
+INCLUDE "data/maps/map_header_pointers.asm"
+INCLUDE "data/maps/map_header_banks.asm"
+INCLUDE "engine/pikachu/pikachu_follow.asm"
+INCLUDE "engine/pikachu/pikachu_status.asm"
+INCLUDE "engine/pikachu/pikachu_emotions.asm"
+INCLUDE "engine/pikachu/pikachu_movement.asm"
+INCLUDE "engine/pikachu/pikachu_pic_animation.asm"
+INCLUDE "engine/debug/debug_menu.asm"
+>>>>>>> 2654da5d157540d482790308f1c2948e1431fa46

@@ -27,6 +27,10 @@ PokemonTower7F_ScriptPointers:
 	dw PokemonTower7Script11
 
 PokemonTower7Script0:
+IF DEF(_DEBUG)
+	call DebugPressedOrHeldB
+	ret nz
+ENDC
 	CheckEvent EVENT_BEAT_POKEMONTOWER_7_TRAINER_0
 	call z, PokemonTower7Script_60d2a
 	ret
@@ -49,7 +53,7 @@ PokemonTower7Script_60d2a:
 	ld a, MUSIC_MEET_JESSIE_JAMES
 	call PlayMusic
 	xor a
-	ld [hJoyHeld], a
+	ldh [hJoyHeld], a
 	ld a, $FF ^ (A_BUTTON | B_BUTTON)
 	ld [wJoyIgnore], a
 	ld a, HS_POKEMON_TOWER_7F_JESSIE
@@ -59,7 +63,7 @@ PokemonTower7Script_60d2a:
 	ld a, $1
 	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
 	ld a, $4
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	ld a, $ff
 	ld [wJoyIgnore], a
@@ -82,7 +86,7 @@ PokemonTower7Script1:
 	ld de, PokemonTower7MovementData_60d7a
 .asm_60d8c
 	ld a, $1
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call MoveSprite
 	ld a, $ff
 	ld [wJoyIgnore], a
@@ -98,14 +102,14 @@ PokemonTower7Script2:
 	ret nz
 PokemonTower7Script3:
 	ld a, $0
-	ld [wSpriteStateData1 + 1 * $10 + 9], a
+	ld [wSprite01StateData1FacingDirection], a
 	CheckEvent EVENT_BEAT_POKEMONTOWER_7_TRAINER_1
 	jr z, .asm_60dba
 	ld a, $c
-	ld [wSpriteStateData1 + 1 * $10 + 9], a
+	ld [wSprite01StateData1FacingDirection], a
 .asm_60dba
 	ld a, $2
-	ld [wSpriteStateData1 + 1 * $10 + 1], a
+	ld [wSprite01StateData1MovementStatus], a
 PokemonTower7Script4:
 	ld de, PokemonTower7MovementData_60d7a
 	CheckEvent EVENT_BEAT_POKEMONTOWER_7_TRAINER_1
@@ -113,7 +117,7 @@ PokemonTower7Script4:
 	ld de, PokemonTower7MovementData_60d7b
 .asm_60dcc
 	ld a, $2
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call MoveSprite
 	ld a, $ff
 	ld [wJoyIgnore], a
@@ -128,19 +132,19 @@ PokemonTower7Script5:
 	ret nz
 PokemonTower7Script6:
 	ld a, $2
-	ld [wSpriteStateData1 + $2 * $10 + $1], a
+	ld [wSprite02StateData1MovementStatus], a
 	ld a, $8
-	ld [wSpriteStateData1 + $2 * $10 + $9], a
+	ld [wSprite02StateData1FacingDirection], a
 	CheckEvent EVENT_BEAT_POKEMONTOWER_7_TRAINER_1
 	jr z, .asm_60dff
 	ld a, $0
-	ld [wSpriteStateData1 + $2 * $10 + $9], a
+	ld [wSprite02StateData1FacingDirection], a
 .asm_60dff
 	call Delay3
 	ld a, $FF ^ (A_BUTTON | B_BUTTON)
 	ld [wJoyIgnore], a
 	ld a, $5
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 PokemonTower7Script7:
 	ld hl, wd72d
@@ -154,7 +158,7 @@ PokemonTower7Script7:
 	ld a, $2c
 	ld [wTrainerNo], a
 	xor a
-	ld [hJoyHeld], a
+	ldh [hJoyHeld], a
 	ld [wJoyIgnore], a
 	ld a, $8
 	call PokemonTower7Script_60d05
@@ -167,17 +171,17 @@ PokemonTower7Script8:
 	cp $ff
 	jp z, PokemonTower7Script_60d01
 	ld a, $2
-	ld [wSpriteStateData1 + 1 * $10 + 1], a
-	ld [wSpriteStateData1 + 2 * $10 + 1], a
+	ld [wSprite01StateData1MovementStatus], a
+	ld [wSprite02StateData1MovementStatus], a
 	xor a
-	ld [wSpriteStateData1 + 1 * $10 + 9], a
-	ld [wSpriteStateData1 + 2 * $10 + 9], a
+	ld [wSprite01StateData1FacingDirection], a
+	ld [wSprite02StateData1FacingDirection], a
 	ld a, $FF ^ (A_BUTTON | B_BUTTON)
 	ld [wJoyIgnore], a
 	ld a, $1
 	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
 	ld a, $6
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	xor a
 	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
@@ -209,7 +213,7 @@ PokemonTower7Script9:
 PokemonTower7Script10:
 	call PlayDefaultMusic
 	xor a
-	ld [hJoyHeld], a
+	ldh [hJoyHeld], a
 	ld [wJoyIgnore], a
 	SetEvent EVENT_BEAT_POKEMONTOWER_7_TRAINER_0
 	ld a, $0
@@ -223,7 +227,7 @@ PokemonTower7Script_60eaf:
 	call Delay3
 	ret
 
-PokemonTower7Script_60ebe
+PokemonTower7Script_60ebe:
 	ld [wMissableObjectIndex], a
 	predef HideObject
 	ret
@@ -237,7 +241,7 @@ PokemonTower7Script11:
 	ld a, SPRITE_FACING_UP
 	ld [wSpritePlayerStateData1FacingDirection], a
 	ld a, MR_FUJIS_HOUSE
-	ld [hWarpDestinationMap], a
+	ldh [hWarpDestinationMap], a
 	ld a, $1
 	ld [wDestinationWarpID], a
 	ld a, LAVENDER_TOWN
@@ -258,11 +262,11 @@ PokemonTower7F_TextPointers:
 
 PokemonTower7Text1:
 PokemonTower7Text2:
-	db "@"
+	text_end
 
 PokemonTower7Text4:
-	TX_FAR _PokemonTowerJessieJamesText1
-	TX_ASM
+	text_far _PokemonTowerJessieJamesText1
+	text_asm
 	ld c, 10
 	call DelayFrames
 	ld a, PLAYER_DIR_UP
@@ -277,22 +281,22 @@ PokemonTower7Text4:
 	jp TextScriptEnd
 
 PokemonTower7Text5:
-	TX_FAR _PokemonTowerJessieJamesText2
-	db "@"
+	text_far _PokemonTowerJessieJamesText2
+	text_end
 
 PokemonTower7JessieJamesEndBattleText:
-	TX_FAR _PokemonTowerJessieJamesText3
-	db "@"
+	text_far _PokemonTowerJessieJamesText3
+	text_end
 
 PokemonTower7Text6:
-	TX_FAR _PokemonTowerJessieJamesText4
-	TX_ASM
+	text_far _PokemonTowerJessieJamesText4
+	text_asm
 	ld c, 64
 	call DelayFrames
 	jp TextScriptEnd
 
 PokemonTower7Text3:
-	TX_ASM
+	text_asm
 	ld hl, PokemonTower7Text_60f75
 	call PrintText
 	SetEvent EVENT_RESCUED_MR_FUJI
@@ -311,5 +315,5 @@ PokemonTower7Text3:
 	jp TextScriptEnd
 
 PokemonTower7Text_60f75:
-	TX_FAR _TowerRescueFujiText
-	db "@"
+	text_far _TowerRescueFujiText
+	text_end

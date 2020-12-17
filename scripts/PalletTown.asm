@@ -33,7 +33,7 @@ PalletTownScript0:
 	SetEventReuseHL EVENT_PLAYER_AT_RIGHT_EXIT_TO_PALLET_TOWN
 .asm_18e40
 	xor a
-	ld [hJoyHeld], a
+	ldh [hJoyHeld], a
 	ld a, $ff
 	ld [wJoyIgnore], a
 	ld a, PLAYER_DIR_UP
@@ -41,7 +41,7 @@ PalletTownScript0:
 	call StopAllMusic
 	ld a, BANK(Music_MeetProfOak)
 	ld c, a
-	ld a, MUSIC_MEET_PROF_OAK
+	ld a, MUSIC_MEET_PROF_OAK ; "oak appears" music
 	call PlayMusic
 	SetEvent EVENT_OAK_APPEARED_IN_PALLET
 
@@ -56,24 +56,24 @@ PalletTownScript1:
 	xor a
 	ld [wcf0d], a
 	ld a, 1
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	ld a, $FF
 	ld [wJoyIgnore], a
-	ld hl, wSpriteStateData2 + 1 * $10 + 4
-	ld a, $8
-	ld [hli], a
-	ld a, $e
-	ld [hl], a
+	ld hl, wSprite01StateData2MapY
+	ld a, 8
+	ld [hli], a ; SPRITESTATEDATA2_MAPY
+	ld a, 14
+	ld [hl], a ; SPRITESTATEDATA2_MAPX
 	ld a, HS_PALLET_TOWN_OAK
 	ld [wMissableObjectIndex], a
 	predef ShowObject
 
 	; trigger the next script
 	ld a, $2
-	ld [wSpriteStateData1 + 1 * $10 + 1], a
+	ld [wSprite01StateData1MovementStatus], a
 	ld a, SPRITE_FACING_UP
-	ld [wSpriteStateData1 + 1 * $10 + 9], a
+	ld [wSprite01StateData1FacingDirection], a
 	ld a, 2
 	ld [wPalletTownCurScript], a
 	ret
@@ -83,17 +83,17 @@ PalletTownScript2:
 	ld a, 0
 	ld [wYCoord], a
 	ld a, 1
-	ld [hNPCPlayerRelativePosPerspective], a
+	ldh [hNPCPlayerRelativePosPerspective], a
 	ld a, 1
 	swap a
-	ld [hNPCSpriteOffset], a
+	ldh [hNPCSpriteOffset], a
 	predef CalcPositionOfPlayerRelativeToNPC
 	ld hl, hNPCPlayerYDistance
 	dec [hl]
-	predef FindPathToPlayer ; load Oak’s movement into wNPCMovementDirections2
+	predef FindPathToPlayer ; load Oak's movement into wNPCMovementDirections2
 	ld de, wNPCMovementDirections2
 	ld a, 1 ; oak
-	ld [H_SPRITEINDEX], a
+	ldh [hSpriteIndex], a
 	call MoveSprite
 
 	; trigger the next script
@@ -110,23 +110,23 @@ PalletTownScript3:
 	ld a, 1
 	ld [wcf0d], a
 	ld a, $2
-	ld [wSpriteStateData1 + 1 * $10 + 1], a
+	ld [wSprite01StateData1MovementStatus], a
 	ld a, SPRITE_FACING_UP
-	ld [wSpriteStateData1 + 1 * $10 + 9], a
+	ld [wSprite01StateData1FacingDirection], a
 	ld a, 1
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	; oak faces the horizontally adjacent patch of grass to face pikachu
 	ld a, $FF
 	ld [wJoyIgnore], a
 	ld a, $2
-	ld [wSpriteStateData1 + 1 * $10 + 1], a
+	ld [wSprite01StateData1MovementStatus], a
 	CheckEvent EVENT_PLAYER_AT_RIGHT_EXIT_TO_PALLET_TOWN
 	ld a, SPRITE_FACING_RIGHT
 	jr z, .asm_18f01
 	ld a, SPRITE_FACING_LEFT
 .asm_18f01
-	ld [wSpriteStateData1 + 1 * $10 + 9], a
+	ld [wSprite01StateData1FacingDirection], a
 
 	; trigger the next script
 	ld a, 4
@@ -155,14 +155,14 @@ PalletTownScript5:
 	ld a, $2
 	ld [wcf0d], a
 	ld a, $1
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	ld a, $2
-	ld [wSpriteStateData1 + 1 * $10 + 1], a
+	ld [wSprite01StateData1MovementStatus], a
 	ld a, SPRITE_FACING_UP
-	ld [wSpriteStateData1 + 1 * $10 + 9], a
+	ld [wSprite01StateData1FacingDirection], a
 	ld a, $8
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	ld a, $ff
 	ld [wJoyIgnore], a
@@ -179,9 +179,9 @@ PalletTownScript6:
 	ld [wSpriteIndex], a
 	xor a
 	ld [wNPCMovementScriptFunctionNum], a
-	ld a, $1
+	ld a, 1
 	ld [wNPCMovementScriptPointerTableNum], a
-	ld a, [H_LOADEDROMBANK]
+	ldh a, [hLoadedROMBank]
 	ld [wNPCMovementScriptBank], a
 
 	; trigger the next script
@@ -191,7 +191,7 @@ PalletTownScript6:
 
 PalletTownScript7:
 	ld a, [wNPCMovementScriptPointerTableNum]
-	and a
+	and a ; is the movement script over?
 	ret nz
 
 	; trigger the next script
@@ -201,10 +201,9 @@ PalletTownScript7:
 
 PalletTownScript8:
 	CheckEvent EVENT_DAISY_WALKING
-	jr nz, .asm_18f9e
-	and $3 ; (EVENT_GOT_TOWN_MAP | EVENT_ENTERED_BLUES_HOUSE)
-	cp $3
-	jr nz, .asm_18f9e
+	jr nz, .next
+	CheckBothEventsSet EVENT_GOT_TOWN_MAP, EVENT_ENTERED_BLUES_HOUSE, 1
+	jr nz, .next
 	SetEvent EVENT_DAISY_WALKING
 	ld a, HS_DAISY_SITTING
 	ld [wMissableObjectIndex], a
@@ -212,8 +211,7 @@ PalletTownScript8:
 	ld a, HS_DAISY_WALKING
 	ld [wMissableObjectIndex], a
 	predef_jump ShowObject
-
-.asm_18f9e
+.next
 	CheckEvent EVENT_GOT_POKEBALLS_FROM_OAK
 	ret z
 	SetEvent EVENT_PALLET_AFTER_GETTING_POKEBALLS_2
@@ -231,7 +229,7 @@ PalletTown_TextPointers:
 	dw PalletTownText8
 
 PalletTownText1:
-	TX_ASM
+	text_asm
 	ld a, [wcf0d]
 	and a
 	jr nz, .next
@@ -252,8 +250,8 @@ PalletTownText1:
 	jp TextScriptEnd
 
 OakAppearsText:
-	TX_FAR _OakAppearsText
-	TX_ASM
+	text_far _OakAppearsText
+	text_asm
 	ld c, 10
 	call DelayFrames
 	ld a, PLAYER_DIR_DOWN
@@ -266,37 +264,52 @@ OakAppearsText:
 	jp TextScriptEnd
 
 OakWalksUpText:
-	TX_FAR _OakWalksUpText
-	db "@"
+	text_far _OakWalksUpText
+	text_end
 
 PalletTownText_19002:
-	TX_FAR _OakWhewText
-	db "@"
+	text_far _OakWhewText
+	text_end
 
-PalletTownText8: ; girl
-	TX_FAR _OakGrassText
-	db "@"
+PalletTownText8:
+	text_far _OakGrassText
+	text_end
 
-PalletTownText2: ; fat man
-	TX_FAR _PalletTownText2
-	db "@"
+PalletTownText2: ; girl
+	text_far _PalletTownText2
+	text_end
 
-PalletTownText3: ; sign by lab
-	TX_FAR _PalletTownText3
-	db "@"
+PalletTownText3: ; fat man
+	text_far _PalletTownText3
+	text_end
 
-PalletTownText4: ; sign by fence
-	TX_FAR _PalletTownText4
-	db "@"
+PalletTownText4: ; sign by lab
+	text_far _PalletTownText4
+	text_end
 
-PalletTownText5: ; sign by Red’s house
-	TX_FAR _PalletTownText5
-	db "@"
+PalletTownText5: ; sign by fence
+IF DEF(_DEBUG)
+	text_asm
+	ld a, 239
+	inc a
+	ld [wWhichPewterGuy], a
+	ld hl, PalletTownText_502b
+	call PrintText
+	jp TextScriptEnd
 
-PalletTownText6: ; sign by Blue’s house
-	TX_FAR _PalletTownText6
-	db "@"
+PalletTownText_502b:
+	text_decimal wWhichPewterGuy, 1, 3
+	text "bit"
+	done
+ELSE
+	text_far _PalletTownText5
+	text_end
+ENDC
 
-PalletTownText7:
-	TX_FAR _PalletTownText7
-	db "@"
+PalletTownText6: ; sign by Red's house
+	text_far _PalletTownText6
+	text_end
+
+PalletTownText7: ; sign by Blue's house
+	text_far _PalletTownText7
+	text_end
